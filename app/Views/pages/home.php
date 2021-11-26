@@ -263,109 +263,106 @@
 <!--End Partner Area-->
 
 
-<!--Start latest blog Style4 area -->
-<section class="latest-blog-style4-area">
-    <div class="container">
-        <div class="sec-title-style4 text-center">
-            <p>OUR Latest News</p>
+	<!-- Start Blog Section -->
+	<section id="blog" class="blog-area bg-gray py-5 mt-3 mb-3">
+		<div class="container">
+        <div class="sec-title-style4 text-center wow slideInUp animated" data-wow-delay="0.3s"
+            data-wow-duration="1200ms">
+            <p>Our Latest Blog</p>
             <div class="big-title">
-                <h2>Our Latest Insights</h2>
+                <h2>Our Latest Articles</h2>
             </div>
             <div class="border-box center">
                 <div class="borders-left thm-bgc3"></div>
                 <div class="borders-right thm-bgc3"></div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                <div class="latest-blog-style4-outer">
-                    <div class="blog-style4-carousel owl-carousel owl-theme">
-                        <!--Start single blog post style4-->
-                        <div class="single-blog-post-style4">
-                            <div class="img-holder">
-                                <div class="inner">
-                                    <img src="assets/images/blog/blog-v3-1.jpg" alt="Awesome Image">
-                                </div>
-                                <div class="title-holder">
-                                    <ul class="meta-info">
-                                        <li><i class="fa fa-calendar thm-clr4" aria-hidden="true"></i><a
-                                                href="#">December 12, 2018</a></li>
-                                        <li><i class="fa fa-comments-o thm-clr4" aria-hidden="true"></i><a
-                                                href="#">Comments 03</a></li>
-                                    </ul>
-                                    <h3 class="blog-title"><a href="blog-single.html">Strategic & Commercial Approach
-                                            With Issues</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End single blog post style4-->
-                        <!--Start single blog post style4-->
-                        <div class="single-blog-post-style4">
-                            <div class="img-holder">
-                                <div class="inner">
-                                    <img src="assets/images/blog/blog-v3-2.jpg" alt="Awesome Image">
-                                </div>
-                                <div class="title-holder">
-                                    <ul class="meta-info">
-                                        <li><i class="fa fa-calendar thm-clr4" aria-hidden="true"></i><a
-                                                href="#">December 12, 2018</a></li>
-                                        <li><i class="fa fa-comments-o thm-clr4" aria-hidden="true"></i><a
-                                                href="#">Comments 03</a></li>
-                                    </ul>
-                                    <h3 class="blog-title"><a href="blog-single.html">Strategic & Commercial Approach
-                                            With Issues</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End single blog post style4-->
-                        <!--Start single blog post style4-->
-                        <div class="single-blog-post-style4">
-                            <div class="img-holder">
-                                <div class="inner">
-                                    <img src="assets/images/blog/blog-v3-3.jpg" alt="Awesome Image">
-                                </div>
-                                <div class="title-holder">
-                                    <ul class="meta-info">
-                                        <li><i class="fa fa-calendar thm-clr4" aria-hidden="true"></i><a
-                                                href="#">December 12, 2018</a></li>
-                                        <li><i class="fa fa-comments-o thm-clr4" aria-hidden="true"></i><a
-                                                href="#">Comments 03</a></li>
-                                    </ul>
-                                    <h3 class="blog-title"><a href="blog-single.html">Strategic & Commercial Approach
-                                            With Issues</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End single blog post style4-->
-                        <!--Start single blog post style4-->
-                        <div class="single-blog-post-style4">
-                            <div class="img-holder">
-                                <div class="inner">
-                                    <img src="assets/images/blog/blog-v3-4.jpg" alt="Awesome Image">
-                                </div>
-                                <div class="title-holder">
-                                    <ul class="meta-info">
-                                        <li><i class="fa fa-calendar thm-clr4" aria-hidden="true"></i><a
-                                                href="#">December 12, 2018</a></li>
-                                        <li><i class="fa fa-comments-o thm-clr4" aria-hidden="true"></i><a
-                                                href="#">Comments 03</a></li>
-                                    </ul>
-                                    <h3 class="blog-title"><a href="blog-single.html">Strategic & Commercial Approach
-                                            With Issues</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End single blog post style4-->
-                    </div>
-
-                    <div class="btn-block">
-                        <button class="prev-btn"></button>
-                        <button class="next-btn"></button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--End latest blog Style4 area-->
+			<div class="row pb-5">
+				<div class="col-lg-4 col-md-6">
+					<div class="single-blog">
+						<div class="post-img">
+							<a href="#">
+								<img src="assets/images/blog/blog-1.jpg" alt="" />
+							</a>
+						</div>
+						<div class="blog-content">
+							<div class="blog-date">
+								<ul class="blog-list">
+									<li>
+										<h6>20 January - 2021</h6>
+									</li>
+									<li><span class="blog-inline-sep">|</span></li>
+									<li><a href="#">Technology</a></li>
+								</ul>
+							</div>
+							<div class="blog-body-title">
+								<h3><a href="#">What Could 5g Change About The Way We Use Technology?</a></h3>
+							</div>
+							<div class="blog-body-text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore veniam dolore.</p>
+							</div>
+							<div class="blog-bottom-text-link"> <a href="#">+ Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-blog">
+						<div class="post-img">
+							<a href="#">
+								<img src="assets/images/blog/blog-2.jpg" alt="" />
+							</a>
+						</div>
+						<div class="blog-content">
+							<div class="blog-date">
+								<ul class="blog-list">
+									<li>
+										<h6>25 January - 2021</h6>
+									</li>
+									<li><span class="blog-inline-sep">|</span></li>
+									<li><a href="#">IT Services</a></li>
+								</ul>
+							</div>
+							<div class="blog-body-title">
+								<h3><a href="#">3 Factors To Consider When Choosing A Managed It Services</a></h3>
+							</div>
+							<div class="blog-body-text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore veniam dolore.</p>
+							</div>
+							<div class="blog-bottom-text-link"> <a href="#">+ Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-blog">
+						<div class="post-img">
+							<a href="#">
+								<img src="assets/images/blog/blog-3.jpg" alt="" />
+							</a>
+						</div>
+						<div class="blog-content">
+							<div class="blog-date">
+								<ul class="blog-list">
+									<li>
+										<h6>30 January - 2021</h6>
+									</li>
+									<li><span class="blog-inline-sep">|</span></li>
+									<li><a href="#">Business</a></li>
+								</ul>
+							</div>
+							<div class="blog-body-title">
+								<h3><a href="#">How To Quickly Shift To A Work-from-home Business Model</a></h3>
+							</div>
+							<div class="blog-body-text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore veniam dolore.</p>
+							</div>
+							<div class="blog-bottom-text-link"> <a href="#">+ Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Blog Section -->

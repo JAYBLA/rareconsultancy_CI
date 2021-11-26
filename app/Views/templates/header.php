@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title><?=$title?> |RareConsultancy</title>
+    <title><?=$title?> | RareConsultancy</title>
     <link rel="stylesheet" href="assets/css/aos.css">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">	
 	<link rel="stylesheet" href="assets/css/imp.css">

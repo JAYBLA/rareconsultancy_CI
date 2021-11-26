@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row">
                 <!--Start single footer widget-->
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div class="col-md-4">
                     <div class="single-footer-widget marbtm50">
                         <div class="our-company-info">
                             <div class="footer-logo">
@@ -19,22 +19,7 @@
                 </div>
                 <!--End single footer widget-->
                 <!--Start single footer widget-->
-                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12">
-                    <div class="single-footer-widget style4 marbtm50">
-                        <div class="title">
-                            <h3>COMPANY</h3>
-                        </div>
-                        <ul class="company-info-links">
-                            <li><a href="#">About Us</a></li>    
-                            <li><a href="#">Company</a></li>    
-                            <li><a href="#">Press & Blog.</a></li>    
-                            <li><a href="#">Privacy Policy</a></li>        
-                        </ul> 
-                    </div>
-                </div>
-                <!--End single footer widget-->  
-                <!--Start single footer widget-->
-                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12">
+                <div class="col-md-4">
                     <div class="single-footer-widget style4">
                         <div class="title">
                             <h3>RESOURCES</h3>
@@ -49,7 +34,7 @@
                 </div>
                 <!--End single footer widget-->
                 <!--Start single footer widget-->
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div class="col-md-4">
                     <div class="single-footer-widget style4 martop50">
                         <div class="title">
                             <h3>SUBSCRIBE US</h3>
@@ -90,13 +75,7 @@
                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> 
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a> 
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
                             </li>
                         </ul>
                     </div>
