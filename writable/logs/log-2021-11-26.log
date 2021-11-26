@@ -1,0 +1,16 @@
+CRITICAL - 2021-11-26 03:22:16 --> Undefined property: App\Controllers\Pages::$load
+#0 D:\WEB SERVICES\WORKPLACE\CodeIgniter\rareconsultancy\app\Controllers\Pages.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\WEB SERVICES...', 22)
+#1 D:\WEB SERVICES\WORKPLACE\CodeIgniter\rareconsultancy\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Pages->view('home')
+#2 D:\WEB SERVICES\WORKPLACE\CodeIgniter\rareconsultancy\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#3 D:\WEB SERVICES\WORKPLACE\CodeIgniter\rareconsultancy\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\WEB SERVICES\WORKPLACE\CodeIgniter\rareconsultancy\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\WEB SERVICES\WORKPLACE\CodeIgniter\rareconsultancy\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\WEB SERVICES...')
+#6 {main}
+CRITICAL - 2021-11-26 03:26:37 --> Undefined property: App\Controllers\Pages::$load
+#0 D:\WEB SERVICES\WORKPLACE\CodeIgniter\rareconsultancy\app\Controllers\Pages.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\WEB SERVICES...', 22)
+#1 D:\WEB SERVICES\WORKPLACE\CodeIgniter\rareconsultancy\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Pages->view('home')
+#2 D:\WEB SERVICES\WORKPLACE\CodeIgniter\rareconsultancy\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#3 D:\WEB SERVICES\WORKPLACE\CodeIgniter\rareconsultancy\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\WEB SERVICES\WORKPLACE\CodeIgniter\rareconsultancy\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\WEB SERVICES\WORKPLACE\CodeIgniter\rareconsultancy\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\WEB SERVICES...')
+#6 {main}
