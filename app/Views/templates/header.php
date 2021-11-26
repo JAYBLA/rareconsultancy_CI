@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>RareConsultancy</title>
+    <title><?=$title?> |RareConsultancy</title>
     <link rel="stylesheet" href="assets/css/aos.css">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">	
 	<link rel="stylesheet" href="assets/css/imp.css">
@@ -38,7 +38,7 @@
             <div class="outer-box clearfix">
                 <div class="header-upper-left-style2 pull-left clearfix">
                     <div class="logo">
-                        <a href="/"><img src="assets/images/resources/logo.png" alt="Awesome Logo" title=""></a>
+                        <a href="/home"><img src="assets/images/resources/logo.png" alt="Awesome Logo" title=""></a>
                     </div>   
                 </div>
                 <div class="header-upper-right-style2 pull-right">
@@ -68,7 +68,7 @@
                                 </div>
                                 <div class="title">
                                     <h3>Email</h3>
-                                    <p><a href="mailto:info@templatepath.com">support24-7@gmail.com</a></p>
+                                    <p><a href="mailto:info@rareconsultancy.co.tz">info@rareconsultancy.co.tz</a></p>
                                 </div>
                             </li>
                         </ul>    
@@ -100,44 +100,17 @@
                             <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
                                     <li class="dropdown current">
-                                        <a class="home-icon" href="#">Home</a>
-                                    </li>
-                                    <li class="dropdown"><a href="#">Pages</a>
-                                        <ul>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="team.html">Team Page</a></li>
-                                            <li><a href="team-single.html">Team Single Page</a></li>
-                                            <li><a href="faq.html">Faq Page</a></li>   
-                                            <li><a href="404-page.html">Error Page</a></li>                
-                                        </ul>
+                                        <a class="home-icon" href="/home">Home</a>
                                     </li>
                                     <li class="dropdown"><a href="#">Services</a>
                                         <ul>
-                                            <li><a href="services.html">View All Services</a></li>
-                                            <li><a href="ser-strategic.html">Strategic Consulting</a></li>
-                                            <li><a href="ser-online.html">Online Consulting</a></li>
-                                            <li><a href="ser-consulting.html">Consulting Analytics</a></li>
-                                            <li><a href="ser-financial.html">Financial Analysis</a></li>
-                                            <li><a href="ser-investment.html">Investment Planning</a></li>
-                                            <li><a href="ser-wealth.html">Wealth Balancing</a></li>
-                                            <li><a href="ser-business.html">Business Consulting</a></li>
-                                            <li><a href="ser-consumer.html">Consumer Markets</a></li>
-                                            <li><a href="ser-corporate.html">Corporate Finance</a></li>
+                                            <li><a href="/brela">View All Services</a></li>
+                                            <li><a href="/advisory">Strategic Consulting</a></li>
+                                            <li><a href="/trainings>">Online Consulting</a></li>                                            
                                         </ul>
                                     </li>
-                                    <li class="dropdown"><a href="#">Projects</a>
-                                        <ul>
-                                            <li><a href="projects.html">View All Projects</a></li>
-                                            <li><a href="project-single.html">Project Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown"><a href="#">Blog</a>
-                                    	<ul>
-                                            <li><a href="blog.html">Latest Blog</a></li>
-                                            <li><a href="blog-single.html">Blog Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="/articles">Articles</a></li>
+                                    <li><a href="/contact">Contact Us</a></li>
                                 </ul>
                             </div>
                         </nav>                        
@@ -148,7 +121,7 @@
                 <!--Top Right-->
                 <div class="header-lawer-right-style4 clearfix float-right">
                     <div class="button-box">
-                        <a class="btn-four" href="#"><span class="txt">Get a Quote</span></a>
+                        <a class="btn-four" href="/contact"><span class="txt">Get a Quote</span></a>
                     </div>      
                 </div>
                 
