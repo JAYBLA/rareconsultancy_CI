@@ -243,36 +243,20 @@
 <section class="partner-area thm-brand">
     <div class="layer-outer" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="700"></div>
     <div class="container">
-        <div class="row">
-            <div class="col-xl-12">
-                <div class="partner-box">
-                    <!--Start Single Partner Logo Box-->
-                    <div class="single-partner-logo-box">
+        <div class="row"> 
+                    <div class="col-md-4">
                         <a href="#"><img src="assets/images/brand/brand-1.png" alt="Awesome Image"></a>
                     </div>
                     <!--End Single Partner Logo Box-->
                     <!--Start Single Partner Logo Box-->
-                    <div class="single-partner-logo-box">
+                    <div class="col-md-4">
                         <a href="#"><img src="assets/images/brand/brand-2.png" alt="Awesome Image"></a>
                     </div>
                     <!--End Single Partner Logo Box-->
                     <!--Start Single Partner Logo Box-->
-                    <div class="single-partner-logo-box marleft-minus">
+                    <div class="col-md-4">
                         <a href="#"><img src="assets/images/brand/brand-3.png" alt="Awesome Image"></a>
                     </div>
-                    <!--End Single Partner Logo Box-->
-                    <!--Start Single Partner Logo Box-->
-                    <div class="single-partner-logo-box">
-                        <a href="#"><img src="assets/images/brand/brand-4.png" alt="Awesome Image"></a>
-                    </div>
-                    <!--End Single Partner Logo Box-->
-                    <!--Start Single Partner Logo Box-->
-                    <div class="single-partner-logo-box">
-                        <a href="#"><img src="assets/images/brand/brand-5.png" alt="Awesome Image"></a>
-                    </div>
-                    <!--End Single Partner Logo Box-->
-                </div>
-            </div>
         </div>
     </div>
 </section>
