@@ -5,14 +5,7 @@
             <div class="col-xl-12">
                 <div class="inner-content clearfix">
                     <div class="title wow slideInDown animated" data-wow-delay="0.3s" data-wow-duration="1500ms">
-                       <h1>Corporate Finance</h1>
-                    </div>
-                    <div class="breadcrumb-menu wow slideInUp animated" data-wow-delay="0.3s" data-wow-duration="1500ms">
-                        <ul class="clearfix">
-                            <li><a href="index.html" class="text-light">Home Back</a></li>
-                            <li><i class="fa fa-angle-double-right text-light" aria-hidden="true"></i></li>
-                            <li class="text-light">Service Detail</li>
-                        </ul>    
+                       <h1><?= $title ?></h1>
                     </div>
                 </div>
             </div>
@@ -40,32 +33,12 @@
                     </div>
                     <!--End Single Sidebar Box--> 
                     <!--Start Single Sidebar Box-->
-                    <div class="single-sidebar-box wow fadeInUp animated" data-wow-delay="0.2s" data-wow-duration="1200ms">
-                        <div class="title">
-                            <h3>Download Brochures</h3>
-                        </div>
-                        <div class="brochures-box">
-                            <ul>
-                                <li>
-                                    <a href="#"><span class="flaticon-file"></span>Project-One .pdf</a>
-                                </li>
-                                <li>
-                                    <a href="#"><span class="flaticon-doc left"></span>Project-One .doc</a>
-                                </li>
-                                <li>
-                                    <a href="#"><span class="flaticon-file-1"></span>Project-One .ppt</a>
-                                </li>
-                            </ul>
-                        </div>      
-                    </div>
-                    <!--End Single Sidebar Box-->
-                    <!--Start Single Sidebar Box-->
                     <div class="single-sidebar-box wow fadeInUp animated" data-wow-delay="0.3s" data-wow-duration="1200ms">
                         <div class="sidebar-contact-box text-center">
                             <span class="flaticon-telephone"></span>
                             <h4>Got any Questions?<br> Call Us Today</h4>
-                            <h3><a href="tel:123456789">1-800-369-8527</a></h3>
-                            <h5><a href="mailto:info@templatepath.com">support@energyconsult.net</a></h5>    
+                            <h3><a href="tel:255768284698">+255 768 284698</a></h3>
+                            <h5><a href="mailto:info@rareconsultancy.co.tz">info@rareconsultancy.co.tz</a></h5>    
                         </div>      
                     </div>
                     <!--End Single Sidebar Box-->          
@@ -73,13 +46,22 @@
             </div>
             <div class="col-xl-8 col-lg-7 col-md-12 order-box-1">
                 <div class="single-service-content-box">
-                    <div class="img-box">
-                        <img src="assets/images/services/service-v2-1.jpg" alt="Awesome Image">
-                    </div>
                     <div class="text-box">
-                        <h2>Corporate Finance</h2>
-                        <h4>Working with thousands of business companies around the world for Ideas</h4>
-                        <p>We help transform the world’s most important businesses into vigorous organizations that anticipate the agile unpredictable, adapt rapidly to disruption and outcompete opposition. We work with clients who not hide from the future but want define clients with high potential and high ambition.</p>
+                        <h2>Advisory</h2>                        
+                        <p>One of our service is to perform advisory services, particularly in the areas of Risk Management Services, Accounting Support and Administrative Manual Development.</p>
+
+                        <h4>Development of administrative manuals</h4>
+                        <p>We review the existing administrative manuals to identify gaps and develop new administrative manuals including financial regulations, accounting manuals, HR manuals, constitution procurement manuals, store procedures and governance manuals.</p>
+
+                        <h4>Risk management services</h4>
+                        <ul class="alpha-list">
+                            <li>Perform risk assessment,</li>
+                            <li>Risk response to assessed risk,</li>
+                            <li>Formulate risk register</li>
+                            <li>Formulate risk management policy and framework</li>
+                            <li>Guidance of setting the risk appetite of the organization</li>
+                            <li>Guidance of risk management reporting.</li>
+                        </ul>
                         <p>We help transform the world’s most important businesses into vigorous organizations opposition. We work with clients who not hide from the future but want define clients with high potential and high ambition.</p>
                     </div>
                 </div>

@@ -233,3 +233,26 @@
 .bg-gray {
 	background-color: #fbfbfb;
 }
+
+
+.alpha-list {
+    list-style: none;    
+    padding: 0;
+}
+.alpha-list li {
+    margin: 0;
+    padding-left: 1.5em;
+    position: relative;
+}
+.alpha-list li:after {
+    content: '';
+    height: 0.4em;
+    width: 0.4em;
+    background: #008000;
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 0.25em;
+    left: 0;
+}
+
