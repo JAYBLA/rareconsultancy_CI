@@ -111,13 +111,13 @@
                                     </li>
                                     <li class="dropdown"><a href="#">Services</a>
                                         <ul>
-                                            <li><a href="/brela">View All Services</a></li>
-                                            <li><a href="/advisory">Strategic Consulting</a></li>
-                                            <li><a href="/trainings">Online Consulting</a></li>                                            
+                                            <li><a href="<?= base_url('/brela') ?>">BRELA Help Desk</a></li>
+                                            <li><a href="<?= base_url('/advisory') ?>">Advisory</a></li>
+                                            <li><a href="<?= base_url('/trainings') ?>">Trainings</a></li>                                            
                                         </ul>
                                     </li>
-                                    <li><a href="/articles">Articles</a></li>
-                                    <li><a href="/contact">Contact Us</a></li>
+                                    <li><a href="<?= base_url('/articles') ?>">Articles</a></li>
+                                    <li><a href="<?= base_url('/contact') ?>">Contact Us</a></li>
                                 </ul>
                             </div>
                         </nav>                        
@@ -128,7 +128,7 @@
                 <!--Top Right-->
                 <div class="header-lawer-right-style4 clearfix float-right">
                     <div class="button-box">
-                        <a class="btn-four" href="/contact"><span class="txt">Get a Quote</span></a>
+                        <a class="btn-four" href="<?= base_url('/contact') ?>"><span class="txt">Get a Quote</span></a>
                     </div>      
                 </div>
                 

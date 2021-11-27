@@ -108,7 +108,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $appTimezone = 'America/Chicago';
+    public $appTimezone = 'Africa/Dar_es_Salaam';
 
     /**
      * --------------------------------------------------------------------------

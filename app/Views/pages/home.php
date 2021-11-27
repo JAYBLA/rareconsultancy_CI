@@ -15,7 +15,7 @@
                                 content of a page when looking at its layout</p>
                         </div>
                         <div class="btns-box">
-                            <a class="btn-four-slide" href="/contact"><span class="txt">Get Startd Now</span></a>
+                            <a class="btn-four-slide" href="<?= base_url('/contact') ?>"><span class="txt">Get Startd Now</span></a>
                         </div>
                     </div>
                 </div>
@@ -32,7 +32,7 @@
                                 content of a page when looking at its layout</p>
                         </div>
                         <div class="btns-box">
-                            <a class="btn-four-slide" href="/contact"><span class="txt">Get Startd Now</span></a>
+                            <a class="btn-four-slide" href="<?= base_url('/contact') ?>"><span class="txt">Get Startd Now</span></a>
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
                                 content of a page when looking at its layout</p>
                         </div>
                         <div class="btns-box">
-                            <a class="btn-four-slide" href="/contact"><span class="txt">Get Startd Now</span></a>
+                            <a class="btn-four-slide" href="<?= base_url('/contact') ?>"><span class="txt">Get Startd Now</span></a>
                         </div>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
                             innovative solutions</p>
                     </div>
                     <div class="button wow slideInUp" data-wow-delay="200ms">
-                        <a class="btn-four" href="/contact"><span class="txt">Contact Us</span></a>
+                        <a class="btn-four" href="<?= base_url('/contact') ?>"><span class="txt">Contact Us</span></a>
                     </div>
                 </div>
             </div>
@@ -171,7 +171,7 @@
                         <div class="box">
                             <div class="content">
                                 <div class="link-button">
-                                    <a href="/brela"><span class="flaticon-link"></span></a>
+                                    <a href="<?= base_url('/brela') ?>"><span class="flaticon-link"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -182,7 +182,7 @@
                         <span class="flaticon-plan"></span>
                     </div>
                     <div class="title">
-                        <h3><a href="/brela">BRELA Help Desk</a></h3>
+                        <h3><a href="<?= base_url('/brela') ?>">BRELA Help Desk</a></h3>
                     </div>
                 </div>
             </div>
@@ -195,7 +195,7 @@
                         <div class="box">
                             <div class="content">
                                 <div class="link-button">
-                                    <a href="/advisory"><span class="flaticon-link"></span></a>
+                                    <a href="<?= base_url('/advisory') ?>"><span class="flaticon-link"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -206,7 +206,7 @@
                         <span class="flaticon-investment"></span>
                     </div>
                     <div class="title">
-                        <h3><a href="/advisory">Advisory</a></h3>
+                        <h3><a href="<?= base_url('/advisory') ?>">Advisory</a></h3>
                     </div>
                 </div>
             </div>

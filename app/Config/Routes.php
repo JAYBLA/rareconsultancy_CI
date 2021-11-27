@@ -33,7 +33,9 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 
 $routes->get('/', 'Pages::default'); //Route for Homepage Only
+$routes->get('/contact', 'ContactForm::create'); //Route for Homepage Only
 $routes->get('(:any)', 'Pages::view/$1'); //Route for Other Pages
+$routes->post('/contact', 'ContactForm::formValidation');
 
 /*
  * --------------------------------------------------------------------
