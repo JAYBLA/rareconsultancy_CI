@@ -9,7 +9,7 @@
                     <div class="single-footer-widget marbtm50">
                         <div class="our-company-info">
                             <div class="footer-logo">
-                                <a href="/home"><img src="assets/images/resources/logo-7.png" alt="Awesome Footer Logo" title="Logo"></a>    
+                                <a href="/"><img src="assets/images/resources/logo-7.png" alt="Awesome Footer Logo" title="Logo"></a>    
                             </div>
                             <div class="text">
                                 <p>There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form by injected.</p>
@@ -57,7 +57,7 @@
             <div class="row py-2">
                 <div class="col-md-4">
                     <div class="copyright-text style4">
-                        <p>&copy; <script>document.write(new Date().getFullYear())</script> || <a href="#">Rare Consultancy</a></p>
+                        <p>&copy; <script>document.write(new Date().getFullYear())</script> || <a href="/">Rare Consultancy</a></p>
                     </div>    
                 </div>
                 <div class="col-md-4">

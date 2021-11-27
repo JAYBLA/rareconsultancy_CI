@@ -1,7 +1,14 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-    <title><?=$title?> | RareConsultancy</title>
+    
+    <meta charset="UTF-8">
+	<title><?=$title?> | Rare Consultancy</title>
+	<!-- responsive meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- For IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <link rel="stylesheet" href="assets/css/aos.css">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">	
 	<link rel="stylesheet" href="assets/css/imp.css">
@@ -38,7 +45,7 @@
             <div class="outer-box clearfix">
                 <div class="header-upper-left-style2 pull-left clearfix">
                     <div class="logo">
-                        <a href="/home"><img src="assets/images/resources/logo.png" alt="Awesome Logo" title=""></a>
+                        <a href="/"><img src="assets/images/resources/logo.png" alt="Awesome Logo" title=""></a>
                     </div>   
                 </div>
                 <div class="header-upper-right-style2 pull-right">
@@ -100,13 +107,13 @@
                             <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
                                     <li class="dropdown current">
-                                        <a class="home-icon" href="/home">Home</a>
+                                        <a class="home-icon" href="/">Home</a>
                                     </li>
                                     <li class="dropdown"><a href="#">Services</a>
                                         <ul>
                                             <li><a href="/brela">View All Services</a></li>
                                             <li><a href="/advisory">Strategic Consulting</a></li>
-                                            <li><a href="/trainings>">Online Consulting</a></li>                                            
+                                            <li><a href="/trainings">Online Consulting</a></li>                                            
                                         </ul>
                                     </li>
                                     <li><a href="/articles">Articles</a></li>

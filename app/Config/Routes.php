@@ -31,7 +31,9 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('(:any)', 'Pages::view/$1');
+
+$routes->get('/', 'Pages::default'); //Route for Homepage Only
+$routes->get('(:any)', 'Pages::view/$1'); //Route for Other Pages
 
 /*
  * --------------------------------------------------------------------
