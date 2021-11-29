@@ -37,10 +37,9 @@ $routes->get('/brela', 'Pages::brela');
 $routes->get('/articles', 'Pages::articles');
 $routes->get('/trainings', 'Pages::trainings');
 $routes->get('/advisory', 'Pages::advisory');
-$routes->get('/contact', 'Pages::contact');
+$routes->get('contact', 'Contact::index');
 $routes->get('news/create', 'News::create');
 $routes->get('news', 'News::index');
-
 
 /*
  * --------------------------------------------------------------------

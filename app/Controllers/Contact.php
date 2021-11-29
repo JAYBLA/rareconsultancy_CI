@@ -7,7 +7,7 @@ use CodeIgniter\Controller;
 
 class Contact extends Controller
 {
-    public function create()
+    public function index()
     {
         $model = model(ContactModel::class);
         $session = session();
@@ -27,11 +27,11 @@ class Contact extends Controller
                 'message' => $this->request->getPost('message'),                
             ]);
 
-            redirect('/contact');
-        } else {
-            echo view('templates/header', ['title' => 'Contact Us']);
             echo view('pages/contact');
-            echo view('templates/footer');
+        } else {            
+            $data['title'] = "Contact Us"; // Capitalize the first letter
+            echo view('pages/contact', $data); 
         }
+      
     }
 }

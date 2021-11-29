@@ -279,3 +279,13 @@ CRITICAL - 2021-11-29 17:12:00 --> Invalid file: includes/header.php
 #11 D:\WEB SERVICES\WORKPLACE\CodeIgniter\rareconsultancy_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #12 D:\WEB SERVICES\WORKPLACE\CodeIgniter\rareconsultancy_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\WEB SERVICES...')
 #13 {main}
+CRITICAL - 2021-11-29 17:44:52 --> Invalid file: templates/header.php
+#0 D:\WEB SERVICES\WORKPLACE\CodeIgniter\rareconsultancy_CI\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates/heade...')
+#1 D:\WEB SERVICES\WORKPLACE\CodeIgniter\rareconsultancy_CI\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('templates/heade...', Array, true)
+#2 D:\WEB SERVICES\WORKPLACE\CodeIgniter\rareconsultancy_CI\app\Controllers\News.php(19): view('templates/heade...', Array)
+#3 D:\WEB SERVICES\WORKPLACE\CodeIgniter\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\News->index()
+#4 D:\WEB SERVICES\WORKPLACE\CodeIgniter\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#5 D:\WEB SERVICES\WORKPLACE\CodeIgniter\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\WEB SERVICES\WORKPLACE\CodeIgniter\rareconsultancy_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 D:\WEB SERVICES\WORKPLACE\CodeIgniter\rareconsultancy_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\WEB SERVICES...')
+#8 {main}

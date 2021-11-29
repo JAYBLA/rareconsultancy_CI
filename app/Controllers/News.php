@@ -14,11 +14,9 @@ class News extends Controller
         $data = [
             'news'  => $model->getNews(),
             'title' => 'News archive',
-        ];
-    
-        echo view('templates/header', $data);
+        ];   
+       
         echo view('news/overview', $data);
-        echo view('templates/footer', $data);
     }
 
     public function view($slug = null)
@@ -32,10 +30,8 @@ class News extends Controller
         }
     
         $data['title'] = $data['news']['title'];
-    
-        echo view('templates/header', $data);
-        echo view('news/view', $data);
-        echo view('templates/footer', $data);
+        
+        echo view('news/view', $data);     
     }
 
     public function create()
@@ -53,10 +49,8 @@ class News extends Controller
             ]);
 
             echo view('news/success_message');
-        } else {
-            echo view('templates/header', ['title' => 'Create a news item']);
-            echo view('news/create');
-            echo view('templates/footer');
+        } else {           
+            echo view('news/create');            
         }
     }
 }

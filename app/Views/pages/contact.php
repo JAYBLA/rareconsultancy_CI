@@ -34,34 +34,23 @@
                     <div class="contact-form">
                         <div class="inner-box">
                         <?= service('validation')->listErrors() ?>
-                            <form id="contact-form" name="contact_form" class="default-form2" action="<?= base_url('/contact') ?>" method="post">
+                            <form class="default-form2" action="/contact" method="post">
                             <?= csrf_field() ?>
-                            <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="input-box"> 
-                                            <input type="text" name="full_name"  placeholder="Name">
-                                        </div>      
+                                    <div class="form-group">                                        
+                                        <input type="text" name="full_name"  placeholder="Name" class="form-control">                                       
                                     </div>
-                                    <div class="col-md-12">
-                                        <div class="input-box"> 
-                                            <input type="email" name="email" placeholder="Email">
-                                        </div>      
+                                    <div class="form-group"> 
+                                        <input type="email" name="email" placeholder="Email" class="form-control">      
                                     </div>
-                                    <div class="col-md-12">
-                                        <div class="input-box"> 
-                                            <input type="text" name="phone" placeholder="Phone">
-                                        </div>      
+                                    <div class="form-group">
+                                        <input type="text" name="phone" placeholder="Phone" class="form-control">
                                     </div>
-                                    <div class="col-md-12">
-                                        <div class="input-box">    
-                                            <textarea name="message" placeholder="Message"></textarea>
-                                        </div>      
+                                    <div class="form-group">  
+                                        <textarea name="message" placeholder="Message" class="form-control"></textarea>   
                                     </div> 
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
+                                    <div class="form-group">
                                         <div class="button-box text-center">                                            
-                                            <button class="btn-four thm-bgc3" type="submit" name="submit"><span class="txt">Contact Us</span></button>    
+                                            <button class="btn-four thm-bgc3" type="submit"><span class="txt">Contact Us</span></button>    
                                         </div>  
                                     </div>
                                 </div>                        

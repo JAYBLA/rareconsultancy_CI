@@ -1,15 +1,24 @@
-<h2><?= esc($title) ?></h2>
+<?= $this->extend('templates/base') ?>
 
-<?= service('validation')->listErrors() ?>
+<?= $this->section('content') ?>
+<div class="container">
+    <div class="card p-5">
+        <h2><?= esc($title) ?></h2>
 
-<form action="/news/create" method="post">
-    <?= csrf_field() ?>
+        <?= service('validation')->listErrors() ?>
 
-    <label for="title">Title</label>
-    <input type="input" name="title" /><br />
-
-    <label for="body">Text</label>
-    <textarea name="body" cols="45" rows="4"></textarea><br />
-
-    <input type="submit" name="submit" value="Create news item" />
-</form>
+        <form action="/news/create" method="post">
+            <?= csrf_field() ?>
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="input" name="title" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="body">Text</label>
+            <textarea name="body" cols="45" rows="4" class="form-control"></textarea> 
+        </div>
+            <input type="submit" name="submit" value="Create news item" />
+        </form>
+    </div>
+</div>
+<?= $this->endSection() ?>

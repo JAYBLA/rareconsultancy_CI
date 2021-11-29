@@ -1,22 +1,28 @@
-<h2><?= esc($title) ?></h2>
+<?= $this->extend('templates/base') ?>
 
-<?php if (! empty($news) && is_array($news)): ?>
+<?= $this->section('content') ?>
+<div class="container">
+    <h2><?= esc($title) ?></h2>
 
-    <?php foreach ($news as $news_item): ?>
+    <?php if (! empty($news) && is_array($news)): ?>
 
-        <h3><?= esc($news_item['title']) ?></h3>
+        <?php foreach ($news as $news_item): ?>
 
-        <div class="main">
-            <?= esc($news_item['body']) ?>
-        </div>
-        <p><a href="/news/<?= esc($news_item['slug'], 'url') ?>">View article</a></p>
+            <h3><?= esc($news_item['title']) ?></h3>
 
-    <?php endforeach; ?>
+            <div class="main">
+                <?= esc($news_item['body']) ?>
+            </div>
+            <p><a href="/news/<?= esc($news_item['slug'], 'url') ?>">View article</a></p>
 
-<?php else: ?>
+        <?php endforeach; ?>
 
-    <h3>No News</h3>
+    <?php else: ?>
 
-    <p>Unable to find any news for you.</p>
+        <h3>No News</h3>
 
-<?php endif ?>
+        <p>Unable to find any news for you.</p>
+
+    <?php endif ?>
+</div>
+<?= $this->endSection() ?>
