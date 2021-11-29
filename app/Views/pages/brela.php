@@ -1,4 +1,7 @@
-<!--Start breadcrumb area-->     
+<?= $this->extend('templates/base') ?>
+
+<?= $this->section('content') ?>
+    <!--Start breadcrumb area-->     
 <section class="breadcrumb-area style2" style="background-image: url(assets/images/slides/slide-image.jpg);">
     <div class="container">
         <div class="row">
@@ -13,3 +16,4 @@
     </div>
 </section>
 <!--End breadcrumb area-->
+<?= $this->endSection() ?>

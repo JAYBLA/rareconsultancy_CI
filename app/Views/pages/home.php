@@ -1,4 +1,7 @@
-<!-- Start Main Slider -->
+<?= $this->extend('templates/base') ?>
+
+<?= $this->section('content') ?>
+    <!-- Start Main Slider -->
 <section class="main-slider style2">
     <div class="slider-box">
         <!-- Banner Carousel -->
@@ -261,108 +264,108 @@
     </div>
 </section>
 <!--End Partner Area-->
-
-
-	<!-- Start Blog Section -->
-	<section id="blog" class="blog-area bg-gray py-5 mt-3 mb-3">
-		<div class="container">
-        <div class="sec-title-style4 text-center wow slideInUp animated" data-wow-delay="0.3s"
-            data-wow-duration="1200ms">
-            <p>Our Latest Blog</p>
-            <div class="big-title">
-                <h2>Our Latest Articles</h2>
+<!-- Start Blog Section -->
+<section id="blog" class="blog-area bg-gray py-5 mt-3 mb-3">
+    <div class="container">
+    <div class="sec-title-style4 text-center wow slideInUp animated" data-wow-delay="0.3s"
+        data-wow-duration="1200ms">
+        <p>Our Latest Blog</p>
+        <div class="big-title">
+            <h2>Our Latest Articles</h2>
+        </div>
+        <div class="border-box center">
+            <div class="borders-left thm-bgc3"></div>
+            <div class="borders-right thm-bgc3"></div>
+        </div>
+    </div>
+        <div class="row pb-5">
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog">
+                    <div class="post-img">
+                        <a href="#">
+                            <img src="assets/images/blog/blog-1.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">
+                            <ul class="blog-list">
+                                <li>
+                                    <h6>20 January - 2021</h6>
+                                </li>
+                                <li><span class="blog-inline-sep">|</span></li>
+                                <li><a href="#">Technology</a></li>
+                            </ul>
+                        </div>
+                        <div class="blog-body-title">
+                            <h3><a href="#">What Could 5g Change About The Way We Use Technology?</a></h3>
+                        </div>
+                        <div class="blog-body-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore veniam dolore.</p>
+                        </div>
+                        <div class="blog-bottom-text-link"> <a href="#">+ Read More</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="border-box center">
-                <div class="borders-left thm-bgc3"></div>
-                <div class="borders-right thm-bgc3"></div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog">
+                    <div class="post-img">
+                        <a href="#">
+                            <img src="assets/images/blog/blog-2.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">
+                            <ul class="blog-list">
+                                <li>
+                                    <h6>25 January - 2021</h6>
+                                </li>
+                                <li><span class="blog-inline-sep">|</span></li>
+                                <li><a href="#">IT Services</a></li>
+                            </ul>
+                        </div>
+                        <div class="blog-body-title">
+                            <h3><a href="#">3 Factors To Consider When Choosing A Managed It Services</a></h3>
+                        </div>
+                        <div class="blog-body-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore veniam dolore.</p>
+                        </div>
+                        <div class="blog-bottom-text-link"> <a href="#">+ Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog">
+                    <div class="post-img">
+                        <a href="#">
+                            <img src="assets/images/blog/blog-3.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">
+                            <ul class="blog-list">
+                                <li>
+                                    <h6>30 January - 2021</h6>
+                                </li>
+                                <li><span class="blog-inline-sep">|</span></li>
+                                <li><a href="#">Business</a></li>
+                            </ul>
+                        </div>
+                        <div class="blog-body-title">
+                            <h3><a href="#">How To Quickly Shift To A Work-from-home Business Model</a></h3>
+                        </div>
+                        <div class="blog-body-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore veniam dolore.</p>
+                        </div>
+                        <div class="blog-bottom-text-link"> <a href="#">+ Read More</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-			<div class="row pb-5">
-				<div class="col-lg-4 col-md-6">
-					<div class="single-blog">
-						<div class="post-img">
-							<a href="#">
-								<img src="assets/images/blog/blog-1.jpg" alt="" />
-							</a>
-						</div>
-						<div class="blog-content">
-							<div class="blog-date">
-								<ul class="blog-list">
-									<li>
-										<h6>20 January - 2021</h6>
-									</li>
-									<li><span class="blog-inline-sep">|</span></li>
-									<li><a href="#">Technology</a></li>
-								</ul>
-							</div>
-							<div class="blog-body-title">
-								<h3><a href="#">What Could 5g Change About The Way We Use Technology?</a></h3>
-							</div>
-							<div class="blog-body-text">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore veniam dolore.</p>
-							</div>
-							<div class="blog-bottom-text-link"> <a href="#">+ Read More</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="single-blog">
-						<div class="post-img">
-							<a href="#">
-								<img src="assets/images/blog/blog-2.jpg" alt="" />
-							</a>
-						</div>
-						<div class="blog-content">
-							<div class="blog-date">
-								<ul class="blog-list">
-									<li>
-										<h6>25 January - 2021</h6>
-									</li>
-									<li><span class="blog-inline-sep">|</span></li>
-									<li><a href="#">IT Services</a></li>
-								</ul>
-							</div>
-							<div class="blog-body-title">
-								<h3><a href="#">3 Factors To Consider When Choosing A Managed It Services</a></h3>
-							</div>
-							<div class="blog-body-text">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore veniam dolore.</p>
-							</div>
-							<div class="blog-bottom-text-link"> <a href="#">+ Read More</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="single-blog">
-						<div class="post-img">
-							<a href="#">
-								<img src="assets/images/blog/blog-3.jpg" alt="" />
-							</a>
-						</div>
-						<div class="blog-content">
-							<div class="blog-date">
-								<ul class="blog-list">
-									<li>
-										<h6>30 January - 2021</h6>
-									</li>
-									<li><span class="blog-inline-sep">|</span></li>
-									<li><a href="#">Business</a></li>
-								</ul>
-							</div>
-							<div class="blog-body-title">
-								<h3><a href="#">How To Quickly Shift To A Work-from-home Business Model</a></h3>
-							</div>
-							<div class="blog-body-text">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore veniam dolore.</p>
-							</div>
-							<div class="blog-bottom-text-link"> <a href="#">+ Read More</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End Blog Section -->
+    </div>
+</section>
+<!-- End Blog Section -->
+<?= $this->endSection() ?>
+
