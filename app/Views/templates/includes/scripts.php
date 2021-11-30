@@ -23,3 +23,16 @@
 <script src="<?= base_url('/assets/js/knob.js' ) ?>"></script>
 <!-- thm custom script -->
 <script src="<?= base_url('/assets/js/custom.js') ?>"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    $(document).ready(function () {
+        <?php if(session()->getFlashdata('status')){?>
+            swal({
+                title: "<?= session()->getFlashdata('status') ?>",
+                text: "<?= session()->getFlashdata('status_txt') ?>",
+                icon: "<?= session()->getFlashdata('status_icon') ?>",
+                button: "OK!",
+            });
+        <?php } ?>
+    });
+</script>

@@ -26,8 +26,10 @@ class Contact extends Controller
                 'phone' => $this->request->getPost('phone'),
                 'message' => $this->request->getPost('message'),                
             ]);
-
-            echo view('pages/contact');
+            session()->setFlashdata('status_txt', 'We will contact you soon!');
+            return redirect()->to(base_url('contact'))
+            ->with('status_icon', 'success')
+            ->with('status','Form Submitted Successfully');
         } else {            
             $data['title'] = "Contact Us"; // Capitalize the first letter
             echo view('pages/contact', $data); 

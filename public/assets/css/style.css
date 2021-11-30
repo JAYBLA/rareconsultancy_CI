@@ -4033,9 +4033,9 @@ select:focus {
 }
 .main-menu.style2 .navigation>li>a:before {
     background: #52A85E;
-    background: -moz-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #84c55d 100%);
-    background: -webkit-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #84c55d 100%);
-    background: linear-gradient(to right, #52A85E 0%, #71BA5D 50%, #84c55d 100%);
+    background: -moz-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #008000 100%);
+    background: -webkit-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #008000 100%);
+    background: linear-gradient(to right, #52A85E 0%, #71BA5D 50%, #008000 100%);
 }
 
 .header-lawer-right-style2 {
@@ -4774,9 +4774,9 @@ select:focus {
     content: "";
     z-index: -1;
     background: #52A85E;
-    background: -moz-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #84c55d 100%);
-    background: -webkit-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #84c55d 100%);
-    background: linear-gradient(to right, #52A85E 0%, #71BA5D 50%, #84c55d 100%);    
+    background: -moz-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #008000 100%);
+    background: -webkit-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #008000 100%);
+    background: linear-gradient(to right, #52A85E 0%, #71BA5D 50%, #008000 100%);    
 }
 
 
@@ -5139,9 +5139,9 @@ select:focus {
     height: 100%;
     border-radius: 50%;
     background: #52A85E;
-    background: -moz-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #84c55d 100%);
-    background: -webkit-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #84c55d 100%);
-    background: linear-gradient(to right, #52A85E 0%, #71BA5D 50%, #84c55d 100%);
+    background: -moz-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #008000 100%);
+    background: -webkit-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #008000 100%);
+    background: linear-gradient(to right, #52A85E 0%, #71BA5D 50%, #008000 100%);
     color: #ffffff;
     font-size: 25px;
     line-height: 80px;
@@ -5200,9 +5200,9 @@ select:focus {
     content: "";
     z-index: -1;
     background: #52A85E;
-    background: -moz-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #84c55d 100%);
-    background: -webkit-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #84c55d 100%);
-    background: linear-gradient(to right, #52A85E 0%, #71BA5D 50%, #84c55d 100%);
+    background: -moz-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #008000 100%);
+    background: -webkit-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #008000 100%);
+    background: linear-gradient(to right, #52A85E 0%, #71BA5D 50%, #008000 100%);
     transition: all 300ms linear;
     transition-delay: 0.1s; 
 }
@@ -5215,7 +5215,7 @@ select:focus {
     position: relative;
     display: block;
     padding-left: 20px;
-    color: #84c55d;
+    color: #008000;
     font-size: 16px;
     line-height: 50px;
     font-weight: 600;
@@ -5276,9 +5276,9 @@ select:focus {
     width: 0;
     height: 4px;
     background: #52A85E;
-    background: -moz-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #84c55d 100%);
-    background: -webkit-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #84c55d 100%);
-    background: linear-gradient(to right, #52A85E 0%, #71BA5D 50%, #84c55d 100%);
+    background: -moz-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #008000 100%);
+    background: -webkit-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #008000 100%);
+    background: linear-gradient(to right, #52A85E 0%, #71BA5D 50%, #008000 100%);
     content: "";
     transition: all 700ms linear;
     transition-delay: 0.3s; 
@@ -5306,9 +5306,9 @@ select:focus {
 
 .single-footer-widget.style2 .title:before {
     background: #52A85E;
-    background: -moz-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #84c55d 100%);
-    background: -webkit-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #84c55d 100%);
-    background: linear-gradient(to right, #52A85E 0%, #71BA5D 50%, #84c55d 100%);
+    background: -moz-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #008000 100%);
+    background: -webkit-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #008000 100%);
+    background: linear-gradient(to right, #52A85E 0%, #71BA5D 50%, #008000 100%);
 }
 .single-footer-widget.style2 .company-info-links li a:hover{
     color: #52a85e;
@@ -7671,9 +7671,9 @@ select:focus {
     transition: all 300ms linear;
     transition-delay: 0.1s;
     background: #52A85E;
-    background: -moz-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #84c55d 100%);
-    background: -webkit-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #84c55d 100%);
-    background: linear-gradient(to right, #52A85E 0%, #71BA5D 50%, #84c55d 100%);    
+    background: -moz-linear-gradient(left, #008000 50%, #007000 100%);
+    background: -webkit-linear-gradient(left, #008000 50%, #007000 100%);
+    background: linear-gradient(to right, #008000 50%, #007000 100%);    
 }
 .service-menu-box ul li a:hover:after,
 .service-menu-box ul li.active a:after{
@@ -7697,7 +7697,7 @@ select:focus {
     bottom: 0;
     width: 70px;
     height: 3px;
-    background: #84c55d;
+    background: #008000;
     content: "";
 }
 .service-sidebar .single-sidebar-box .title h3{
@@ -7786,9 +7786,9 @@ select:focus {
     transition: all 300ms linear;
     transition-delay: 0.1s;
     background: #52A85E;
-    background: -moz-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #84c55d 100%);
-    background: -webkit-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #84c55d 100%);
-    background: linear-gradient(to right, #52A85E 0%, #71BA5D 50%, #84c55d 100%);    
+    background: -moz-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #008000 100%);
+    background: -webkit-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #008000 100%);
+    background: linear-gradient(to right, #52A85E 0%, #71BA5D 50%, #008000 100%);    
 }
 .brochures-box ul li a:hover:after{
 	opacity: 1;
@@ -7802,7 +7802,7 @@ select:focus {
     position: relative;
     display: block;
     padding: 60px 0 55px;
-    background: #6ab65e;
+    background: #008000;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
     z-index: 1;
@@ -7874,7 +7874,7 @@ select:focus {
     margin: 0 0 11px;
 }
 .single-service-content-box .text-box h4{
-    color: #84c55d;
+    color: #008000;
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
@@ -7997,7 +7997,7 @@ select:focus {
 	font-family: 'Nunito Sans', sans-serif;
 }
 .accordion-box.style-two .block .acc-btn.active{
-	color:#84c55d;
+	color:#008000;
 }
 .accordion-box.style-two .block .count-box {
     position: absolute;
@@ -8009,7 +8009,7 @@ select:focus {
     font-size: 18px;
     font-weight: 700;
     text-align: center;
-    background: #84c55d;
+    background: #008000;
 }
 
 .accordion-box.style-two .block .acc-content{
@@ -8030,7 +8030,7 @@ select:focus {
     left: -1px;
     bottom: -1px;
     width: 70px;
-    background: #84c55d;
+    background: #008000;
     content: "";
 }
 .accordion-box.style-two .block .acc-content .content-text{

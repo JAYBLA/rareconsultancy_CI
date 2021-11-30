@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row">
                 <!--Start single footer widget-->
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <div class="single-footer-widget marbtm50">
                         <div class="our-company-info">
                             <div class="footer-logo">
@@ -19,16 +19,16 @@
                 </div>
                 <!--End single footer widget-->
                 <!--Start single footer widget-->
-                <div class="col-md-4">
-                    <div class="single-footer-widget style4">
+                <div class="col-md-3">
+                    <div class="single-footer-widget style4 ">
                         <div class="title">
-                            <h3>RESOURCES</h3>
+                            <h3>USEFUL LINKS</h3>
                         </div>
                         <ul class="resources-links">
-                            <li><a href="#">Personal Loan</a></li>    
-                            <li><a href="#">Home Loan</a></li>    
-                            <li><a href="#">Car Loan</a></li>    
-                            <li><a href="#">Business Loan</a></li>       
+                            <li><a href="<?= base_url('/brela') ?>">BRELA Help Desk</a></li>    
+                            <li><a href="<?= base_url('/advisory') ?>">Advisory</a></li>    
+                            <li><a href="<?= base_url('/trainings') ?>">Trainings</a></li>    
+                            <li><a href="<?= base_url('/contact') ?>">Request a Quote</a></li>       
                         </ul>                     	  
                     </div>
                 </div>

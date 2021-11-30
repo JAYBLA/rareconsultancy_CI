@@ -49,5 +49,6 @@
 </button>
 </div>
 <?= $this->include('templates/includes/scripts') ?>
+<?= $this->renderSection('javascript') ?>
 </body>
 </html>

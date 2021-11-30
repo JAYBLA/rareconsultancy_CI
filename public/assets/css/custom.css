@@ -256,3 +256,7 @@
     left: 0;
 }
 
+.swal-button {
+    background-color: #008000 !important;
+}
+

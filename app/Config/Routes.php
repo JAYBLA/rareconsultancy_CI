@@ -41,6 +41,9 @@ $routes->get('contact', 'Contact::index');
 $routes->get('news/create', 'News::create');
 $routes->get('news', 'News::index');
 
+
+$routes->get('admin', 'Dashboard::index');
+$routes->get('admin/post-create', 'Dashboard::create_post');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

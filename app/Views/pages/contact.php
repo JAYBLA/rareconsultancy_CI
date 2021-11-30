@@ -65,3 +65,7 @@
 </section>
 <!--End Contact Form Section-->
 <?= $this->endSection() ?>
+
+<?= $this->section('javascript') ?>
+
+<?= $this->endSection() ?>

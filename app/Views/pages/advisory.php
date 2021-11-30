@@ -28,9 +28,9 @@
                     <div class="single-sidebar-box wow fadeInUp animated" data-wow-delay="0.1s" data-wow-duration="1200ms">
                         <div class="service-menu-box">
                             <ul>
-                                <li><a href="ser-strategic.html">BRELA Help Desk</a></li>
-                                <li><a href="ser-online.html">Advisory</a></li>                                
-                                <li class="active"><a href="ser-corporate.html">Trainings</a></li>
+                                <li><a href="<?= base_url('/brela') ?>">BRELA Help Desk</a></li>
+                                <li class="active"><a href="<?= base_url('/advisory') ?>">Advisory</a></li>                                
+                                <li><a href="<?= base_url('/trainings') ?>">Trainings</a></li>
                             </ul>
                         </div>        
                     </div>
