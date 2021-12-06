@@ -33,17 +33,37 @@
                 <div class="contact-form-content">
                     <div class="contact-form">
                         <div class="inner-box">
-                        <?= service('validation')->listErrors() ?>
+                        <?php $validation = \Config\Services::validation(); ?>                        
                             <form class="default-form2" action="/contact" method="post">
                             <?= csrf_field() ?>
                                     <div class="form-group">                                        
-                                        <input type="text" name="full_name"  placeholder="Name" class="form-control">                                       
+                                        <input type="text" name="full_name"  placeholder="Name" class="form-control">
+                                        
+                                                <!-- Error -->
+                                        <?php if($validation->getError('full_name')) {?>
+                                            <div class='alert alert-danger mt-2'>
+                                            <?= $error = $validation->getError('full_name'); ?>
+                                            </div>
+                                        <?php }?>
                                     </div>
                                     <div class="form-group"> 
-                                        <input type="email" name="email" placeholder="Email" class="form-control">      
+                                        <input type="email" name="email" placeholder="Email" class="form-control"> 
+                                        
+                                        <!-- Error -->
+                                        <?php if($validation->getError('email')) {?>
+                                            <div class='alert alert-danger mt-2'>
+                                            <?= $error = $validation->getError('email'); ?>
+                                            </div>
+                                        <?php }?>
                                     </div>
                                     <div class="form-group">
                                         <input type="text" name="phone" placeholder="Phone" class="form-control">
+                                        <!-- Error -->
+                                        <?php if($validation->getError('phone')) {?>
+                                            <div class='alert alert-danger mt-2'>
+                                            <?= $error = $validation->getError('phone'); ?>
+                                            </div>
+                                        <?php }?>
                                     </div>
                                     <div class="form-group">  
                                         <textarea name="message" placeholder="Message" class="form-control"></textarea>   

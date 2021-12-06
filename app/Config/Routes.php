@@ -38,12 +38,13 @@ $routes->get('/articles', 'Pages::articles');
 $routes->get('/trainings', 'Pages::trainings');
 $routes->get('/advisory', 'Pages::advisory');
 $routes->get('contact', 'Contact::index');
-$routes->get('news/create', 'News::create');
-$routes->get('news', 'News::index');
 
-
+        // Admin
 $routes->get('admin', 'Dashboard::index');
-$routes->get('admin/post-create', 'Dashboard::create_post');
+$routes->post('admin/post-create', 'Dashboard::article_add');
+$routes->get('admin/post-update/(:num)', 'Dashboard::ajax_post/$1');
+$routes->post('admin/post-delete/(:num)', 'Dashboard::ajax_post/$1');
+$routes->post('admin/post-update', 'Dashboard::article_update/$1');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
