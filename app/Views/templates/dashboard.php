@@ -17,7 +17,10 @@
         <link href="<?= base_url('/dashboard/assets/css/icons.min.css') ?>" rel="stylesheet" type="text/css">
         <!-- App Css-->
         <link href="<?= base_url('/dashboard/assets/css/app.min.css') ?>" rel="stylesheet" type="text/css">
-
+        <script>
+        var csrfName = '<?= csrf_token() ?>';
+        var csrfHash = '<?= csrf_hash() ?>';  
+    </script>
     </head>
 
 

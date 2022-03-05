@@ -12,23 +12,22 @@ class Dashboard extends Controller
     public function index()
     {
         $data['title'] = "Panel";
-        helper(['form', 'url']);
-        $this->ArticleModel = new ArticleModel();
-        $data['articles'] = $this->ArticleModel->get_all_articles();
         return view('dashboard/index', $data ) ;
     }
 
-    // BLOG MODULE
+ 
     public function article_add() {
         helper(['form', 'url']);
-        $this->ArticleModel = new ArticleModel();
-        $data = array(        
+       $articleModel = new ArticleModel();
+        $data = [        
             'title' => $this->request->getPost('title'),
             'description' => $this->request->getPost('description'),            
-        );
-        $insert = $this->ArticleModel->article_add($data);
-        echo json_encode(array("status" => TRUE));
+        ];
+        $articleModel->save($data);
+        $data = ['status' => 'Article Saved Successfully'];
+        return $this->response->setJSON($data);
     }
+
     public function ajax_post($id) {
         $this->ArticleModel = new ArticleModel();
         $data = $this->ArticleModel->get_by_id($id);

@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row">
                 <!--Start single footer widget-->
-                <div class="col-md-5">
+                <div class="col-md-6">
                     <div class="single-footer-widget marbtm50">
                         <div class="our-company-info">
                             <div class="footer-logo">
@@ -19,7 +19,7 @@
                 </div>
                 <!--End single footer widget-->
                 <!--Start single footer widget-->
-                <div class="col-md-3">
+                <div class="col-md-6">
                     <div class="single-footer-widget style4 ">
                         <div class="title">
                             <h3>USEFUL LINKS</h3>
@@ -30,21 +30,6 @@
                             <li><a href="<?= base_url('/trainings') ?>">Trainings</a></li>    
                             <li><a href="<?= base_url('/contact') ?>">Request a Quote</a></li>       
                         </ul>                     	  
-                    </div>
-                </div>
-                <!--End single footer widget-->
-                <!--Start single footer widget-->
-                <div class="col-md-4">
-                    <div class="single-footer-widget style4 martop50">
-                        <div class="title">
-                            <h3>SUBSCRIBE US</h3>
-                        </div>
-                        <div class="subscribe-box">
-                            <form class="subscribe-form" action="#">
-                                <input type="email" name="email" placeholder="Email Address">
-                                <button class="btn-four thm-bgc4" type="submit"><span class="txt">Subscribe</span></button>
-                            </form>
-                        </div>                     	  
                     </div>
                 </div>
                 <!--End single footer widget-->

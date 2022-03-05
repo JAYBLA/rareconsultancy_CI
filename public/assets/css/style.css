@@ -1,38 +1,4 @@
-/***************************************************************************************************************
-||||||||||||||||||||||||||       MASTER STYLESHEET FOR ENERGY             ||||||||||||||||||||||||||||||||||
-****************************************************************************************************************
-||||||||||||||||||||||||||                TABLE OF CONTENT               |||||||||||||||||||||||||||||||||||||||
-****************************************************************************************************************
-****************************************************************************************************************
-
-01. Imported styles
-02. Flaticon reset styles
-03. Header styles
-04. Mainmenu styles
-05. Rev_slider_wrapper styles
-66. Call to action area Style
-07. Categories area style
-08. Fact counter area style
-09. Latest Blog area style
-10. Latest blog area style 
-11. Testimonial area style
-12. Brand area style
-13. Single service style
-14. Pricing table area style
-15. About page style
-16. Account page style
-17. 404 page style style
-18. Blog page style
-19. Blog single style
-20. Contact page style
-
-****************************************************************************************************************
-||||||||||||||||||||||||||||            End TABLE OF CONTENT                ||||||||||||||||||||||||||||||||||||
-****************************************************************************************************************/
-
-
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Hind+Siliguri:300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 
 @import url(../css/animate.css);
@@ -48,6 +14,13 @@
 /*==============================================
    Base Css
 ===============================================*/
+:root{
+    --black-color:#000000;
+    --white-color:#ffffff;
+    --green-color:#008000;
+    --site-font:'Chivo', sans-serif;
+    --greenish-alpha-color:rgba(0, 128, 0,0.1)
+}
 *{
 	margin:0px;
 	padding:0px;
@@ -60,13 +33,13 @@ body {
     height: 100%;
 }
 body {
-    color: #777777;
+    color: var(--black-color);
     font-size: 16px;
     line-height: 28px;
     font-weight: 400;
-    font-family: 'Hind Siliguri', sans-serif;
+   font-family: var(--site-font);
 }
-::selection { background: #fb6f62; color: #ffffff; }
+::selection { background: #fb6f62; color: var(--white-color); }
 button:focus{
     outline: none;
 }
@@ -77,9 +50,9 @@ button {
     padding: 0;
 }
 h1, h2, h3, h4, h5, h6 {
-    color: #000000;
+    color: var(--black-color);
     font-weight: 400;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
     margin: 0;
 }
 h3 {
@@ -98,9 +71,7 @@ a:focus {
     outline: none;
     border: none;
 }
-img.lazy-image{
-	background:url(../images/icon/image-bg.svg) center center no-repeat;	
-}
+
 img.lazy-image.loaded{
 	background-image:none;
 }
@@ -187,7 +158,7 @@ li{
     display: inline-block;
     border-bottom-right-radius: 30px;
     padding: 0 40px;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 18px;
     line-height: 60px;
     font-weight: 400;
@@ -219,7 +190,7 @@ li{
 }
 .btn-one:hover,
 .btn-one:focus{
-    color: #000000;
+    color: var(--black-color);
 }
 
 
@@ -227,12 +198,12 @@ li{
     position: relative;
     display: inline-block;
     padding: 0 40px;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 16px;
     line-height: 60px;
     font-weight: 700;
     text-transform: uppercase;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
     transition: all 0.3s ease-in-out 0.1s;
 }
 .btn-two:before{
@@ -259,7 +230,7 @@ li{
 }
 .btn-two:hover,
 .btn-two:focus{
-    color: #000000;
+    color: var(--black-color);
 }
 
 
@@ -267,12 +238,12 @@ li{
     position: relative;
     display: inline-block;
     padding: 0 40px;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 16px;
     line-height: 60px;
     font-weight: 700;
     text-transform: uppercase;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
     transition: all 0.3s ease-in-out 0.1s;
 }
 .btn-three:before{
@@ -299,7 +270,7 @@ li{
 }
 .btn-three:hover,
 .btn-three:focus{
-    color: #000000;
+    color: var(--black-color);
 }
 
 
@@ -309,12 +280,12 @@ li{
     display: inline-block;
     background: #008000;
     padding: 0 40px;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 16px;
     line-height: 60px;
     font-weight: 700;
     text-transform: uppercase;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
     transition: all 0.3s ease-in-out 0.1s;
 }
 .btn-four:before{
@@ -322,7 +293,7 @@ li{
     content: '';
     top: 0;
     left: 0;
-    background: #000000;
+    background: var(--black-color);
     width: 100%;
     height: 100%;
     opacity: 0;
@@ -341,7 +312,7 @@ li{
 }
 .btn-four:hover,
 .btn-four:focus{
-    color: #ffffff;   
+    color: var(--white-color);   
 }
 
 
@@ -351,12 +322,12 @@ li{
     background: #008000;
     border: 2px solid #008000;
     padding: 0 40px;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 16px;
     line-height: 60px;
     font-weight: 700;
     text-transform: uppercase;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
     transition: all 0.3s ease-in-out 0.1s;
 }
 
@@ -365,7 +336,7 @@ li{
     content: '';
     top: 0;
     left: 0;
-    background: #000000;
+    background: var(--black-color);
     width: 100%;
     height: 100%;
     opacity: 0;
@@ -385,7 +356,7 @@ li{
 
 .btn-four-slide:hover,
 .btn-four-slide:focus{
-    color: #ffffff;
+    color: var(--white-color);
     border: 2px solid #008000;
 }
 
@@ -444,7 +415,7 @@ li{
     position: relative;
     display: inline-block;
     float: left;
-    color: #777777;
+    color: var(--black-color);
     font-size: 16px;
     line-height: 16px;
     font-weight: 500;
@@ -452,7 +423,7 @@ li{
     font-family: 'Hind Siliguri', sans-serif;
 }
 .sec-title.clr-white .title h5{
-    color: #ffffff;
+    color: var(--white-color);
 }
 .sec-title .title .border-box{
     position: relative;
@@ -463,7 +434,7 @@ li{
     content: "";
 }
 .sec-title .title .border-box.bg-black{
-    background: #000000;
+    background: var(--black-color);
 }
 .sec-title .big-title{
     position: relative;
@@ -473,14 +444,14 @@ li{
 .sec-title .big-title h2{
     position: relative;
     display: block;
-    color: #000000;
+    color: var(--black-color);
     font-size: 36px;
     line-height: 48px;
     font-weight: 400;
     text-transform: capitalize;
 }
 .sec-title.clr-white .big-title h2{
-    color: #ffffff;    
+    color: var(--green-color);    
 }
 .sec-title .big-title h2 span{
     font-weight: 800;
@@ -509,12 +480,12 @@ li{
     padding-bottom: 60px;
 }
 .sec-title-style2 p{
-    color: #777777;
+    color: var(--black-color);
     font-size: 16px;
     line-height: 16px;
     font-weight: 500;
     text-transform: uppercase;
-    font-family: 'Hind Siliguri', sans-serif;    
+    font-family: var(--site-font);
 }
 .sec-title-style2 .big-title{
     position: relative;
@@ -522,7 +493,7 @@ li{
     padding: 3px 0 19px;    
 }
 .sec-title-style2 .big-title h2{
-    color: #000000;
+    color: var(--black-color);
     font-size: 36px;
     line-height: 44px;
     font-weight: 700;
@@ -547,12 +518,12 @@ li{
     padding-bottom: 60px;
 }
 .sec-title-style3 p{
-    color: #777777;
+    color: var(--black-color);
     font-size: 16px;
     line-height: 16px;
     font-weight: 500;
     text-transform: uppercase;
-    font-family: 'Hind Siliguri', sans-serif;    
+    font-family: var(--site-font);
 }
 .sec-title-style3 .big-title{
     position: relative;
@@ -560,7 +531,7 @@ li{
     padding: 3px 0 19px;    
 }
 .sec-title-style3 .big-title h2{
-    color: #000000;
+    color: var(--black-color);
     font-size: 36px;
     line-height: 44px;
     font-weight: 700;
@@ -598,12 +569,12 @@ li{
     padding-bottom: 60px;
 }
 .sec-title-style4 p{
-    color: #777777;
+    color: var(--black-color);
     font-size: 16px;
     line-height: 16px;
     font-weight: 500;
     text-transform: uppercase;
-    font-family: 'Hind Siliguri', sans-serif;    
+    font-family: var(--site-font);
 }
 .sec-title-style4 .big-title{
     position: relative;
@@ -611,7 +582,7 @@ li{
     padding: 6px 0 27px;    
 }
 .sec-title-style4 .big-title h2{
-    color: #000000;
+    color: var(--black-color);
     font-size: 36px;
     line-height: 48px;
     font-weight: 700;
@@ -632,7 +603,7 @@ li{
     left: 0;
     bottom: 0;
     width: 30px;
-    background: #000000;
+    background: var(--black-color);
 }
 .sec-title-style4 .border-box .borders-right{
     position: absolute;
@@ -644,25 +615,14 @@ li{
 }
 
 .sec-title-style4.clr-white p{
-    color: #bbbbbb;
+    color: var(--black-color);
 }
 .sec-title-style4.clr-white .big-title h2{
-    color: #ffffff;
+    color: var(--green-color);
 }
 .sec-title-style4.clr-white .border-box .borders-left{
-    background: #ffffff;
+    background: var(--white-color);
 }
-
-
-
-
-
-
-
-
-
-
-
 .parallax-bg-one {
     background-attachment: fixed;
     background-position: center top;
@@ -762,7 +722,7 @@ li{
     width: 50px;
     height: 50px;
     background: transparent;
-    border: 2px solid #000000;
+    border: 2px solid var(--black-color);
     border-radius: 0%;
     margin: 0 0 0 0px;
     padding: 0;
@@ -778,7 +738,7 @@ li{
     display: block;
     width: 100%;
     height: 100%;
-    color: #000000;
+    color: var(--black-color);
     font-size: 24px;
     line-height: 46px;
     transition: all 200ms linear;
@@ -793,13 +753,13 @@ li{
 	transform:rotate(180deg);
 }
 .owl-nav-style-one.owl-theme .owl-nav [class*="owl-"]:hover{
-    border-color: #ffffff;
+    border-color: var(--white-color);
 }
 .owl-nav-style-one.owl-theme .owl-nav .owl-prev:hover:before{
-    color: #ffffff;
+    color: var(--white-color);
 }
 .owl-nav-style-one.owl-theme .owl-nav .owl-next:hover:before{
-    color: #ffffff; 
+    color: var(--white-color); 
 }
 
 
@@ -824,7 +784,7 @@ li{
     margin-left: 0px;
 }
 .owl-nav-style-two.owl-theme .owl-nav [class*="owl-"]:hover{
-    color: #ffffff;
+    color: var(--white-color);
     background: #3740b0;
 }
 
@@ -921,7 +881,7 @@ li{
 .accordion-box .accordion .accord-btn {
     position: relative;
     display: block;
-    background: #ffffff;
+    background: var(--white-color);
     border: 1px solid #cccccc;
     cursor: pointer;
     padding-left: 75px;
@@ -931,7 +891,7 @@ li{
     transition: all 500ms ease;
 }
 .accordion-box .accordion .accord-btn h4 {
-    color: #000000;
+    color: var(--black-color);
     font-size: 18px;
     line-height: 26px;
     font-weight: 600;
@@ -946,7 +906,7 @@ li{
     width: auto;
     height: auto;
     background: transparent;
-    color: #000000;
+    color: var(--black-color);
     font-size: 16px;
     font-weight: 600;
     transform: translateY(-50%);
@@ -963,13 +923,13 @@ li{
     color: #52a85e;
 }
 .accordion-box .accordion .accord-btn.active:after{
-    color: #000000;
+    color: var(--black-color);
     content: "\f105";
 }
 .accordion-box .accordion .accord-content {
     position: relative;
     display: block;
-    background: #ffffff;
+    background: var(--white-color);
     padding-top: 1px;
     padding-bottom: 22px;
     padding-left: 75px;
@@ -982,7 +942,7 @@ li{
     display: block;
 }
 .accordion-box .accordion .accord-content p {
-    color: #777777;
+    color: var(--black-color);
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
@@ -1045,7 +1005,7 @@ li{
 .body_switcher .body_switch_btn button {
     width:50px;
     height:50px;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 24px;
     line-height: 50px;
     background: rgba(0, 0, 0, 0.80);
@@ -1063,7 +1023,7 @@ li{
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
 }
 .body_switcher .boxed_switch_menu h5{
-    color: #000000;
+    color: var(--black-color);
     font-size: 20px;
     line-height: 24px;
     font-weight: 600;
@@ -1106,8 +1066,7 @@ li{
     max-width: 1550px;
     width: 100%;
     min-width: 300px;
-    margin: 0 auto;
-    background: url(../images/pattern/body-pattern.png) #111111;
+    margin: 0 auto;    
     background-attachment: fixed;
     background-repeat: repeat;
     background-position: center;
@@ -1125,17 +1084,10 @@ li{
     width:100%; 
     height:100%; 
     z-index:999999999999999999; 
-    background-color:#ffffff; 
+    background-color:var(--white-color); 
     background-position:center center; 
-    background-repeat:no-repeat; 
-    background-image:url(../images/icon/preloader.gif);
+    background-repeat:no-repeat;     
 }
-.preloader.style-two {
-    background-image: url(../images/icon/preloader-1.gif);
-}
-
-
-
 
 
 /*** Scroll To Top style ***/
@@ -1145,7 +1097,7 @@ li{
     bottom: 20px;
     width: 55px;
     height: 55px;
-    color: #ffffff;
+    color: var(--white-color);
     border-radius: 50%;
     font-size: 20px;
     line-height: 54px;
@@ -1191,7 +1143,7 @@ li{
     bottom: 70px;
     right: 0;
     margin: 0 auto;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 20px;
     line-height: 60px;
     font-weight: 400;
@@ -1323,7 +1275,7 @@ select:focus {
     background: -o-linear-gradient(top, rgba(0,0,0,0.7) 0%, rgba(254,159,96,0.7) 0%, rgba(82,168,93,0.7) 0%, rgba(110,184,93,0.7) 0%, rgba(245,245,245,0.7) 0%, rgba(0,82,189,0.7) 0%, rgba(0,108,249,0.7) 0%, rgba(0,98,227,0.78) 38%, rgba(0,82,189,0.9) 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top, rgba(0,0,0,0.7) 0%, rgba(254,159,96,0.7) 0%, rgba(82,168,93,0.7) 0%, rgba(110,184,93,0.7) 0%, rgba(245,245,245,0.7) 0%, rgba(0,82,189,0.7) 0%, rgba(0,108,249,0.7) 0%, rgba(0,98,227,0.78) 38%, rgba(0,82,189,0.9) 100%); /* IE 10+ */
     background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(254,159,96,0.7) 0%, rgba(82,168,93,0.7) 0%, rgba(110,184,93,0.7) 0%, rgba(245,245,245,0.7) 0%, rgba(0,82,189,0.7) 0%, rgba(0,108,249,0.7) 0%, rgba(0,98,227,0.78) 38%, rgba(0,82,189,0.9) 100%);/* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#0052bd', GradientType=0 );/* IE6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--black-color)', endColorstr='#0052bd', GradientType=0 );/* IE6-9 */
 }
 .overlay-style-one.bg4{
     background: rgba(247,150,40,0.7);/* Old Browsers */
@@ -1496,7 +1448,7 @@ select:focus {
     transition: all 500ms ease;
 }
 .social-links-style1 li a:hover i{
-    color: #ffffff;
+    color: var(--white-color);
 }
 
 
@@ -1518,7 +1470,7 @@ select:focus {
 .sociallinks-style-two li a i {
     position: relative;
     display: block;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 16px;
     transition: all 500ms ease 0s;
 }
@@ -1628,7 +1580,7 @@ select:focus {
 	height: 100%;
 	max-height: 100%;
 	overflow-y: auto;
-	background: #000000;
+	background: var(--black-color);
 	padding: 0px 0px;
 	z-index: 5;
 	opacity: 0;
@@ -1654,7 +1606,7 @@ select:focus {
 	position: absolute;
 	top: 10px;
 	right: 10px;
-	color: #ffffff;
+	color: var(--white-color);
 	font-size: 20px;
 	line-height: 30px;
 	width: 24px;
@@ -1700,7 +1652,7 @@ select:focus {
 	position: relative;
 	display: block;
 	padding: 10px 25px;
-	color: #ffffff;
+	color: var(--white-color);
 	font-size: 15px;
 	line-height: 24px;
 	font-weight: 600;
@@ -1743,7 +1695,7 @@ select:focus {
 	width:32px;
 	height:32px;
 	text-align:center;
-	color:#ffffff;
+	color:var(--white-color);
 	font-size:16px;
 	line-height:32px;
 	background:rgba(255,255,255,0.10);
@@ -1778,7 +1730,7 @@ select:focus {
 }
 .mobile-menu .social-links li a{
 	position:relative;
-	color:#ffffff;
+	color:var(--white-color);
 	font-size: 20px;
 	line-height:32px;
 	-webkit-transition: all 500ms ease;
@@ -1903,7 +1855,7 @@ select:focus {
     bottom: 0;
     right: 0;
     height: 1px;
-    background: #ffffff;
+    background: var(--white-color);
     content: "";
 }
 .header-lawer .outer-box {
@@ -1961,7 +1913,7 @@ select:focus {
 .main-menu .navigation>li>a {
 	position: relative;
 	display: block;
-	color: #ffffff;
+	color: var(--white-color);
 	font-size: 16px;
 	line-height: 30px;
 	font-weight: 700;
@@ -1969,7 +1921,7 @@ select:focus {
 	padding: 35px 0px 35px;
 	transition: all 500ms ease;
 	opacity: 1;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
 }
 .main-menu .navigation>li>a:before{
     position: absolute;
@@ -2011,7 +1963,7 @@ select:focus {
     width: 100%;
     height: 100%;
     content: '';
-    background: #ffffff;
+    background: var(--white-color);
     border-radius: 0;
 	-webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
 	-ms-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
@@ -2047,7 +1999,7 @@ select:focus {
 	display: block;
     border-bottom: 1px solid #e9e9e9;
 	padding: 13px 0px 13px;
-	color: #000000;
+	color: var(--black-color);
 	font-size: 15px;
 	line-height: 24px;
 	font-weight: 500;
@@ -2087,7 +2039,7 @@ select:focus {
     bottom: 0;
     font-family: FontAwesome;
     content: "\f105";
-    color: #000000;
+    color: var(--black-color);
     font-size: 14px;
     font-weight: 700;
     margin: 12px 0;
@@ -2106,7 +2058,7 @@ select:focus {
 	width: 250px;
 	padding: 0;
 	display: none;
-	background: #ffffff;
+	background: var(--white-color);
     border-radius: 0;
 	-webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
 	-ms-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
@@ -2146,7 +2098,7 @@ select:focus {
 	display: block;
     border-bottom: 1px solid #e9e9e9;
 	padding: 13px 0px 13px;
-	color: #000000;
+	color: var(--black-color);
 	font-size: 15px;
 	line-height: 24px;
 	font-weight: 500;
@@ -2207,7 +2159,7 @@ select:focus {
     text-align: center;
     font-size: 16px;
     line-height: 42px;
-    color: #ffffff;
+    color: var(--white-color);
     cursor: pointer;
     display: none;
     z-index: 5;
@@ -2246,7 +2198,7 @@ select:focus {
     height: 40px;
     border: 1px solid transparent;
     border-radius: 50%;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 16px;
     line-height: 38px;
     transition: all 0.4s linear;    
@@ -2273,7 +2225,7 @@ select:focus {
     position: relative;
     display: block;
     text-align: center;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 20px;
     line-height: 40px;
 }
@@ -2284,11 +2236,11 @@ select:focus {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 12px;
     line-height: 16px;
     text-align: center;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
 }
 .cart-box .value {
     position: relative;
@@ -2297,12 +2249,12 @@ select:focus {
     padding-left: 5px;
 }
 .cart-box .value p{
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 16px;
     line-height: 40px;
     font-weight: 400;
     margin: 0;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
 }
 
 
@@ -2318,9 +2270,9 @@ select:focus {
     display: block;
     width: 40px;
     height: 40px;
-    border: 1px solid #ffffff;
+    border: 1px solid var(--white-color);
     border-radius: 50%;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 14px;
     line-height: 38px;
     cursor: pointer;
@@ -2354,7 +2306,7 @@ select:focus {
     min-width: 250px;
 }
 .outer-search-box-style1 .search-box .form-group input[type="search"] {
-    background: #ffffff none repeat scroll 0 0;
+    background: var(--white-color) none repeat scroll 0 0;
     border: 1px solid #1f1f23;
     color: #000;
     display: block;
@@ -2387,7 +2339,7 @@ select:focus {
 }
 .outer-search-box-style1 .search-box .form-group button:hover,
 .outer-search-box-style1 .search-box .form-group input:focus + button{
-    color: #000000;
+    color: var(--black-color);
     background: #f5f5f5;
 }
 
@@ -2400,12 +2352,12 @@ select:focus {
     position: relative;
     display: inline-block;
     padding: 0 60px;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 24px;
     line-height: 100px;
     font-weight: 700;
     text-transform: uppercase;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
 }
 .header-lawer-right .button-box a:hover{
     background-position: right center;    
@@ -2477,7 +2429,7 @@ select:focus {
 
 .main-slider .content h5{
     position: relative;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
@@ -2498,7 +2450,7 @@ select:focus {
     display: inline-block;
     width: 0px;
     height: 2px;
-    background: #ffffff;
+    background: var(--white-color);
     transition: all 1000ms ease;
 }
 .main-slider .active .content .border-box{
@@ -2507,7 +2459,7 @@ select:focus {
 }
 .main-slider .content h2{
 	position: relative;
-	color: #ffffff;
+	color: var(--white-color);
 	font-size: 72px;
 	line-height: 1.2em;
 	font-weight: 700;
@@ -2614,12 +2566,12 @@ select:focus {
 .facts-area{
     position: relative;
     display: block;
-    background: #ffffff;
+    background: var(--white-color);
 }
 .facts-box {
     position: relative;
     display: block;
-    background: #000000;
+    background: var(--black-color);
     border-bottom-right-radius: 50px;
     padding: 60px 0;
     margin-top: -100px;
@@ -2631,7 +2583,7 @@ select:focus {
     left: -5000px;
     bottom: 0;
     right: 0;
-    background: #000000;
+    background: var(--black-color);
     border-bottom-right-radius: 50px;
     content: "";
 }
@@ -2669,7 +2621,7 @@ select:focus {
     vertical-align: middle;
 }
 .facts-box ul li .title h3{
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 20px;
     line-height: 30px;
     font-weight: 600;
@@ -2689,7 +2641,7 @@ select:focus {
     position: relative;
     display: block;
     overflow: hidden;
-    background: #ffffff;
+    background: var(--white-color);
     padding: 120px 0 190px;
 }
 .about-style1-image-box {
@@ -2725,7 +2677,7 @@ select:focus {
     bottom: -60px;
     right: -60px;
     width: 300px;
-    background: #000000;
+    background: var(--black-color);
     padding: 31px 30px 30px;
 }
 .about-style1-image-box .image-box .overlay-box:before{
@@ -2744,7 +2696,7 @@ select:focus {
     width: 115px;
 }
 .about-style1-image-box .image-box .overlay-box .left h2 {
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 100px;
     line-height: 70px;
     font-weight: 700;
@@ -2756,7 +2708,7 @@ select:focus {
     vertical-align: middle;
 }
 .about-style1-image-box .image-box .overlay-box .right h4{
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 24px;
     line-height: 28px;
     font-weight: 400;
@@ -2813,14 +2765,14 @@ select:focus {
     transition: all 500ms ease;
 }
 .video-holder-box .icon .inner a:hover{
-    color: #000000;
+    color: var(--black-color);
 }
 .video-holder-box .icon .inner a span:before {
     position: relative;
     display: block;
     width: 100%;
     height: 100%;
-    color: #000000;
+    color: var(--black-color);
     font-size: 20px;
     line-height: 60px;
 }
@@ -2834,7 +2786,7 @@ select:focus {
     padding-left: 20px;
 }
 .about-style1-text-box .inner-contant .bottom-box .title-box h5{
-    color: #000000;
+    color: var(--black-color);
     font-size: 16px;
     line-height: 20px;
     font-weight: 600;
@@ -2874,7 +2826,7 @@ select:focus {
 .single-service-style1 {
     position: relative;
     display: block;
-    background: #ffffff;
+    background: var(--white-color);
     max-width: 320px;
     width: 100%;
     padding: 50px 40px 50px;
@@ -2917,7 +2869,7 @@ select:focus {
     line-height: 60px;
 }
 .single-service-style1 h3{
-    color: #000000;
+    color: var(--black-color);
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
@@ -2942,7 +2894,7 @@ select:focus {
     border: 1px solid #c2c2c2;
     border-radius: 50%;
     text-align: center;
-    color: #000000;
+    color: var(--black-color);
     font-size: 16px;
     line-height: 38px;
     font-weight: 600;
@@ -2967,7 +2919,7 @@ select:focus {
     transform: scale(1.0);
 }
 .single-service-style1:hover .read-more-button a{
-    color: #ffffff;
+    color: var(--white-color);
 }
 
 .service-carousel.owl-carousel.owl-dot-style1 .owl-stage-outer{
@@ -2992,7 +2944,7 @@ select:focus {
     position: relative;
     display: block;
     overflow: hidden;
-    background: #ffffff;
+    background: var(--white-color);
     padding-bottom: 53px;
     z-index: 10;
 }
@@ -3019,9 +2971,8 @@ select:focus {
     top: 120px;
     left: -5000px;
     bottom: -70px;
-    right: 40px;
-    background-image: url(../images/pattern/pattern-bg-2.png);
-    background-color: #000000;
+    right: 40px;  
+    background-color: var(--black-color);
     background-repeat: repeat;
     content: "";
     z-index: -2;
@@ -3052,7 +3003,7 @@ select:focus {
     display: block;
 }
 .loan-ranger .top .inner .left label.control-label {
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 18px;
     line-height: 28px;
     font-weight: 600;
@@ -3068,7 +3019,7 @@ select:focus {
     width: 100px;
     height: auto;
     padding: 0;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 18px;
     line-height: 28px;
     font-weight: 600;
@@ -3093,7 +3044,7 @@ select:focus {
     display: block;
 }
 .loan-ranger .bottom .inner .left label.control-label {
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 18px;
     line-height: 28px;
     font-weight: 600;
@@ -3109,7 +3060,7 @@ select:focus {
     width: 100px;
     height: auto;
     padding: 0;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 18px;
     line-height: 28px;
     font-weight: 600;
@@ -3131,8 +3082,8 @@ select:focus {
 }
 .loan-ranger .ui-slider-handle {
     position: absolute;
-    background: #ffffff;
-    border: 6px solid #000000;
+    background: var(--white-color);
+    border: 6px solid var(--black-color);
     border-radius: 50%;
     height: 30px;
     margin-left: 0;
@@ -3146,7 +3097,7 @@ select:focus {
     top: -12px;
 }
 .loan-ranger .ui-slider .ui-slider-range {
-    background: #000000;
+    background: var(--black-color);
     border-radius: 0;
 }
 
@@ -3165,14 +3116,14 @@ select:focus {
     max-width: 33.333333%;
 }
 .calculated-box .single-box h5{
-    color: #000000;
+    color: var(--black-color);
     font-size: 16px;
     line-height: 20px;
     font-weight: 600;
     margin: 0 0 9px;
 }
 .calculated-box .single-box p{
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
@@ -3185,8 +3136,8 @@ select:focus {
     padding-top: 32px;
 }
 .loan-ranger .button-box a{
-    color: #000000;
-    background: #ffffff;
+    color: var(--black-color);
+    background: var(--white-color);
 }
 .calculate-image-box {
     position: relative;
@@ -3296,18 +3247,18 @@ select:focus {
     display: block;
     width: 60px;
     height: 30px;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 20px;
     line-height: 30px;
     text-align: center;
 }
 .single-project-style1:hover .read-more-button a{
-    background: #000000;
+    background: var(--black-color);
 }
 .single-project-style1 .text-holder {
     position: relative;
     display: block;
-    background: #ffffff;
+    background: var(--white-color);
     padding: 33px 33px 33px;
     border-bottom-right-radius: 40px;
     border: 2px solid #eeeeee;
@@ -3320,7 +3271,7 @@ select:focus {
     margin: 0 0 10px;
 }
 .single-project-style1 .text-holder h3 a{
-    color: #000000;
+    color: var(--black-color);
     transition: all 200ms linear;
     transition-delay: 0.1s;
 }
@@ -3420,34 +3371,34 @@ select:focus {
 .single-features-box h3 {
     position: relative;
     display: block;
-    color: #000000;
+    color: var(--black-color);
     font-size: 24px;
     line-height: 30px;
     font-weight: 800;
     margin: 33px 0 20px;
 }
 .single-features-box p{
-    color: #777777;
+    color: var(--black-color);
     font-size: 18px;
     line-height: 30px;
     font-weight: 400;
     margin: 0;
 }
 .single-features-box.style2 span:before{
-    color: #000000;
+    color: var(--black-color);
 }
 .single-features-box.style2 p{
-    color: #000000;    
+    color: var(--black-color);    
 }
 
 .single-features-box.style3:before{
     background: rgba(35, 35, 35, 0.90);
 }
 .single-features-box.style3 h3{
-    color: #ffffff;        
+    color: var(--white-color);        
 }
 .single-features-box.style3 p{
-    color: #ffffff;    
+    color: var(--white-color);    
 }
 
 
@@ -3460,7 +3411,7 @@ select:focus {
 .latest-blog-area {
     position: relative;
     display: block;
-    background: #ffffff;
+    background: var(--white-color);
     padding-top: 120px;
     padding-bottom: 70px;
 }
@@ -3587,7 +3538,7 @@ select:focus {
     display: inline-block;
     width: 30px;
     height: 30px;
-    color: #000000;
+    color: var(--black-color);
     font-size: 30px;
     line-height: 30px;
     text-align: center;
@@ -3610,7 +3561,7 @@ select:focus {
     border-bottom-right-radius: 30px;
 }
 .single-blog-post .img-holder .date-box h2{
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 30px;
     line-height: 20px;
     font-weight: 800;
@@ -3643,7 +3594,7 @@ select:focus {
     position: relative;
     display: inline-block;
     float: left;
-    color: #000000;
+    color: var(--black-color);
     font-size: 16px;
     line-height: 16px;
     font-weight: 400;
@@ -3667,7 +3618,7 @@ select:focus {
     margin: 21px 0 15px;
 }
 .single-blog-post .text-holder .blog-title a{
-    color: #000000;
+    color: var(--black-color);
     transition: all 500ms ease;
 }
 .single-blog-post .text-holder .read-more{
@@ -3678,13 +3629,13 @@ select:focus {
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
 }
 .single-blog-post .text-holder .read-more a i{
     position: relative;
     display: inline-block;
     padding-left: 10px;
-    color: #000000;
+    color: var(--black-color);
 }
 
 
@@ -3697,7 +3648,7 @@ select:focus {
 .footer-area {
     position: relative;
     display: block;
-    background: #000000;
+    background: var(--black-color);
 }
 
 .footer{
@@ -3727,7 +3678,7 @@ select:focus {
     content: "";
 }
 .single-footer-widget .title h3 {
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 20px;
     line-height: 24px;
     font-weight: 800;
@@ -3751,7 +3702,7 @@ select:focus {
     display: block;    
 }
 .single-footer-widget .our-company-info .text p{
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 16px;
     line-height: 36px;
     font-weight: 400;
@@ -3777,7 +3728,7 @@ select:focus {
     position: relative;
     display: block;
     padding-left: 30px;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 16px;
     font-weight: 400;
     transition: all 200ms linear;
@@ -3814,7 +3765,7 @@ select:focus {
     position: relative;
     display: block;
     padding-left: 30px;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 16px;
     font-weight: 400;
     transition: all 200ms linear;
@@ -3845,9 +3796,9 @@ select:focus {
 .single-footer-widget .subscribe-form input[type="email"]{
     position: relative;
     display: block;
-    background: #ffffff;
-    border: 1px solid #ffffff;
-    color: #000000;
+    background: var(--white-color);
+    border: 1px solid var(--white-color);
+    color: var(--black-color);
     font-size: 16px;
     font-weight: 500;
     font-style: normal;
@@ -3859,16 +3810,16 @@ select:focus {
     transition: all 500ms ease;
 }
 .single-footer-widget .subscribe-form input::-webkit-input-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 .single-footer-widget .subscribe-form input:-moz-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 .single-footer-widget .subscribe-form input::-moz-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 .single-footer-widget .subscribe-form input:-ms-input-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 .single-footer-widget .subscribe-form button {
     margin-top: 30px;
@@ -3964,7 +3915,7 @@ select:focus {
     background: #363636;
     border: 0px solid 363636;
     border-radius: 0;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 18px;
     line-height: 50px;
     text-align: center;
@@ -3973,7 +3924,7 @@ select:focus {
     border-radius: 6px;
 }
 .footer-social-links ul li a:hover{
-    background: #000000;
+    background: var(--black-color);
 }
 
 
@@ -3989,7 +3940,7 @@ select:focus {
     top: 40px;
     left: 0;
     width: 100%;
-    background: #ffffff;
+    background: var(--white-color);
     box-shadow: 5px 0px 4px 0px #f8f8f8;
     transition: all 200ms linear;
     transition-delay: 0.1s;
@@ -4029,7 +3980,7 @@ select:focus {
     margin-right: 0;
 }
 .main-menu.style2 .navigation>li>a {
-    color: #000000;
+    color: var(--black-color);
 }
 .main-menu.style2 .navigation>li>a:before {
     background: #52A85E;
@@ -4082,7 +4033,7 @@ select:focus {
     margin: 22px 0 37px;
 }
 .banner-area h2 span{
-    color: #000000;
+    color: var(--black-color);
 }
 
 
@@ -4099,8 +4050,8 @@ select:focus {
     display: block;
     height: 100px;
     width: 100px;
-    border: 2px solid #000000;
-    background: #ffffff;
+    border: 2px solid var(--black-color);
+    background: var(--white-color);
     font-size: 25px;
     line-height: 96px;
     text-align: center;
@@ -4116,7 +4067,7 @@ select:focus {
     padding-left: 30px;
 }
 .banner-video-gallery .title-box h5{
-    color: #777777;
+    color: var(--black-color);
     font-size: 24px;
     line-height: 30px;
     font-weight: 400;
@@ -4155,12 +4106,12 @@ select:focus {
 .banner-social-links ul li a{
     position: relative;
     display: block;
-    color: #000000;
+    color: var(--black-color);
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
     text-transform: uppercase;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
     transition: all 200ms linear;
     transition-delay: 0.1s;
 }
@@ -4196,7 +4147,7 @@ select:focus {
     left: 0;
     bottom: 0;
     right: -5000px;
-    background: #ffffff;
+    background: var(--white-color);
     content: "";
     z-index: -1;
 }
@@ -4245,7 +4196,7 @@ select:focus {
 }
 
 .contact-info-box .single-info-box .title h3{
-    color: #000000;
+    color: var(--black-color);
     font-size: 18px;
     line-height: 40px;
     font-weight: 800;
@@ -4269,7 +4220,7 @@ select:focus {
     vertical-align: middle;
 }
 .contact-info-box .single-info-box .inner .text p{
-    color: #000000;
+    color: var(--black-color);
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -4284,7 +4235,7 @@ select:focus {
     line-height: 24px;
 }
 .contact-info-box .single-info-box .inner .text ul li a{
-    color: #000000;
+    color: var(--black-color);
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;    
@@ -4314,7 +4265,7 @@ select:focus {
     left: 0;
     right: -5000px;
     height: 270px;
-    background: #ffffff;
+    background: var(--white-color);
     content: "";
     z-index: -1;
 }
@@ -4379,7 +4330,7 @@ select:focus {
     display: inline-block;
     width: 50px;
     height: 50px;
-    background: #ffffff;
+    background: var(--white-color);
     font-size: 20px;
     line-height: 50px;
     transform: scale(.4);
@@ -4392,7 +4343,7 @@ select:focus {
     transition-delay: 0.3s;
 }
 .single-service-style2 .overlay-style-one .link-button a{
-    color: #000000;
+    color: var(--black-color);
     font-weight: 600;
     display: inline-block;
 }
@@ -4400,7 +4351,7 @@ select:focus {
 .single-service-style2 .text-holder{
     position: relative;
     display: block;
-    background: #ffffff;
+    background: var(--white-color);
     padding: 28px 30px 28px;
     padding-right: 20px;
 }
@@ -4429,7 +4380,7 @@ select:focus {
     margin: 0 0 10px;
 }
 .single-service-style2 .text-holder .inner .text h3 a{
-    color: #000000;
+    color: var(--black-color);
     transition: all 200ms linear;
     transition-delay: 0.1s;
 }
@@ -4451,11 +4402,11 @@ select:focus {
     bottom: 60px;
 }
 .service-carousel-style2.owl-carousel.owl-dot-style1 .owl-dots .owl-dot {
-    background: #ffffff;
+    background: var(--white-color);
     border: 2px solid #e7e7e7;
 }
 .service-carousel-style2.owl-carousel.owl-dot-style1 .owl-dots .owl-dot.active {
-    border-color: #000000;
+    border-color: var(--black-color);
     background-color: #52a85e;
 }
 
@@ -4547,7 +4498,7 @@ select:focus {
     text-align: center;
 }
 .progress-block .title h5{
-    color: #000000;
+    color: var(--black-color);
     font-size: 20px;
     line-height: 20px;
     font-weight: 600;
@@ -4624,7 +4575,7 @@ select:focus {
     display: block;
 }
 .single-consulting-box .text-holder h3{
-    color: #000000;
+    color: var(--black-color);
     font-size: 22px;
     line-height: 30px;
     font-weight: 700;
@@ -4644,7 +4595,7 @@ select:focus {
 .latest-project-style2-area{
     position: relative;
     display: block;
-    background: #ffffff;
+    background: var(--white-color);
     padding: 120px 0 120px;
 }
 .project-style2-outerimage-box{
@@ -4676,7 +4627,7 @@ select:focus {
     font-size: 160px;
     line-height: 120px;
     font-weight: 600;
-    font-family: 'Hind Siliguri', sans-serif;    
+    font-family: var(--site-font);
 }
 
 
@@ -4697,7 +4648,7 @@ select:focus {
     margin: 0;
 }
 .project-style2-content .inner-content h3 {
-    color: #000000;
+    color: var(--black-color);
     font-size: 24px;
     line-height: 36px;
     font-weight: 700;
@@ -4714,12 +4665,12 @@ select:focus {
     width: 270px;
     padding-left: 30px;
     padding-right: 20px;
-    background: #000000;
-    color: #ffffff;
+    background: var(--black-color);
+    color: var(--white-color);
     font-size: 18px;
     line-height: 60px;
     font-weight: 700;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
     transition: all 200ms linear;
     transition-delay: 0.1s;
 }
@@ -4730,7 +4681,7 @@ select:focus {
     width: 60px;
     height: 60px;
     background: #55aa5e;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 24px;
     line-height: 60px;
     display: block;
@@ -4748,7 +4699,7 @@ select:focus {
     line-height: 160px;
     font-weight: 900;
     text-transform: uppercase;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
     position: absolute;
     top: 215px;
     right: -680px;
@@ -4848,7 +4799,7 @@ select:focus {
     position: relative;
     display: block;
     overflow: hidden;
-    background: #000000;
+    background: var(--black-color);
     padding: 73px 0;
 }
 .slogan-content{
@@ -4865,14 +4816,14 @@ select:focus {
     z-index: 1;
 }
 .slogan-content .title h2{
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 30px;
     line-height: 40px;
     font-weight: 600;
     margin: 0 0 6px;
 }
 .slogan-content .title p{
-    color: #ffffff;
+    color: var(--white-color);
     margin: 0;
 }
 .slogan-content .button{
@@ -4918,7 +4869,7 @@ select:focus {
     line-height: 160px;
     font-weight: 900;
     text-transform: uppercase;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
     position: absolute;
     left: 173px;
     bottom: -149px;
@@ -4963,7 +4914,7 @@ select:focus {
 .single-testimonial-style2 .text-box .quote-box span:before{
     position: relative;
     display: block;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 30px;
     line-height: 80px;
     text-align: center;
@@ -4984,14 +4935,14 @@ select:focus {
     margin: 0 0 35px;
 }
 .single-testimonial-style2 .text-box .inner .left h3{
-    color: #000000;
+    color: var(--black-color);
     font-size: 24px;
     line-height: 30px;
     font-weight: 800;
     margin: 0 0 14px;
 }
 .single-testimonial-style2 .text-box .inner .left p{
-    color: #777777;
+    color: var(--black-color);
     font-size: 18px;
     line-height: 20px;
     font-weight: 600;
@@ -5005,7 +4956,7 @@ select:focus {
     display: block;
 }
 .single-testimonial-style2 .text-box .inner .right .text p{
-    color: #777777;
+    color: var(--black-color);
     font-size: 18px;
     line-height: 30px;
     font-weight: 400;
@@ -5100,7 +5051,7 @@ select:focus {
     left: -5000px;
     bottom: -120px;
     right: 170px;
-    background: #ffffff;
+    background: var(--white-color);
     content: "";
     z-index: -1;
 }
@@ -5142,7 +5093,7 @@ select:focus {
     background: -moz-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #008000 100%);
     background: -webkit-linear-gradient(left, #52A85E 0%, #71BA5D 50%, #008000 100%);
     background: linear-gradient(to right, #52A85E 0%, #71BA5D 50%, #008000 100%);
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 25px;
     line-height: 80px;
 }
@@ -5225,14 +5176,14 @@ select:focus {
     transition-delay: 0.1s; 
 }
 .single-blog-post-style2:hover .title-holder .top .categories p{
-    color: #000000;
+    color: var(--black-color);
 }
 .single-blog-post-style2 .title-holder .top .date{
     position: relative;
     display: block;
 }
 .single-blog-post-style2 .title-holder .top .date h4{
-    color: #777777;
+    color: var(--black-color);
     font-size: 24px;
     line-height: 18px;
     font-weight: 700;
@@ -5253,7 +5204,7 @@ select:focus {
     font-weight: 700;
 }
 .single-blog-post-style2 .title-holder .blog-title a{
-    color: #000000; 
+    color: var(--black-color); 
     transition: all 300ms linear;
     transition-delay: 0.1s; 
 }
@@ -5346,7 +5297,7 @@ select:focus {
 .header-upper{
     position: relative;
     display: block;
-    background: #ffffff;
+    background: var(--white-color);
 }
 .header-upper .outer-box{
     position: relative;
@@ -5371,7 +5322,7 @@ select:focus {
     position: relative;
     display: inline-block;
     float: left;
-    color: #777777;
+    color: var(--black-color);
     font-size: 14px;
     line-height: 28px;
     font-weight: 400;
@@ -5395,7 +5346,7 @@ select:focus {
 .header-upper-left .contact-info ul li a{
     position: relative;
     display: inline-block;
-    color: #777777;
+    color: var(--black-color);
     font-size: 14px;
     line-height: 28px;
     font-weight: 400; 
@@ -5424,7 +5375,7 @@ select:focus {
     position: relative;
     display: inline-block;
     float: left;
-    border-right: 1px solid #ffffff;
+    border-right: 1px solid var(--white-color);
 }
 .header-social-links-style2 ul li a{
     position: relative;
@@ -5432,7 +5383,7 @@ select:focus {
     width: 50px;
     height: 50px;
     background: #0051bc;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 16px;
     line-height: 50px;
     text-align: center;
@@ -5440,7 +5391,7 @@ select:focus {
     transition-delay: 0.1s;
 }
 .header-social-links-style2 ul li a:hover{
-    background: #000000;
+    background: var(--black-color);
 }
 .header-upper-right .outer-search-box-style1 {
     position: relative;
@@ -5452,10 +5403,10 @@ select:focus {
 .header-upper-right .outer-search-box-style1 .seach-toggle {
     width: 50px;
     height: 50px;
-    background: #000000;
-    border: 1px solid #000000;
+    background: var(--black-color);
+    border: 1px solid var(--black-color);
     border-radius: 0;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 16px;
     line-height: 48px;
 }
@@ -5474,7 +5425,7 @@ select:focus {
     background: -o-linear-gradient(top, rgba(245,245,245,1) 0%, rgba(246,41,12,1) 0%, rgba(0,0,0,1) 0%, rgba(254,159,96,1) 0%, rgba(82,168,93,1) 0%, rgba(110,184,93,1) 0%, rgba(245,245,245,1) 0%, rgba(249,249,249,1) 50%, rgba(255,255,255,1) 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top, rgba(245,245,245,1) 0%, rgba(246,41,12,1) 0%, rgba(0,0,0,1) 0%, rgba(254,159,96,1) 0%, rgba(82,168,93,1) 0%, rgba(110,184,93,1) 0%, rgba(245,245,245,1) 0%, rgba(249,249,249,1) 50%, rgba(255,255,255,1) 100%); /* IE 10+ */
     background: linear-gradient(to bottom, rgba(245,245,245,1) 0%, rgba(246,41,12,1) 0%, rgba(0,0,0,1) 0%, rgba(254,159,96,1) 0%, rgba(82,168,93,1) 0%, rgba(110,184,93,1) 0%, rgba(245,245,245,1) 0%, rgba(249,249,249,1) 50%, rgba(255,255,255,1) 100%);/* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#ffffff', GradientType=0 );/* IE6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='var(--white-color)', GradientType=0 );/* IE6-9 */
 }
 .header-lawer-style3:before {
     position: absolute;
@@ -5521,7 +5472,7 @@ select:focus {
     margin-right: 0;
 }
 .main-menu.style3 .navigation>li>a {
-    color: #000000;
+    color: var(--black-color);
     padding: 55px 0px 55px;
 }
 .main-menu.style3 .navigation>li>a:before{
@@ -5549,12 +5500,12 @@ select:focus {
     line-height: 58px;
     font-weight: 700;
     text-transform: uppercase;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
     transition: all 200ms linear;
     transition-delay: 0.1s;
 }
 .header-lawer-right-style3 .button-box a:hover{
-    color: #ffffff;
+    color: var(--white-color);
     background: #0051bc;
 }
 
@@ -5583,7 +5534,7 @@ select:focus {
     left: 0;
     bottom: 0;
     width: 35%;
-    background-color: #ffffff;
+    background-color: var(--white-color);
     background-attachment: scroll;
     background-repeat: repeat;
 }
@@ -5602,7 +5553,7 @@ select:focus {
 .banner-style2-content{
     position: relative;
     display: block;
-    background: #ffffff;
+    background: var(--white-color);
     max-width: 570px;
     width: 100%;
     -webkit-box-shadow: -3px 0px 7px 2px #f8f8f8; 
@@ -5631,7 +5582,7 @@ select:focus {
     display: block;
 }
 .banner-style2-image-box .bx-wrapper .bx-viewport li .single-box h4{
-    color: #777777;
+    color: var(--black-color);
     font-size: 36px;
     line-height: 40px;
     font-weight: 700;
@@ -5644,7 +5595,7 @@ select:focus {
     margin: 14px 0 22px;
 }
 .banner-style2-image-box .bx-wrapper .bx-viewport li .single-box h2{
-    color: #000000;
+    color: var(--black-color);
     font-size: 96px;
     line-height: 100px;
     font-weight: 900;
@@ -5661,12 +5612,12 @@ select:focus {
 .banner-style2-image-box .bx-wrapper .bx-viewport li .single-box .btns-box a.style2{
     color: #0051bc;
     line-height: 58px;
-    background: #ffffff;
+    background: var(--white-color);
     border: 1px solid #0051bc;
     margin-left: 26px;
 }
 .banner-style2-image-box .bx-wrapper .bx-viewport li .single-box .btns-box a.style2:hover{
-    color: #ffffff;
+    color: var(--white-color);
 }
 
 .slider-pager {
@@ -5701,7 +5652,7 @@ select:focus {
     font-size: 48px;
     line-height: 70px;
     font-weight: 700;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
 }
 .banner-style2-carousel .owl-item .item a:before{
     position: absolute;
@@ -5724,7 +5675,7 @@ select:focus {
     right:10px;
     width: 5px;
     height: 50px;
-    background: #000000;
+    background: var(--black-color);
     content: "";
 }
 .banner-style2-carousel .owl-item .item a{
@@ -5749,7 +5700,7 @@ select:focus {
 .services-style3-area{
     position: relative;
     display: block;
-    background: #ffffff;
+    background: var(--white-color);
     padding-bottom: 120px;
 }
 .service-style3-content{
@@ -5773,7 +5724,7 @@ select:focus {
     position: relative;
     display: block;
     padding: 70px 40px 61px;
-    background: #ffffff;
+    background: var(--white-color);
     -webkit-box-shadow: 0px 4px 7px 1px rgba(232,232,232,0.7); 
     box-shadow: 0px 4px 7px 1px rgba(232,232,232,0.7);
     transition: all 900ms ease 100ms;
@@ -5794,7 +5745,7 @@ select:focus {
 .single-service-style3 .icon-holder span:before{
     position: relative;
     display: block;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 40px;
     line-height: 80px;
 }
@@ -5804,7 +5755,7 @@ select:focus {
     padding-top: 34px;
 }
 .single-service-style3 .text-holder h3{
-    color: #000000;
+    color: var(--black-color);
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
@@ -5846,17 +5797,17 @@ select:focus {
     background-color: rgba(35, 35, 35, 0.90);
 }
 .single-service-style3 .overlay-content .icon-holder{
-    background: #ffffff;
+    background: var(--white-color);
     border-radius: 50%;
 }
 .single-service-style3 .overlay-content .icon-holder span:before{
     color: #0051bc;    
 }
 .single-service-style3 .overlay-content .text-holder h3 {
-    color: #ffffff;
+    color: var(--white-color);
 }
 .single-service-style3 .overlay-content .text-holder p {
-    color: #ffffff;
+    color: var(--white-color);
 }
 .single-service-style3 .text-holder .reamore-button{
     position: relative;
@@ -5864,11 +5815,11 @@ select:focus {
     padding-top: 23px;
 }
 .single-service-style3 .text-holder .reamore-button a{
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 16px;
     font-weight: 700;
     text-transform: capitalize;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
 }
 .single-service-style3 .text-holder .reamore-button a i{
     display: inline-block;
@@ -5885,7 +5836,7 @@ select:focus {
 .about-style2-area{
     position: relative;
     display: block;
-    background: #ffffff;
+    background: var(--white-color);
     padding-bottom: 120px;
 }
 .about-style2-image-box {
@@ -5915,12 +5866,12 @@ select:focus {
     position: relative;
     display: block;
     width: 205px;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 16px;
     line-height: 60px;
     font-weight: 600;
     text-align: center;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
 }
 .about-style2-image-box .image-bg .button a i{
     position: relative;
@@ -5960,7 +5911,7 @@ select:focus {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 16px;
     line-height: 50px;
     background: rgb(246,41,12);
@@ -6020,7 +5971,7 @@ select:focus {
     font-size: 16px;
 }
 .about-style2-text-box .inner-contant ul li:hover{
-    color: #000000;
+    color: var(--black-color);
 }
 .about-style2-text-box .inner-contant .author-info {
     position: relative;
@@ -6044,7 +5995,7 @@ select:focus {
     margin: 0 0 7px;
 }
 .about-style2-text-box .inner-contant .author-info .name h6{
-    color: #777777;
+    color: var(--black-color);
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
@@ -6074,7 +6025,7 @@ select:focus {
     display: block;
     padding: 40px 40px 61px;
     padding-right: 30px;
-    background: #ffffff;
+    background: var(--white-color);
     -webkit-box-shadow: 0px 3px 7px 1px #dfdfdf; 
     box-shadow: 0px 3px 7px 1px #dfdfdf;
 }
@@ -6099,11 +6050,11 @@ select:focus {
     transition: all 700ms ease 100ms;
 }
 .single-service-style4:hover span:before{
-    color: #000000;
+    color: var(--black-color);
     transition: all 700ms ease 600ms;
 }
 .single-service-style4 h3{
-    color: #000000;
+    color: var(--black-color);
     font-size: 24px;
     line-height: 32px;
     font-weight: 700;
@@ -6111,7 +6062,7 @@ select:focus {
     transition: all 700ms ease 100ms;
 }
 .single-service-style4:hover h3{
-    color: #ffffff;
+    color: var(--white-color);
     transition: all 700ms ease 700ms;       
 }
 .single-service-style4 p{
@@ -6119,18 +6070,18 @@ select:focus {
     transition: all 700ms ease 100ms;
 }
 .single-service-style4:hover p{
-    color: #ffffff;
+    color: var(--white-color);
     transition: all 700ms ease 800ms;    
 }
 .single-service-style4 a{
     color: #006dfb;
     font-size: 16px;
     font-weight: 600;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
     transition: all 700ms ease 100ms;
 }
 .single-service-style4:hover a{
-    color: #ffffff;
+    color: var(--white-color);
     transition: all 700ms ease 600ms;    
 }
 .single-service-style4 a i{
@@ -6178,7 +6129,7 @@ select:focus {
     background: -o-linear-gradient(top, rgba(0,0,0,0.7) 0%, rgba(254,159,96,0.7) 0%, rgba(82,168,93,0.7) 0%, rgba(110,184,93,0.7) 0%, rgba(245,245,245,0.7) 0%, rgba(0,82,189,0.7) 0%, rgba(0,108,249,0.7) 0%, rgba(0,98,227,0.78) 38%, rgba(0,82,189,0.9) 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top, rgba(0,0,0,0.7) 0%, rgba(254,159,96,0.7) 0%, rgba(82,168,93,0.7) 0%, rgba(110,184,93,0.7) 0%, rgba(245,245,245,0.7) 0%, rgba(0,82,189,0.7) 0%, rgba(0,108,249,0.7) 0%, rgba(0,98,227,0.78) 38%, rgba(0,82,189,0.9) 100%); /* IE 10+ */
     background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(254,159,96,0.7) 0%, rgba(82,168,93,0.7) 0%, rgba(110,184,93,0.7) 0%, rgba(245,245,245,0.7) 0%, rgba(0,82,189,0.7) 0%, rgba(0,108,249,0.7) 0%, rgba(0,98,227,0.78) 38%, rgba(0,82,189,0.9) 100%);/* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#0052bd', GradientType=0 );/* IE6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--black-color)', endColorstr='#0052bd', GradientType=0 );/* IE6-9 */
 }
 
 .services-style4-area .view-all-button{
@@ -6204,7 +6155,7 @@ select:focus {
 .how-work-area{
     position: relative;
     display: block;
-    background: #ffffff;
+    background: var(--white-color);
 }
 .how-work-area .patter-box {
     position: absolute;
@@ -6271,14 +6222,14 @@ select:focus {
 }
 .progress-levels .progress-box .inner .text {
     position: relative;
-    color: #000000;
+    color: var(--black-color);
     font-size: 16px;
     line-height: 16px;
     font-weight: 700;
     letter-spacing: 0.5px;
     margin: 0 0 17px;
     text-transform: capitalize;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
 }
 .progress-levels .progress-box .bar{
 	 position: relative;
@@ -6315,24 +6266,24 @@ select:focus {
 }
 .progress-levels .progress-box .inner .count-text {
     position: relative;
-    color: #000000;
+    color: var(--black-color);
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
     display: inline-block;
     float: none;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
 }
 .progress-levels .progress-box .inner .percent {
     position: relative;
-    color: #000000;
+    color: var(--black-color);
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
     display: inline-block;
     float: none;
     margin-left: -2px;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
 }
 
 .how-work-img-box{
@@ -6363,7 +6314,7 @@ select:focus {
     left: 0;
     bottom: 0;
     width: 150px;
-    background: #000000;    
+    background: var(--black-color);    
 }
 
 /*** 
@@ -6407,17 +6358,17 @@ select:focus {
     display: block;
 	float: left;
 	padding: 16px 50px 16px;
-	color: #ffffff;
+	color: var(--white-color);
 	font-size: 16px;
 	font-weight: 500;
     text-transform: uppercase;
 	cursor: pointer;
 	transition:all 300ms ease;
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: var(--site-font)
 }
 .strategy-tabs .tab-buttons .tab-btn:hover,
 .strategy-tabs .tab-buttons .tab-btn.active-btn{
-	color:#000000;
+	color:var(--black-color);
 }
 
 .strategy-tabs .tabs-content .tab{
@@ -6483,7 +6434,7 @@ select:focus {
 .latest-blog-style3-area{
     position: relative;
     display: block;
-    background: #ffffff;
+    background: var(--white-color);
     padding: 120px 0 80px;
 }
 .latest-blog-style3-area .top {
@@ -6541,7 +6492,7 @@ select:focus {
     border-right: 15px solid rgba(0, 0, 0, 0.80);
 }
 .single-blog-post-style3 .img-holder .date-box h3{
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 24px;
     line-height: 18px;
     font-weight: 700;
@@ -6601,7 +6552,7 @@ select:focus {
     margin: 0;
     transition: all 300ms linear;
     transition-delay: 0.1s;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
 }
 .single-blog-post-style3 .title-holder h3{
     font-size: 24px;
@@ -6610,7 +6561,7 @@ select:focus {
     margin: 16px 0 0;
 }
 .single-blog-post-style3 .title-holder h3 a{
-    color: #000000;
+    color: var(--black-color);
     transition: all 200ms linear;
     transition-delay: 0.1s;
 }
@@ -6629,7 +6580,7 @@ select:focus {
     text-transform: capitalize;
     transition: all 200ms linear;
     transition-delay: 0.1s;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
 }
 .single-blog-post-style3 .title-holder .readmore-button a i{
     position: relative;
@@ -6644,7 +6595,7 @@ select:focus {
     bottom: -50px;
     right: 0;
     padding: 30px 40px 40px;
-    background: #ffffff;
+    background: var(--white-color);
     -webkit-box-shadow: 0px 4px 7px 1px #ebebeb;
     box-shadow: 0px 4px 7px 1px #ebebeb;
     transition-delay: .1s;
@@ -6709,7 +6660,7 @@ select:focus {
 .header-top{
     position: relative;
     display: block;
-    background: #ffffff;
+    background: var(--white-color);
 }
 .header-top-left{
     position: relative;
@@ -6728,7 +6679,7 @@ select:focus {
     z-index: -1;
 }
 .header-top-left p{
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 16px;
     line-height: 30px;
     font-weight: 400;
@@ -6747,7 +6698,7 @@ select:focus {
     left: -30px;
     bottom: 0;
     right: -5000px;
-    background: #000000;
+    background: var(--black-color);
     content: "";
     z-index: -1;
 }
@@ -6771,7 +6722,7 @@ select:focus {
 .header-social-links-style3 ul li a{
     position: relative;
     display: block;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 16px;
     transition: all 200ms linear;
     transition-delay: 0.1s;
@@ -6784,7 +6735,7 @@ select:focus {
 .header-upper-style2 {
     position: relative;
     display: block;
-    background: #ffffff;
+    background: var(--greenish-alpha-color);
     padding: 35px 0;
 }
 .header-upper-style2 .outer-box{
@@ -6846,7 +6797,7 @@ select:focus {
     vertical-align: middle;
 }
 .header-contact-info ul li .title h3{
-    color: #000000;
+    color: var(--black-color);
     font-size: 18px;
     line-height: 22px;
     font-weight: 800;
@@ -6854,14 +6805,14 @@ select:focus {
     margin: 0 0 5px;
 }
 .header-contact-info ul li .title p{
-    color: #777777;
+    color: var(--black-color);
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
     margin: 0;
 }
 .header-contact-info ul li .title p a{
-    color: #777777;
+    color: var(--black-color);
 }
 
 
@@ -6880,7 +6831,7 @@ select:focus {
     background: -o-linear-gradient(top, rgba(245,245,245,1) 0%, rgba(246,41,12,1) 0%, rgba(0,0,0,1) 0%, rgba(254,159,96,1) 0%, rgba(82,168,93,1) 0%, rgba(110,184,93,1) 0%, rgba(245,245,245,1) 0%, rgba(249,249,249,1) 50%, rgba(255,255,255,1) 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top, rgba(245,245,245,1) 0%, rgba(246,41,12,1) 0%, rgba(0,0,0,1) 0%, rgba(254,159,96,1) 0%, rgba(82,168,93,1) 0%, rgba(110,184,93,1) 0%, rgba(245,245,245,1) 0%, rgba(249,249,249,1) 50%, rgba(255,255,255,1) 100%); /* IE 10+ */
     background: linear-gradient(to bottom, rgba(245,245,245,1) 0%, rgba(246,41,12,1) 0%, rgba(0,0,0,1) 0%, rgba(254,159,96,1) 0%, rgba(82,168,93,1) 0%, rgba(110,184,93,1) 0%, rgba(245,245,245,1) 0%, rgba(249,249,249,1) 50%, rgba(255,255,255,1) 100%);/* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#ffffff', GradientType=0 );/* IE6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='var(--white-color)', GradientType=0 );/* IE6-9 */
 }
 .header-lawer-style4 .outer-box {
     position: relative;
@@ -6898,7 +6849,7 @@ select:focus {
     margin-right: 0;
 }
 .main-menu.style4 .navigation>li>a {
-    color: #000000;
+    color: var(--black-color);
     padding: 15px 0px 15px;
 }
 .main-menu.style4 .navigation>li>a:before{
@@ -6928,9 +6879,9 @@ select:focus {
     display: block;
     width: 60px;
     height: 60px;
-    border: 0px solid #ffffff;
+    border: 0px solid var(--white-color);
     border-radius: 0%;
-    color: #000000;
+    color: var(--black-color);
     font-size: 20px;
     line-height: 60px;
     cursor: pointer;
@@ -6980,7 +6931,7 @@ select:focus {
 }
 .main-slider.style2 .content h2{
 	position: relative;
-	color: #ffffff;
+	color: var(--white-color);
 	font-size: 72px;
 	line-height: 1.2em;
 	font-weight: 800;
@@ -7008,7 +6959,7 @@ select:focus {
     transition: all .7s ease-in-out .7s;       
 }
 .main-slider.style2 .content .text p{
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 18px;
     line-height: 34px;
     font-weight: 400;
@@ -7052,6 +7003,7 @@ select:focus {
     background: transparent;
     padding: 0px 0;
     z-index: 10;
+    background-color: var(--greenish-alpha-color);
 }
 .slogan-style2-content{
     position: relative;
@@ -7073,7 +7025,7 @@ select:focus {
     left: -5000px;
     bottom: 0;
     right: 0;
-    background: url(../images/pattern/pattern-bg-6.png) #ffffff;
+    background-color:var(--white-color);
     content: "";
     border-bottom-right-radius: 40px;
     z-index: -1;
@@ -7087,7 +7039,7 @@ select:focus {
     content: "";
     -webkit-box-shadow: 0px 4px 7px 2px #e9e9e9; 
     box-shadow: 0px 4px 7px 2px #e9e9e9;
-    background: #ffffff;
+    background: var(--white-color);
     border-bottom-right-radius: 40px;
     z-index: -2;
 }
@@ -7107,14 +7059,14 @@ select:focus {
     content: "";
 }
 .slogan-style2-content .title h2{
-    color: #000000;
+    color: var(--black-color);
     font-size: 30px;
     line-height: 40px;
     font-weight: 700;
     margin: 0 0 6px;
 }
 .slogan-style2-content .title p{
-    color: #777777;
+    color: var(--black-color);
     margin: 0;
 }
 .slogan-style2-content .button{
@@ -7132,7 +7084,7 @@ select:focus {
 .about-style3-area{
     position: relative;
     display: block;
-    background: #ffffff;
+    background: var(--white-color);
 }
 .about-style3-image-box{
     position: relative;
@@ -7181,8 +7133,8 @@ select:focus {
     display: block;
     width: 80px;
     height: 80px;
-    background: #000000;
-    color: #ffffff;
+    background: var(--black-color);
+    color: var(--white-color);
     font-size: 25px;
     text-align: center;
     line-height: 80px;
@@ -7197,7 +7149,7 @@ select:focus {
     padding-left: 20px;
 }
 .about-style3-image-box .video-box .title h3{
-    color: #000000;
+    color: var(--black-color);
     font-size: 18px;
     line-height: 22px;
     font-weight: 700;
@@ -7246,7 +7198,7 @@ select:focus {
     left: 0;
 }
 .about-style3-text-box .inner-contant ul li .icon span:before{
-    color: #777777;
+    color: var(--black-color);
     font-size: 50px;
     line-height: 50px;
 }
@@ -7267,7 +7219,7 @@ select:focus {
     color: #008000;
     font-size: 16px;
     font-weight: 700;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
 }
 
 
@@ -7281,6 +7233,7 @@ select:focus {
     position: relative;
     display: block;
     padding: 90px 0 100px;
+    background-color: var(--greenish-alpha-color);
 }
 .services-style5-area .pattern-bg{
     position: absolute;
@@ -7288,8 +7241,7 @@ select:focus {
     left: 0;
     width: 100%;
     height: 100%;
-    background-repeat: repeat;
-    background-color: #000000;
+    background-repeat: repeat;   
 }
 .services-style5-area .sec-title-style4{
     overflow: hidden;
@@ -7346,7 +7298,7 @@ select:focus {
     display: inline-block;
     width: 50px;
     height: 50px;
-    background: #ffffff;
+    background: var(--white-color);
     font-size: 20px;
     line-height: 50px;
     transform: scale(.4);
@@ -7359,7 +7311,7 @@ select:focus {
     transition-delay: 0.3s;
 }
 .single-service-style5 .overlay-style-one .link-button a{
-    color: #000000;
+    color: var(--black-color);
     font-weight: 600;
     display: inline-block;
 }
@@ -7389,7 +7341,7 @@ select:focus {
     bottom: 0;
     height: 2px;
     width: 0%;
-    background: #ffffff;
+    background: var(--white-color);
     content: "";
     transition: 0.5s ease;
 }
@@ -7409,7 +7361,7 @@ select:focus {
 .single-service-style5 .title-holder .icon span:before{
     position: relative;
     display: block;
-    color: #000000;
+    color: var(--black-color);
     font-size: 40px;
     line-height: 70px;
     text-align: center;
@@ -7425,7 +7377,7 @@ select:focus {
     font-weight: 400;
 }
 .single-service-style5 .title-holder .title h3 a{
-    color: #ffffff;
+    color: var(--white-color);
 }
 .services-carousel-style5.owl-carousel.owl-dot-style1 .owl-stage-outer {
     padding-bottom: 60px;
@@ -7437,7 +7389,7 @@ select:focus {
 =============================================
 ***/
 .footer-area.style4 {
-    background: #000000;
+    background: var(--black-color);
 }
 .single-footer-widget.style4 .title:before {
     background: #008000;
@@ -7501,12 +7453,12 @@ select:focus {
     text-align: left;
 }
 .breadcrumb-area.style2 .breadcrumb-menu ul li {
-    color: #000000;
+    color: var(--black-color);
     padding: 0 3px;
     text-transform: uppercase;
 }
 .breadcrumb-area.style2 .breadcrumb-menu ul li a {
-    color: #000000;
+    color: var(--black-color);
 }
 
 
@@ -7550,21 +7502,21 @@ select:focus {
     transition: all .3s ease-in-out .2s;
 }
 .single-service-style2:hover .text-holder .inner .icon span:before{
-    color: #ffffff; 
+    color: var(--white-color); 
     transition: all .3s ease-in-out .3s;
 }
 .single-service-style2 .text-holder .inner .text h3 a {
     transition: all .3s ease-in-out .2s;
 }
 .single-service-style2:hover .text-holder .inner .text h3 a{
-    color: #ffffff; 
+    color: var(--white-color); 
     transition: all .3s ease-in-out .3s;    
 }
 .single-service-style2 .text-holder .inner .text p {
     transition: all .3s ease-in-out .2s;
 }
 .single-service-style2:hover .text-holder .inner .text p{
-    color: #ffffff; 
+    color: var(--white-color); 
     transition: all .3s ease-in-out .5s;       
 }
 
@@ -7619,21 +7571,21 @@ select:focus {
 .service-menu-box ul li a{
     position: relative;
     display: block;
-    background: #ffffff;
+    background: var(--white-color);
     padding: 0 30px;
-    color: #000000;
+    color: var(--black-color);
     font-size: 15px;
     line-height: 60px;
     font-weight: 600;
     border-bottom: 1px solid #e1e1e1;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
     transition: all 300ms linear;
     transition-delay: 0.1s;   
     z-index: 1;
 }
 .service-menu-box ul li a:hover,
 .service-menu-box ul li.active a{
-    color: #ffffff;
+    color: var(--white-color);
     transition: all 300ms linear;
     transition-delay: 0.3s;   
 }
@@ -7653,7 +7605,7 @@ select:focus {
 }
 .service-menu-box ul li a:hover:before,
 .service-menu-box ul li.active a:before{
-    color: #000000;
+    color: var(--black-color);
     transition: all 300ms linear;
     transition-delay: 0.3s;      
 }
@@ -7701,7 +7653,7 @@ select:focus {
     content: "";
 }
 .service-sidebar .single-sidebar-box .title h3{
-    color: #000000;
+    color: var(--black-color);
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
@@ -7733,13 +7685,13 @@ select:focus {
     font-size: 18px;
     line-height: 80px;
     font-weight: 600;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
     transition: all 300ms linear;
     transition-delay: 0.1s;  
     z-index: 1;
 }
 .brochures-box ul li a:hover{
-    color: #ffffff;
+    color: var(--white-color);
     transition: all 300ms linear;
     transition-delay: 0.3s;       
 }
@@ -7747,7 +7699,7 @@ select:focus {
     position: relative;
     top: 7px;
     display: inline-block;
-    color: #000000;
+    color: var(--black-color);
     font-size: 35px;
     width: 35px;
     margin-right: 20px;
@@ -7760,7 +7712,7 @@ select:focus {
     left: -6px;
 } 
 .brochures-box ul li a:hover span:before{
-    color: #ffffff;
+    color: var(--white-color);
     transition: all 300ms linear;
     transition-delay: 0.3s;       
 }
@@ -7807,25 +7759,15 @@ select:focus {
     border-bottom-right-radius: 40px;
     z-index: 1;
 }
-.sidebar-contact-box:before{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: url(../images/pattern/sidebar-contact-box-bg.png);
-    content: "";
-    z-index: -1;
-}
 
 .sidebar-contact-box span:before{
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 70px;
     line-height: 70px;
     font-weight: 100;
 }
 .sidebar-contact-box h4{
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 20px;
     line-height: 36px;
     font-weight: 700;
@@ -7838,14 +7780,14 @@ select:focus {
     margin: 0 0 14px;
 }
 .sidebar-contact-box h3 a{
-    color: #000000;
+    color: var(--black-color);
 }
 .sidebar-contact-box h5{
     font-size: 16px;
     font-weight: 700;
 }
 .sidebar-contact-box h5 a{
-    color: #ffffff;    
+    color: var(--white-color);    
 }
 
 
@@ -7867,7 +7809,7 @@ select:focus {
     padding-top: 42px;
 }
 .single-service-content-box .text-box h2{
-    color: #000000;
+    color: var(--black-color);
     font-size: 36px;
     line-height: 44px;
     font-weight: 700;
@@ -7899,7 +7841,7 @@ select:focus {
     margin-top: -7px;
 }
 .benefits-content-box .text-holder h3{
-    color: #000000;
+    color: var(--black-color);
     font-size: 30px;
     line-height: 38px;
     font-weight: 700;
@@ -7935,7 +7877,7 @@ select:focus {
     display: block;
 }
 .benefits-content-box .text-holder ul li .text h4{
-    color: #000000;
+    color: var(--black-color);
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
@@ -7957,7 +7899,7 @@ select:focus {
     padding-bottom: 14px;
 }
 .solutions-content-box .title h2{
-    color: #000000;
+    color: var(--black-color);
     font-size: 30px;
     line-height: 40px;
     font-weight: 700;
@@ -7981,20 +7923,20 @@ select:focus {
     margin-bottom: 20px;
 	padding: 0px 0px;
     border: 1px solid #dddddd;
-    background-color: #ffffff;
+    background-color: var(--white-color);
 }
 .accordion-box.style-two .block .acc-btn{
 	position: relative;
     display: block;
     padding-left: 120px;
-	color: #000000;
+	color: var(--black-color);
 	font-size: 16px;
 	line-height: 68px;
 	font-weight: 700;
     text-transform: uppercase;
 	cursor: pointer;
 	transition:all 500ms ease;
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: var(--site-font)
 }
 .accordion-box.style-two .block .acc-btn.active{
 	color:#008000;
@@ -8005,7 +7947,7 @@ select:focus {
     top: -1px;
     bottom: -1px;
     width: 70px;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 18px;
     font-weight: 700;
     text-align: center;
@@ -8077,7 +8019,7 @@ select:focus {
     padding-bottom: 36px;
 }
 .team-single-content .info-box h2{
-    color: #000000;
+    color: var(--black-color);
     font-size: 36px;
     line-height: 44px;
     font-weight: 600;
@@ -8088,7 +8030,7 @@ select:focus {
     display: block;
 }
 .team-single-content .capabilities-box h2{
-    color: #000000;
+    color: var(--black-color);
     font-size: 36px;
     line-height: 44px;
     font-weight: 600;
@@ -8105,7 +8047,7 @@ select:focus {
     padding-left: 30px;
     line-height: 36px;
     font-weight: 600;
-    font-family: 'Nunito Sans', sans-serif;    
+   font-family: var(--site-font);    
 }
 .team-single-content .capabilities-box ul li:before{
     position: absolute;
@@ -8123,7 +8065,7 @@ select:focus {
     padding-top: 35px;
 }
 .team-single-content .contact-box h2{
-    color: #000000;
+    color: var(--black-color);
     font-size: 36px;
     line-height: 44px;
     font-weight: 600;
@@ -8143,7 +8085,7 @@ select:focus {
 #team-contact-form textarea{
     position: relative;
     display: block;   
-    background: #ffffff;
+    background: var(--white-color);
     border: 1px solid #cccccc;
     width: 100%;
     height: 60px;
@@ -8164,52 +8106,52 @@ select:focus {
     margin-bottom: 25px;
 }
 #team-contact-form input[type="text"]:focus{
-    color: #000000;
+    color: var(--black-color);
     border-color: #e8e3e3; 
 }
 #team-contact-form input[type="email"]:focus{
-    color: #000000;
+    color: var(--black-color);
     border-color: #e8e3e3;
 }
 #team-contact-form textarea:focus{
-    color: #000000;
+    color: var(--black-color);
     border-color: #e8e3e3;
 }
 #team-contact-form input[type="text"]::-webkit-input-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 #team-contact-form input[type="text"]:-moz-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 #team-contact-form input[type="text"]::-moz-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 #team-contact-form input[type="text"]:-ms-input-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 #team-contact-form input[type="email"]::-webkit-input-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 #team-contact-form input[type="email"]:-moz-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 #team-contact-form input[type="email"]::-moz-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 #team-contact-form input[type="email"]:-ms-input-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 #team-contact-form textarea::-webkit-input-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 #team-contact-form textarea:-moz-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 #team-contact-form textarea::-moz-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 #team-contact-form textarea:-ms-input-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 #team-contact-form button {
     padding: 0 40px;
@@ -8274,7 +8216,7 @@ select:focus {
     padding-top: 15px;
 }
 .team-sidebar .single-team-member .title-holder .text p{
-    color: #777777;
+    color: var(--black-color);
     font-size: 16px;
     line-height: 30px;
     font-weight: 400;
@@ -8295,7 +8237,7 @@ select:focus {
     padding-bottom: 24px;
 }
 .personal-information-box .title h3{
-    color: #000000;
+    color: var(--black-color);
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
@@ -8315,7 +8257,7 @@ select:focus {
     width: 110px;
 }
 .personal-information-box ul li a{
-    color: #777777;
+    color: var(--black-color);
     transition: all 200ms linear;
     transition-delay: 0.1s;
 }
@@ -8338,25 +8280,25 @@ select:focus {
     padding-bottom: 31px;
 }
 .preson-skill-box .title h3{
-    color: #000000;
+    color: var(--black-color);
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;    
 }
 
 .progress-levels.style2 .progress-box .inner .text {
-    color: #777777;
+    color: var(--black-color);
     font-size: 16px;
     line-height: 16px;
     font-weight: 500;
     letter-spacing: 0px;
     margin: 0 0 17px;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
 }
 
 .progress-levels.style2 .progress-box .bar .bar-innner {
     height: 4px;
-    background: #000000;
+    background: var(--black-color);
 }
 .progress-levels.style2 .progress-box .bar .bar-fill {
     height: 4px;
@@ -8370,19 +8312,19 @@ select:focus {
     width: 12px;
     height: 12px;
     border: 1px solid #f89828;
-    background: #ffffff;
+    background: var(--white-color);
     border-radius: 50%;
     content: "";
 }
 
 .progress-levels.style2 .progress-box .inner .count-text {
-    color: #777777;
+    color: var(--black-color);
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
 }
 .progress-levels.style2 .progress-box .inner .percent {
-    color: #777777;
+    color: var(--black-color);
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
@@ -8409,7 +8351,7 @@ select:focus {
     z-index: 3;
 }
 .error-content h4{
-    color: #000000;
+    color: var(--black-color);
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -8462,7 +8404,7 @@ select:focus {
     display: block;
     border: 1px solid #dddddd;
 	padding: 0px 30px 0px;
-	color: #000000;
+	color: var(--black-color);
 	font-size: 18px;
     line-height: 68px;
 	font-weight: 700;
@@ -8470,14 +8412,14 @@ select:focus {
 	cursor: pointer;
     margin-bottom: 15px;
 	transition:all 300ms ease;
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: var(--site-font)
 }
 .faq-tab-box .tab-buttons .tab-btn:last-child{
     margin-bottom: 0;
 }
 .faq-tab-box .tab-buttons .tab-btn:hover,
 .faq-tab-box .tab-buttons .tab-btn.active-btn{
-	color:#ffffff;
+	color:var(--white-color);
     border-color: #008000;
     background: #008000;
 }
@@ -8509,7 +8451,7 @@ select:focus {
     padding-right: 70px;
 }
 .accordion-box.team-page .accordion .accord-btn {
-    background: #ffffff;
+    background: var(--white-color);
     border: 1px solid #dddddd;
     padding-left: 30px;
     padding-right: 50px;
@@ -8536,7 +8478,7 @@ select:focus {
     color: #008000;
 }
 .accordion-box.team-page .accordion .accord-content p {
-    color: #777777;
+    color: var(--black-color);
     font-size: 16px;
     line-height: 28px;
     font-weight: 400;
@@ -8580,13 +8522,13 @@ select:focus {
 .question-form form textarea{
     position: relative;
     display: block;
-    background: #ffffff;
+    background: var(--white-color);
     border: 1px solid #bbbbbb;
     width: 100%;
     height: 60px;
     margin-bottom: 30px;
     padding: 0 30px;
-    color: #777777;
+    color: var(--black-color);
     font-size: 16px;
     font-weight: 400;
     border-radius: 0px;
@@ -8613,7 +8555,7 @@ select:focus {
 #project-page{
     position: relative;
     display: block;
-    background: #ffffff;
+    background: var(--white-color);
     padding: 120px 0 60px;
 }
 #project-page .single-project-style1 {
@@ -8622,7 +8564,7 @@ select:focus {
 #project-page .single-project-style1 .text-holder {
     position: relative;
     display: block;
-    background: #ffffff;
+    background: var(--white-color);
     padding: 33px 33px 33px;
     border-bottom-right-radius: 40px;
     border: 2px solid #eeeeee;
@@ -8686,7 +8628,7 @@ select:focus {
     content: "";
 }
 .project-detail-content .top .sidebar-box .title h3{
-    color: #000000;
+    color: var(--black-color);
     font-size: 30px;
     line-height: 40px;
     font-weight: 700;
@@ -8721,7 +8663,7 @@ select:focus {
     padding-bottom: 36px;
 }
 .challenge-content-box h2{
-    color: #000000;
+    color: var(--black-color);
     font-size: 30px;
     line-height: 40px;
     font-weight: 700;
@@ -8734,7 +8676,7 @@ select:focus {
     padding-bottom: 36px;    
 }
 .strategy-content-box h2{
-    color: #000000;
+    color: var(--black-color);
     font-size: 30px;
     line-height: 40px;
     font-weight: 700;
@@ -8747,7 +8689,7 @@ select:focus {
     padding-bottom: 9px;        
 }
 .result-content-box h2{
-    color: #000000;
+    color: var(--black-color);
     font-size: 30px;
     line-height: 40px;
     font-weight: 700;
@@ -8800,7 +8742,7 @@ select:focus {
 =============================================
 ***/
 #related-project-area {
-    background: #ffffff;
+    background: var(--white-color);
     padding-top: 0;
 }
 
@@ -8826,7 +8768,7 @@ select:focus {
 #blog-area{
     position: relative;
     display: block;
-    background: #ffffff;
+    background: var(--white-color);
     padding: 120px 0 120px;
 }
 
@@ -8863,13 +8805,13 @@ select:focus {
     display: inline-block;
     border-radius: 30px;
     width: 150px;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 16px;
     line-height: 48px;
     font-weight: 600;
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.30);
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
     transition: all 200ms linear;
     transition-delay: 0.1s;
 }
@@ -8901,7 +8843,7 @@ select:focus {
     display: block;
 }
 .single-blog-post .img-holder .overlay-content .social-share-post .title h5{
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 16px;
     line-height: 30px;
     font-weight: 700;
@@ -8925,7 +8867,7 @@ select:focus {
     margin-right: 0;
 }
 .single-blog-post .img-holder .overlay-content .social-share-post .social-links ul li a{
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 14px;
     transition: all 200ms linear;
     transition-delay: 0.1s;
@@ -8941,7 +8883,7 @@ select:focus {
     padding: 6px 0 4px;
 }
 .single-blog-post .img-holder .catogaries-box h6{
-    color: #000000;
+    color: var(--black-color);
     font-size: 14px;
     line-height: 30px;
     font-weight: 700;
@@ -8974,7 +8916,7 @@ select:focus {
     padding-right: 10px;
 }
 .single-blog-post .text-holder .meta-info li a {
-    color: #777777;
+    color: var(--black-color);
     font-size: 14px;
     font-weight: 500;
 }
@@ -9007,12 +8949,12 @@ select:focus {
 .blog-post .single-blog-post .text-holder .text-box .read-more-button a{
     position: relative;
     display: inline-block;
-    background: #ffffff;
+    background: var(--white-color);
     padding-right: 20px;
     font-size: 16px;
     line-height: 30px;
     font-weight: 700;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
 }
 .blog-post .single-blog-post .text-holder .text-box .read-more-button a i{
     position: relative;
@@ -9038,33 +8980,33 @@ select:focus {
     width: 50px;
     height: 50px;
     border-radius: 0%;
-    background: #ffffff;
+    background: var(--white-color);
     border: 1px solid #dddddd;
     border-left: none;
     border-right: none;
-	color: #777777;
+	color: var(--black-color);
 	font-size: 18px;
 	line-height: 48px;
 	font-weight: 500;
 	text-align: center;
 	text-transform:capitalize;
 	transition:all 500ms ease;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
 }
 .styled-pagination li a:hover,
 .styled-pagination li a.active{
-	color: #ffffff;
+	color: var(--white-color);
 }
 .styled-pagination li.prev a,
 .styled-pagination li.next a{
-    color: #ffffff;
+    color: var(--white-color);
     line-height: 48px;
-    border-color: #000000;
-    background: #000000;
+    border-color: var(--black-color);
+    background: var(--black-color);
 }
 .styled-pagination li.prev a:hover,
 .styled-pagination li.next a:hover{
-	color:#000000;
+	color:var(--black-color);
     background: #dddddd;
     border-color: #dddddd;
 }
@@ -9097,7 +9039,7 @@ select:focus {
     content: "";
 }
 .sidebar-wrapper .single-sidebar .title h3 {
-    color: #000000;
+    color: var(--black-color);
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
@@ -9124,7 +9066,7 @@ select:focus {
 .single-sidebar .categories {
     position: relative;
     display: block;
-    background: #ffffff;
+    background: var(--white-color);
     -webkit-box-shadow: -1px 0px 7px 3px rgba(232,232,232,0.9); 
     box-shadow: -1px 0px 7px 3px rgba(232,232,232,0.9);
 }
@@ -9163,13 +9105,13 @@ select:focus {
 .single-sidebar .categories li a{
     position: relative;
     display: block;
-    color: #000000;
+    color: var(--black-color);
     font-size: 15px;
     font-weight: 600;
     -webkit-transition: all 0.4s linear;
     -o-transition: all 0.4s linear;
     transition: all 0.4s linear;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
 }
 .single-sidebar .categories li a span {
     position: relative;
@@ -9206,9 +9148,9 @@ select:focus {
     width: 100%;
     height: 60px;
     border-radius: 0px;
-    background: #ffffff;
+    background: var(--white-color);
     border: 0px solid #dddddd;
-    color: #777777;
+    color: var(--black-color);
     font-size: 16px;
     font-weight: 500;
     letter-spacing: .1em;
@@ -9222,7 +9164,7 @@ select:focus {
     right: 0px;
     width: 60px;
     height: 60px;
-    color: #000000;
+    color: var(--black-color);
     line-height: 60px;
     display: block;
     text-align: center;
@@ -9242,16 +9184,16 @@ select:focus {
     color: #fff;
 }
 .sidebar-search-box .search-form input::-webkit-input-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 .sidebar-search-box .search-form input:-moz-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 .sidebar-search-box .search-form input::-moz-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 .sidebar-search-box .search-form input:-ms-input-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 
 
@@ -9274,7 +9216,7 @@ select:focus {
 .single-sidebar .recent-posts{
     position: relative;
     display: block;
-    background: #ffffff;
+    background: var(--white-color);
     padding: 30px;
     -webkit-box-shadow: -1px 0px 7px 3px rgba(232,232,232,0.9); 
     box-shadow: -1px 0px 7px 3px rgba(232,232,232,0.9);
@@ -9326,7 +9268,7 @@ select:focus {
     transition: all 0.3s ease-in-out 0.3s;    
 }
 .single-sidebar .recent-posts li .img-box .overlay-content a{
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 16px;
     transition: all 200ms linear;
     transition-delay: 0.1s;
@@ -9344,7 +9286,7 @@ select:focus {
     margin: 0 0 11px;
 }
 .single-sidebar .recent-posts li .title-box h4 a{
-    color: #000000;
+    color: var(--black-color);
     transition: all 200ms linear;
     transition-delay: 0.1s;
 }
@@ -9378,7 +9320,7 @@ select:focus {
     display: block;
     margin-left: -5px;
     margin-right: -5px;
-    background: #ffffff;
+    background: var(--white-color);
     padding: 30px 20px 20px;
     width: 100%;
     min-height: 200px;
@@ -9396,7 +9338,7 @@ select:focus {
     display: block;
     padding: 0px 10px 0px;
     border: 1px solid #dddddd;
-    color: #777777;
+    color: var(--black-color);
     font-size: 14px;
     line-height: 38px;
     font-weight: 400;
@@ -9404,7 +9346,7 @@ select:focus {
     transition: all 0.4s ease-in-out 0.1s;
 }
 .single-sidebar .popular-tag li a:hover{
-    color: #ffffff;
+    color: var(--white-color);
 }
 
 
@@ -9432,13 +9374,13 @@ select:focus {
     border: 1px dashed #e2e2e2;
 }
 .blog-single-author-box p{
-    color: #000000;
+    color: var(--black-color);
     font-size: 16px;
     line-height: 30px;
     font-weight: 700;
     margin: 0;
     font-style: italic;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
 }
 .blog-single-author-box .author-name{
     position: absolute;
@@ -9449,7 +9391,7 @@ select:focus {
     line-height: 30px;
     font-weight: 600;
     text-align: center;
-    background: #ffffff;
+    background: var(--white-color);
     border-radius: 20px;
     -webkit-box-shadow: 0px 0px 8px 2px #f5f5f5; 
     box-shadow: 0px 0px 8px 2px #f5f5f5;
@@ -9460,7 +9402,7 @@ select:focus {
     left: 50px;
     width: 55px;
     height: 55px;
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 20px;
     text-align: center;
     line-height: 55px;
@@ -9485,7 +9427,7 @@ select:focus {
     padding-bottom: 36px;
 }
 .blog-single-botton-text .title h2{
-    color: #000000;
+    color: var(--black-color);
     font-size: 30px;
     line-height: 38px;
     font-weight: 700;
@@ -9545,12 +9487,12 @@ select:focus {
     top: -1px;
     display: inline-block;
     float: left;
-    color: #000000;
+    color: var(--black-color);
     font-size: 16px;
     line-height: 30px;
     font-weight: 700;
     margin: 0;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
 }
 .blog-single-area .tag-box .tag ul{
     position: relative;
@@ -9570,7 +9512,7 @@ select:focus {
 .blog-single-area .tag-box .tag ul li a{
     position: relative;
     display: block;
-    color: #000000;
+    color: var(--black-color);
     font-size: 14px;
     line-height: 30px;
     font-weight: 500;
@@ -9588,12 +9530,12 @@ select:focus {
     display: inline-block;
     padding-right: 15px;
     float: left;
-    color: #000000;
+    color: var(--black-color);
     font-size: 16px;
     line-height: 30px;
     font-weight: 700;
     margin: 0;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
 }
 .blog-single-area .tag-box .right .sociallinks-style-two li{
     margin-right: 20px;
@@ -9602,7 +9544,7 @@ select:focus {
     margin-right: 0;
 }
 .blog-single-area .tag-box .right .sociallinks-style-two li a i {
-    color: #777777;
+    color: var(--black-color);
 }
 
 
@@ -9645,7 +9587,7 @@ select:focus {
     margin: 0 0 6px;
 }
 .blog-single-prev-next-button .prev .title-box h3 a{
-    color: #000000;
+    color: var(--black-color);
     transition: all 200ms linear;
     transition-delay: 0.1s;
 }
@@ -9656,7 +9598,7 @@ select:focus {
     line-height: 20px;
 }
 .blog-single-prev-next-button .prev .title-box .button a{
-    color: #777777;
+    color: var(--black-color);
     font-size: 12px;
     font-weight: 600;
     transition: all 200ms linear;
@@ -9691,7 +9633,7 @@ select:focus {
     margin: 0 0 6px;
 }
 .blog-single-prev-next-button .next .title-box h3 a{
-    color: #000000;
+    color: var(--black-color);
     transition: all 200ms linear;
     transition-delay: 0.1s;
 }
@@ -9702,7 +9644,7 @@ select:focus {
     line-height: 20px;
 }
 .blog-single-prev-next-button .next .title-box .button a{
-    color: #777777;
+    color: var(--black-color);
     font-size: 12px;
     font-weight: 600;
     transition: all 200ms linear;
@@ -9735,7 +9677,7 @@ select:focus {
     content: "";
 }
 .comment-box .title h3{
-    color: #000000;
+    color: var(--black-color);
     font-size: 30px;
     line-height: 40px;
     font-weight: 700;
@@ -9773,7 +9715,7 @@ select:focus {
     padding-bottom: 12px;
 }
 .comment-box .single-comment-box .text-holder .text p{
-    color: #777777;
+    color: var(--black-color);
     font-size: 14px;
     line-height: 28px;
     margin: 0;
@@ -9785,16 +9727,16 @@ select:focus {
 }
 .comment-box .single-comment-box .text-holder .bottom .name{}
 .comment-box .single-comment-box .text-holder .bottom .name h3 {
-    color: #000000;
+    color: var(--black-color);
     font-size: 18px;
     line-height: 22px;
     font-weight: 600;
 }
 .comment-box .single-comment-box .text-holder .bottom .name h3 span{
-    color: #777777;
+    color: var(--black-color);
     font-size: 14px;
     font-weight: 500;
-    font-family: 'Nunito Sans', sans-serif;
+   font-family: var(--site-font);
 }
 
 .comment-box .single-comment-box .reply-button{
@@ -9803,7 +9745,7 @@ select:focus {
     right: 0;
 }
 .comment-box .single-comment-box .reply-button a{
-    color: #000000;
+    color: var(--black-color);
     font-size: 12px;
     line-height: 40px;
     font-weight: 700;
@@ -9834,7 +9776,7 @@ select:focus {
     content: "";
 }
 .add-comment-box .title h3{
-    color: #000000;
+    color: var(--black-color);
     font-size: 30px;
     line-height: 40px;
     font-weight: 700;
@@ -9845,7 +9787,7 @@ select:focus {
 .add-comment-box #add-comment-form textarea{
     position: relative;
     display: block;
-    background: #ffffff;
+    background: var(--white-color);
     border: 1px solid #dddddd;
     width: 100%; 
     height: 50px;
@@ -9888,7 +9830,7 @@ select:focus {
     position: relative;
     display: block;
     padding: 120px 0px 120px;
-    background-color: #ffffff;
+    background-color: var(--white-color);
 }
 .contact-form-area.style2{
     background-color: #F5F5F5;    
@@ -9897,7 +9839,7 @@ select:focus {
     position: relative;
     display: block;
     padding: 0 100px;
-    background: #ffffff;
+    background: var(--white-color);
 }
 .contact-form-content.style2{
     padding: 60px 100px 60px;    
@@ -9920,7 +9862,7 @@ select:focus {
 .contact-form form textarea{
     position: relative;
     display: block;   
-    background: #ffffff;
+    background: var(--white-color);
     border: 1px solid #e1e1e1;
     width: 100%;
     height: 60px;
@@ -9941,52 +9883,52 @@ select:focus {
     margin-bottom: 30px;
 }
 .contact-form form input[type="text"]:focus{
-    color: #000000;
+    color: var(--black-color);
     border-color: #e8e3e3; 
 }
 .contact-form form input[type="email"]:focus{
-    color: #000000;
+    color: var(--black-color);
     border-color: #e8e3e3;
 }
 .contact-form form textarea:focus{
-    color: #000000;
+    color: var(--black-color);
     border-color: #e8e3e3;
 }
 .contact-form form input[type="text"]::-webkit-input-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 .contact-form form input[type="text"]:-moz-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 .contact-form form input[type="text"]::-moz-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 .contact-form form input[type="text"]:-ms-input-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 .contact-form form input[type="email"]::-webkit-input-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 .contact-form form input[type="email"]:-moz-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 .contact-form form input[type="email"]::-moz-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 .contact-form form input[type="email"]:-ms-input-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 .contact-form form textarea::-webkit-input-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 .contact-form form textarea:-moz-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 .contact-form form textarea::-moz-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 .contact-form form textarea:-ms-input-placeholder {
-    color: #777777;
+    color: var(--black-color);
 }
 .contact-form form button {
     padding: 0 60px;
@@ -10003,7 +9945,7 @@ select:focus {
 .google-map-area{
     position: relative;
     display: block;
-    background: #ffffff;
+    background: var(--white-color);
 }
 .google-map-area .map-outer{
     position: relative;
@@ -10037,7 +9979,7 @@ select:focus {
     position: relative;
     display: block;
     float: right;
-    background: #ffffff;
+    background: var(--white-color);
     padding: 76px 60px 53px;
     max-width: 470px;
     width: 100%;
@@ -10051,14 +9993,14 @@ select:focus {
     padding-bottom: 44px;
 }
 .contact-information-box .title-box p{
-    color: #777777;
+    color: var(--black-color);
     font-size: 20px;
     line-height: 24px;
     font-weight: 400;
     margin: 0 0 8px;
 }
 .contact-information-box .title-box h2{
-    color: #000000;
+    color: var(--black-color);
     font-size: 36px;
     line-height: 40px;
     font-weight: 700;
@@ -10128,7 +10070,7 @@ select:focus {
     padding-bottom: 17px;
 }
 .contact-information-box .follow-us .text h3{
-    color: #000000;
+    color: var(--black-color);
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
@@ -10152,7 +10094,7 @@ select:focus {
 .contact-information-box .follow-us .social-links ul li a{
     position: relative;
     display: block;
-    color: #000000;
+    color: var(--black-color);
     font-size: 18px;
     line-height: 30px;
     transition: all 200ms linear;
@@ -10428,7 +10370,7 @@ select:focus {
 }
 
 .ui-datepicker td a {
-    color: #000000 !important;
+    color: var(--black-color) !important;
     text-align: center;
     background-image: none !important;
     background: #f5f5f5 !important;
@@ -10439,7 +10381,7 @@ select:focus {
 .ui-widget-header .ui-state-highlight{
     border: 1px solid #333333 !important;
     background: #333333 !important;
-    color: #ffffff !important;
+    color: var(--white-color) !important;
 }
 .ui-datepicker .ui-datepicker-prev {
     left: 5px;
