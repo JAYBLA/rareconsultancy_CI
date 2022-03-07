@@ -18,7 +18,7 @@
                                 secretarial services.</p>
                         </div>
                         <div class="btns-box">
-                            <a class="btn-four-slide" href="<?= base_url('/contact') ?>"><span class="txt">Get Startd
+                            <a class="btn-four-slide" href="<?= base_url('/contact') ?>"><span class="txt">Get Started
                                     Now</span></a>
                         </div>
                     </div>
@@ -88,7 +88,7 @@
         <div class="col-lg-4">
             <a href="<?= base_url() ?>/file-rectification">
                 <div class="card box h-100">
-                    <span>02</span>
+                    <span>03</span>
                     <h4>File Rectification </h4>
                     <p>In accordance with the law in Tanzania, companies are required to make all necessary filings
                         with the Business Registration and Licensing Agency (BRELA).
@@ -101,7 +101,7 @@
         <div class="col-lg-4">
             <a href="<?= base_url() ?>/advisory">
                 <div class="card box h-100">
-                    <span>03</span>
+                    <span>04</span>
                     <h4>Advisory</h4>
                     <p>One of our service is to perform advisory services, particularly in the areas of Risk
                         Management Services, Accounting Support and Administrative Manual Development.</p>
@@ -112,27 +112,32 @@
         <div class="col-lg-4">
             <a href="<?= base_url() ?>/trainings">
                 <div class="card box h-100">
-                    <span>04</span>
+                    <span>05</span>
                     <h4>Trainings</h4>
-                    <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno
-                        para dest</p>
+                    <p>We offer various trainings including Governance Trainings, Risk Management Trainings,Taxation
+                        Trainings and Other Technical Trainings.</p>
                 </div>
             </a>
         </div>
 
         <div class="col-lg-4">
-            <div class="card box h-100">
-                <span>05</span>
-                <h4>Certificate Of Incentives</h4>
-                <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
-            </div>
+            <a href="<?= base_url() ?>/tax">
+                <div class="card box h-100">
+                    <span>06</span>
+                    <h4>Tax</h4>
+                    <p>We see the active management of tax issues as a core business discipline. We help you manage the
+                        tax charge and try to benchmark your tax charge and compliance processes against those of
+                        similar businesses. We provide Tax Advisory Services, Tax Dispute Resolution and Registration of
+                        companies and Partnership firms</p>
+                </div>
+            </a>
         </div>
     </div>
     </div>
 </section>
 <!--End Services Style5 Area-->
 <!-- Start Blog Section -->
-<section id="blog" class="blog-area bg-gray py-5 mt-3 mb-3">
+<!-- <section id="blog" class="blog-area bg-gray py-5 mt-3 mb-3">
     <div class="container">
         <div class="sec-title-style4 text-center">
             <p>Our Latest Blog</p>
@@ -234,6 +239,6 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- End Blog Section -->
 <?= $this->endSection() ?>

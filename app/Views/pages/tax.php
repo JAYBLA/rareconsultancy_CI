@@ -8,7 +8,7 @@
             <div class="col-xl-12">
                 <div class="inner-content clearfix">
                     <div class="title wow slideInDown animated" data-wow-delay="0.3s" data-wow-duration="1500ms">
-                       <h1>Business Registration and Licensing</h1>
+                       <h1><?= $title ?></h1>
                     </div>
                 </div>
             </div>
@@ -16,6 +16,8 @@
     </div>
 </section>
 <!--End breadcrumb area-->
+
+
 <!--Start Services Single Area-->
 <section id="service-single-area">
     <div class="container">
@@ -37,17 +39,19 @@
             <div class="col-xl-8 col-lg-7 col-md-12 order-box-1">
                 <div class="single-service-content-box">
                     <div class="text-box">
-                        <h2>WE HELP ON;</h2> 
+                        <h2>Tax</h2>                        
+                        <p>We see the active management of tax issues as a core business discipline. We help you manage the tax charge and try to benchmark your tax charge and compliance processes against those of similar businesses.  We provide Tax Advisory Services and Tax Dispute Resolution.</p>
+                        <h4>Tax advisory</h4>
                         <ul class="alpha-list">
-                            <li>Registration of new business name <b>(BRELA)</b></li>
-                            <li>Change of particulars of business name/Kubadili taarifa za jina la biashara</li>
-                            <li>Cessation of business name</li>
-                            <li>Payment of annual maintenance fee</li>
-                            <li>Obtaining Taxpayer Identification Number (TIN) Certificate</li> 
-                            <li>Obtaining Business License/Leseni ya biashara</li>
-                            <li>Obtaining Value Added Tax (VAT) Certificate</li> 
-                            <li>Other registration (OSHA, NSSF AND WCF)</li>                       
+                            <li>Transfer pricing policy</li>
+                            <li>Computation of Corporate income tax and final returns of income</li>
+                            <li>Tax estimation and tax planning</li>
+                            <li>Advise on tax incentive regimes</li>
+                            <li>Tax audits and tax health check</li>
+                            <li>Tax advice and advisory</li>
                         </ul>
+                        <h4>Tax dispute resolution</h4>
+                        <p>We help our client in responding to findings raised by TRA examinations audit. We also assist our client during the presentation, negotiation, and final settlement of the examination/audit findings.</p>                       
                     </div>
                 </div>
             </div>

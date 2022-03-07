@@ -76,11 +76,12 @@
                                             <li><a href="<?= base_url() ?>/business-licensing">Business Registration & Licensing</a></li>
                                             <li><a href="<?= base_url() ?>/file-rectification">File Rectification</a></li> 
                                             <li><a href="<?= base_url() ?>/advisory">Advisory</a></li> 
-                                            <li><a href="<?= base_url() ?>/trainings">Trainings</a></li>                                            
+                                            <li><a href="<?= base_url() ?>/trainings">Trainings</a></li> 
+                                            <li><a href="<?= base_url() ?>/tax">Tax</a></li>                                           
                                         </ul>
                                     </li>
-                                    <li><a href="<?= base_url('/articles') ?>">Articles</a></li>
-                                    <li><a href="<?= base_url('/contact') ?>">Contact Us</a></li>
+                                    <li><a href="#">Articles</a></li>
+                                    <li><a href="<?= base_url() ?>/contact">Contact Us</a></li>
                                 </ul>
                             </div>
                         </nav>                        
