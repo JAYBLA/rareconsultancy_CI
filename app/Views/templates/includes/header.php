@@ -72,9 +72,11 @@
                                     </li>
                                     <li class="dropdown"><a href="#">Services</a>
                                         <ul>
-                                            <li><a href="<?= base_url('/brela') ?>">BRELA Help Desk</a></li>
-                                            <li><a href="<?= base_url('/advisory') ?>">Advisory</a></li>
-                                            <li><a href="<?= base_url('/trainings') ?>">Trainings</a></li>                                            
+                                            <li><a href="<?= base_url() ?>/company-incorporation">Company Incorporation</a></li>
+                                            <li><a href="<?= base_url() ?>/business-licensing">Business Registration & Licensing</a></li>
+                                            <li><a href="<?= base_url() ?>/file-rectification">File Rectification</a></li> 
+                                            <li><a href="<?= base_url() ?>/advisory">Advisory</a></li> 
+                                            <li><a href="<?= base_url() ?>/trainings">Trainings</a></li>                                            
                                         </ul>
                                     </li>
                                     <li><a href="<?= base_url('/articles') ?>">Articles</a></li>

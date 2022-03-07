@@ -32,19 +32,27 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 
-$routes->get('/', 'Pages::home');
-$routes->get('/brela', 'Pages::brela');
-$routes->get('/articles', 'Pages::articles');
-$routes->get('/trainings', 'Pages::trainings');
-$routes->get('/advisory', 'Pages::advisory');
-$routes->get('contact', 'Contact::index');
-
         // Admin
 $routes->get('admin', 'Dashboard::index');
 $routes->post('admin/post-create', 'Dashboard::article_add');
 $routes->get('admin/post-update/(:num)', 'Dashboard::ajax_post/$1');
 $routes->post('admin/post-delete/(:num)', 'Dashboard::ajax_post/$1');
 $routes->post('admin/post-update', 'Dashboard::article_update/$1');
+
+
+
+$routes->get('/contact', 'Contact::index');
+$routes->get('/', 'Pages::index');
+$routes->get('(:any)', 'Pages::view/$1');
+
+
+
+$routes->set404Override(function(){
+    $data=[
+        'title' => 'Page Not Found'
+    ];
+    return view('pages/error', $data);
+});
 /*
  * --------------------------------------------------------------------
  * Additional Routing

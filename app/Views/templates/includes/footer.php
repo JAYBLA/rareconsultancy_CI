@@ -39,33 +39,10 @@
     <div class="bottom-divider"></div>
     <div class="footer-bottom">
         <div class="container">
-            <div class="row py-2">
-                <div class="col-md-4">
+            <div class="row py-2"> 
                     <div class="copyright-text style4">
                         <p>&copy; <script>document.write(new Date().getFullYear())</script> || <a href="/">Rare Consultancy</a></p>
-                    </div>    
-                </div>
-                <div class="col-md-4">
-                    <div class="our-info-box">
-                        <ul>
-                            <li><a href="tel:+255768284698">(+255) 768 284 698</a></li>
-                            <li><a href="mailto:info@rareconsultancy.co.tz">info@rareconsultancy.co.tz</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4">    
-                    <div class="footer-social-links style4">
-                        <ul>
-                            <li>
-                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
-                            </li>
-                        </ul>
-                    </div>
-                </div> 
-                   
+                    </div> 
             </div>    
         </div>    
     </div>

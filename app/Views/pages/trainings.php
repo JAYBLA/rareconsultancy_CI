@@ -23,17 +23,6 @@
             <div class="col-xl-4 col-lg-5 order-box-2">
                 <aside class="service-sidebar">
                     <!--Start Single Sidebar Box-->
-                    <div class="single-sidebar-box wow fadeInUp animated" data-wow-delay="0.1s" data-wow-duration="1200ms">
-                        <div class="service-menu-box">
-                            <ul>
-                                <li><a href="<?= base_url('/brela') ?>">BRELA Help Desk</a></li>
-                                <li><a href="<?= base_url('/advisory') ?>">Advisory</a></li>                                
-                                <li class="active"><a href="<?= base_url('/trainings') ?>">Trainings</a></li>
-                            </ul>
-                        </div>        
-                    </div>
-                    <!--End Single Sidebar Box--> 
-                    <!--Start Single Sidebar Box-->
                     <div class="single-sidebar-box wow fadeInUp animated" data-wow-delay="0.3s" data-wow-duration="1200ms">
                         <div class="sidebar-contact-box text-center">
                             <span class="flaticon-telephone"></span>

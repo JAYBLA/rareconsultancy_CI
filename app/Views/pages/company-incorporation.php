@@ -8,7 +8,7 @@
             <div class="col-xl-12">
                 <div class="inner-content clearfix">
                     <div class="title wow slideInDown animated" data-wow-delay="0.3s" data-wow-duration="1500ms">
-                       <h1><?= $title ?></h1>
+                       <h1>Company Incorporation</h1>
                     </div>
                 </div>
             </div>
@@ -16,8 +16,6 @@
     </div>
 </section>
 <!--End breadcrumb area-->
-
-
 <!--Start Services Single Area-->
 <section id="service-single-area">
     <div class="container">
@@ -39,22 +37,16 @@
             <div class="col-xl-8 col-lg-7 col-md-12 order-box-1">
                 <div class="single-service-content-box">
                     <div class="text-box">
-                        <h2>Advisory</h2>                        
-                        <p>One of our service is to perform advisory services, particularly in the areas of Risk Management Services, Accounting Support and Administrative Manual Development.</p>
-
-                        <h4>Development of administrative manuals</h4>
-                        <p>We review the existing administrative manuals to identify gaps and develop new administrative manuals including financial regulations, accounting manuals, HR manuals, constitution procurement manuals, store procedures and governance manuals.</p>
-
-                        <h4>Risk management services</h4>
+                        <h2>WE HELP ON;</h2> 
+                        <h4>COMPANY INCORPORATION</h4>
                         <ul class="alpha-list">
-                            <li>Perform risk assessment,</li>
-                            <li>Risk response to assessed risk,</li>
-                            <li>Formulate risk register</li>
-                            <li>Formulate risk management policy and framework</li>
-                            <li>Guidance of setting the risk appetite of the organization</li>
-                            <li>Guidance of risk management reporting.</li>
+                            <li>Writting Memorandum and Articles of Association</li>
+                            <li>Company name reservation <b>(BRELA)</b></li>
+                            <li>Registration of a new company<b>(BRELA)</b></li>
+                            <li>Change of particulars of company<b>(BRELA)</b></li>
+                            <li>Filing of documents about company<b>(BRELA)</b></li>
+                            <li>Filing of annual return (accounts) or Update<b>(BRELA)</b></li>
                         </ul>
-                        <p>We help transform the world’s most important businesses into vigorous organizations opposition. We work with clients who not hide from the future but want define clients with high potential and high ambition.</p>
                     </div>
                 </div>
             </div>

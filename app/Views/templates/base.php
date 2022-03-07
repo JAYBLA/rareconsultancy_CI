@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="<?= base_url('/assets/css/imp.css') ?>">
 	<link rel="stylesheet" href="<?= base_url('/assets/css/custom-animate.css') ?>">
 	<link rel="stylesheet" href="<?= base_url('/assets/css/flaticon.css') ?>">
-	<link rel="stylesheet" href="<?= base_url('/assets/css/font-awesome.min.css') ?>">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="<?= base_url('/assets/css/owl.css') ?>">
 	<link rel="stylesheet" href="<?= base_url('/assets/css/magnific-popup.css') ?>">
 	<link rel="stylesheet" href="<?= base_url('/assets/css/scrollbar.css') ?>">

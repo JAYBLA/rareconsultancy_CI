@@ -8,7 +8,7 @@
             <div class="col-xl-12">
                 <div class="inner-content clearfix">
                     <div class="title wow slideInDown animated" data-wow-delay="0.3s" data-wow-duration="1500ms">
-                       <h1><?= $title ?></h1>
+                       <h1>File Rectification</h1>
                     </div>
                 </div>
             </div>
@@ -16,8 +16,6 @@
     </div>
 </section>
 <!--End breadcrumb area-->
-
-
 <!--Start Services Single Area-->
 <section id="service-single-area">
     <div class="container">
@@ -39,22 +37,17 @@
             <div class="col-xl-8 col-lg-7 col-md-12 order-box-1">
                 <div class="single-service-content-box">
                     <div class="text-box">
-                        <h2>Advisory</h2>                        
-                        <p>One of our service is to perform advisory services, particularly in the areas of Risk Management Services, Accounting Support and Administrative Manual Development.</p>
-
-                        <h4>Development of administrative manuals</h4>
-                        <p>We review the existing administrative manuals to identify gaps and develop new administrative manuals including financial regulations, accounting manuals, HR manuals, constitution procurement manuals, store procedures and governance manuals.</p>
-
-                        <h4>Risk management services</h4>
+                        <h2>WE HELP ON;</h2> 
+                        <h4>FILE RECTIFICATION</h4>
                         <ul class="alpha-list">
-                            <li>Perform risk assessment,</li>
-                            <li>Risk response to assessed risk,</li>
-                            <li>Formulate risk register</li>
-                            <li>Formulate risk management policy and framework</li>
-                            <li>Guidance of setting the risk appetite of the organization</li>
-                            <li>Guidance of risk management reporting.</li>
-                        </ul>
-                        <p>We help transform the world’s most important businesses into vigorous organizations opposition. We work with clients who not hide from the future but want define clients with high potential and high ambition.</p>
+                            <li>Filing of annual returns of companies</li>
+                            <li>Appointments and Termination of directors</li>
+                            <li>Appointments and Termination of Company Secretaries</li>                            
+                        </ul> <br> <br>
+                        <p><em><b>In our experience we have encountered companies with various problems caused by failure to abide by the requirement of filing all necessary documents with BRELA and as a result has proven to enormously affect possible transactions and future dealings. Penalties for companies have been common in relation to not keeping records up to date or filing on time.</b></em> <br>
+                            At 
+<strong>Rare Consultancy</strong> with our vast experience and technical know-how, we assist clients in rectifying any possible anomalies that could potentially affect our clients and their businesses and ensure that their files are in order. We offer unique services which ensure all filings are submitted on time and in the correct format.</p>
+
                     </div>
                 </div>
             </div>

@@ -1,38 +1,28 @@
 <?php
 
 namespace App\Controllers;
-use App\Models\ContactModel;
-use CodeIgniter\Controller;
 
-class Pages extends Controller
+class Pages extends BaseController
 {
-    public function home()
-    {
-        $data['title'] = "Home";
-        echo view('pages/home', $data);       
+    public function index()
+    {    
+        $data = [
+            'title'=>"Home",
+        ]; 
+        return view('pages/home', $data);
     }
 
-    public function brela()
+    public function view($page = 'home')
     {
-        $data['title'] = "BRELA Help Desk";
-        echo view('pages/brela', $data);       
-    }
+        if (! is_file(APPPATH . 'Views/pages/' . $page . '.php')) {
+            // Whoops, we don't have a page for that!
+            throw new \CodeIgniter\Exceptions\PageNotFoundException($page);
+        }    
+       
 
-    public function articles()
-    {
-        $data['title'] = "Articles";
-        echo view('pages/articles', $data);       
-    }
-
-    public function trainings()
-    {
-        $data['title'] = "Trainings";
-        echo view('pages/trainings', $data);       
-    }
-
-    public function advisory()
-    {
-        $data['title'] = "Advisory";
-        echo view('pages/advisory', $data);       
+        $data = [
+            'title'=>ucfirst($page), // Capitalize the first letter 
+        ];  
+        echo view('pages/' . $page, $data);
     }
 }

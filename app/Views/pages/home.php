@@ -48,7 +48,7 @@
 <!--End Slogan Style2 Area-->
 
 <!--Start Services Style5 Area-->
-<section class="services-style5-area">
+<section class="services-style5-area" id="rareservices">
     <div class="pattern-bg pattern-bg-7"></div>
     <div class="container">
         <div class="sec-title-style4 clr-white text-center">
@@ -61,74 +61,73 @@
                 <div class="borders-right thm-bgc3"></div>
             </div>
         </div>
-        <div class="row g-5">
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4"
-                        style="width: 90px; height: 90px;">
-                        <i class="fa fa-user-tie fa-2x"></i>
+        <div class="row why-us">
+            <a href="<?= base_url() ?>/company-incorporation">
+                <div class="col-lg-4">
+                    <div class="card box h-100">
+                        <span>01</span>
+                        <h4>Company Incorporation</h4>
+                        <p>We provide assistance in the setting up of businesses within Tanzania from drafting of all
+                            relevant documents stage to the point clients can start their business.
+                        </p>
+
                     </div>
-                    <h3 class="mb-3 service-heading">Business Research</h3>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor ipsum amet eos erat ipsum lorem et sit
-                        sed stet lorem</p>
+            </a>
+        </div>
+        <div class="col-lg-4">
+            <a href="<?= base_url() ?>/business-licensing">
+                <div class="card box h-100">
+                    <span>02</span>
+                    <h4>Business Licensing</h4>
+                    <p>We assist on all licensing including Business Licence and specialised licensing, Taxpayer
+                        Identification Number and Value Added Tax Certificate
+                    </p>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4"
-                        style="width: 90px; height: 90px;">
-                        <i class="fa fa-chart-pie fa-2x"></i>
-                    </div>
-                    <h3 class="mb-3 service-heading">Stretagic Planning</h3>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor ipsum amet eos erat ipsum lorem et sit
-                        sed stet lorem</p>
+            </a>
+        </div>
+        <div class="col-lg-4">
+            <a href="<?= base_url() ?>/file-rectification">
+                <div class="card box h-100">
+                    <span>02</span>
+                    <h4>File Rectification </h4>
+                    <p>In accordance with the law in Tanzania, companies are required to make all necessary filings
+                        with the Business Registration and Licensing Agency (BRELA).
+                    </p>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4"
-                        style="width: 90px; height: 90px;">
-                        <i class="fa fa-chart-line fa-2x"></i>
-                    </div>
-                    <h3 class="mb-3 service-heading">Market Analysis</h3>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor ipsum amet eos erat ipsum lorem et sit
-                        sed stet lorem</p>
+            </a>
+        </div>
+    </div>
+    <div class="row mt-4 why-us">
+        <div class="col-lg-4">
+            <a href="<?= base_url() ?>/advisory">
+                <div class="card box h-100">
+                    <span>03</span>
+                    <h4>Advisory</h4>
+                    <p>One of our service is to perform advisory services, particularly in the areas of Risk
+                        Management Services, Accounting Support and Administrative Manual Development.</p>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4"
-                        style="width: 90px; height: 90px;">
-                        <i class="fa fa-chart-area fa-2x"></i>
-                    </div>
-                    <h3 class="mb-3 service-heading">Financial Analaysis</h3>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor ipsum amet eos erat ipsum lorem et sit
-                        sed stet lorem</p>
+            </a>
+        </div>
+
+        <div class="col-lg-4">
+            <a href="<?= base_url() ?>/trainings">
+                <div class="card box h-100">
+                    <span>04</span>
+                    <h4>Trainings</h4>
+                    <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno
+                        para dest</p>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4"
-                        style="width: 90px; height: 90px;">
-                        <i class="fa fa-balance-scale fa-2x"></i>
-                    </div>
-                    <h3 class="mb-3 service-heading">legal Advisory</h3>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor ipsum amet eos erat ipsum lorem et sit
-                        sed stet lorem</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4"
-                        style="width: 90px; height: 90px;">
-                        <i class="fa fa-house-damage fa-2x"></i>
-                    </div>
-                    <h3 class="mb-3 service-heading">Tax & Insurance</h3>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor ipsum amet eos erat ipsum lorem et sit
-                        sed stet lorem</p>
-                </div>
+            </a>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card box h-100">
+                <span>05</span>
+                <h4>Certificate Of Incentives</h4>
+                <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
             </div>
         </div>
+    </div>
     </div>
 </section>
 <!--End Services Style5 Area-->
