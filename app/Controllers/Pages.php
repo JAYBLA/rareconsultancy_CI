@@ -7,9 +7,15 @@ class Pages extends BaseController
 {
     public function index()
     {    
+        helper('text');
+        
+        $model = model(PostsModel::class);
+
         $data = [
-            'title'=>"Home",
-        ]; 
+            'posts'  => $model->orderBy('id', 'DESC')->paginate(6),
+            'pager' => $model->pager,
+            'title' => 'Home',
+        ];
         return view('pages/home', $data);
     }
 

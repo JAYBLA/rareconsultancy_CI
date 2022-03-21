@@ -18,7 +18,7 @@
 <!--End breadcrumb area-->
 
 <!--Start Blog Style1 Area-->
-<section id="blog-area" class="blog-style1-area">
+<section id="blog-area" class="rareblog blog-style1-area">
     <div class="container">
         <div class="row blog-post">
             <?php if (! empty($posts) && is_array($posts)): ?>
@@ -28,10 +28,10 @@
                         <div class="single-blog-post wow fadeInUp animated" data-wow-delay="0.3s" data-wow-duration="1200ms">
                             <div class="img-holder">
                                 <div class="inner">
-                                    <img src="<?=base_url()?>/uploads/<?= $posts_item['file_name'] ?>" alt="featured image">
+                                    <img src="<?=base_url() ?>/uploads/<?= $posts_item['file_name'] ?>" alt="featured image">
                                     <div class="overlay-content">
                                         <div class="button">
-                                            <a href="/articles/<?= $posts_item['slug'] ?>"><i class="fa fa-book" aria-hidden="true"></i>Learn More</a>
+                                            <a href="<?=base_url() ?>/articles/<?= $posts_item['slug'] ?>"><i class="fa fa-book" aria-hidden="true"></i>Learn More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -42,9 +42,9 @@
                                 </ul>
                                 <h3 class="blog-title"><a href="/articles/<?= $posts_item['slug'] ?>"><?= esc($posts_item['title']) ?></a></h3>
                                 <div class="text-box">
-                                    <p><?= character_limiter($posts_item['body'], 100) ?></p>
+                                    <p><?= character_limiter($posts_item['body'], 180) ?></p>
                                     <div class="read-more-button">
-                                        <a href="/articles/<?= $posts_item['slug'] ?>">Read More<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                        <a href="<?=base_url() ?>/articles/<?= $posts_item['slug'] ?>">Read More<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
                             </div>

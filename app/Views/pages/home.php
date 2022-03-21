@@ -137,7 +137,7 @@
 </section>
 <!--End Services Style5 Area-->
 <!-- Start Blog Section -->
-<section id="blog" class="blog-area bg-gray py-5 mt-3 mb-3">
+<section id="blog" class="rareblog blog-area bg-gray py-5 mt-3 mb-3">
     <div class="container">
         <div class="sec-title-style4 text-center">
             <p>Our Latest Blog</p>
@@ -150,88 +150,48 @@
             </div>
         </div>
         <div class="row pb-5">
+                <?php if (! empty($posts) && is_array($posts)): ?>
+                <?php foreach($posts as $posts_item): ?>
             <div class="col-lg-4 col-md-6">
                 <div class="single-blog">
                     <div class="post-img">
-                        <a href="#">
-                            <img src="assets/images/blog/blog-1.jpg" alt="" />
+                        <a href="<?= base_url() ?>/articles/<?= $posts_item['slug'] ?>">
+                            <img src="<?=base_url()?>/uploads/<?= $posts_item['file_name'] ?>" alt="" />
                         </a>
                     </div>
                     <div class="blog-content">
                         <div class="blog-date">
                             <ul class="blog-list">
                                 <li>
-                                    <h6>20 January - 2021</h6>
+                                    <h6><?= date('Y-m-d', strtotime($posts_item['created_at'])) ?></h6>
                                 </li>
                             </ul>
                         </div>
                         <div class="blog-body-title">
-                            <h3><a href="#">What Could 5g Change About The Way We Use Technology?</a></h3>
+                            <h3><a href="<?= base_url() ?>/articles/<?= $posts_item['slug'] ?>"><?= esc($posts_item['title']) ?></a></h3>
                         </div>
                         <div class="blog-body-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore veniam dolore.</p>
+                            <p><?= character_limiter($posts_item['body'], 180) ?></p>
                         </div>
-                        <div class="blog-bottom-text-link"> <a href="#">+ Read More</a>
+                        <div class="blog-bottom-text-link"> <a href="<?= base_url() ?>/articles/<?= $posts_item['slug'] ?>">+ Read More</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-blog">
-                    <div class="post-img">
-                        <a href="#">
-                            <img src="assets/images/blog/blog-2.jpg" alt="" />
-                        </a>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-date">
-                            <ul class="blog-list">
-                                <li>
-                                    <h6>25 January - 2021</h6>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="blog-body-title">
-                            <h3><a href="#">3 Factors To Consider When Choosing A Managed It Services</a></h3>
-                        </div>
-                        <div class="blog-body-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore veniam dolore.</p>
-                        </div>
-                        <div class="blog-bottom-text-link"> <a href="#">+ Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-blog">
-                    <div class="post-img">
-                        <a href="#">
-                            <img src="assets/images/blog/blog-3.jpg" alt="" />
-                        </a>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-date">
-                            <ul class="blog-list">
-                                <li>
-                                    <h6>30 January - 2021</h6>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="blog-body-title">
-                            <h3><a href="#">How To Quickly Shift To A Work-from-home Business Model</a></h3>
-                        </div>
-                        <div class="blog-body-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore veniam dolore.</p>
-                        </div>
-                        <div class="blog-bottom-text-link"> <a href="#">+ Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php endforeach; ?>
+            <?php endif; ?>
         </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <?php if ($pager) :?>
+                <?php $pagi_path='/articles'; ?>
+                <?php $pager->setPath($pagi_path); ?>
+                <ul class="styled-pagination text-center clearfix">                            
+                    <li><?= $pager->links() ?></li>
+                </ul>
+                <?php endif ?>
+            </div>
+        </div> 
     </div>
 </section>
 <!-- End Blog Section -->

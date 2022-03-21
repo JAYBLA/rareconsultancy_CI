@@ -192,7 +192,7 @@
 
 .blog-content .blog-date .blog-list li a {
 	font-size: 13px;
-	color: #5764ec;
+	color: #008000;
 	font-weight: 600;
 	display: inline-block;
 }
@@ -207,8 +207,8 @@
 }
 
 .blog-area .single-blog .blog-content h3 a:hover {
-	color: #5764ec;
-	text-decoration: underline !important;
+	color: #008000;
+	text-decoration: none !important;
 }
 
 .blog-bottom-text-link {
@@ -226,8 +226,8 @@
 }
 
 .single-blog .blog-content .blog-bottom-text-link a:hover {
-	color: #5764ec;
-	text-decoration: underline !important;
+	color: #008000;
+	text-decoration: none !important;
 }
 
 .bg-gray {
