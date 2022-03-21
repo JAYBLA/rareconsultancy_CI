@@ -47,7 +47,7 @@ class Posts extends BaseController
         ])) {
             $imageFile = $this->request->getFile('featured_image');
             $file_name = $imageFile->getRandomName();
-            $imageFile->move(ROOTPATH . 'public/uploads', $file_name);
+            $imageFile->move(ROOTPATH . '../rareconsultancy.co.tz/uploads', $file_name);
 
             $model->save([
                 'title' => $this->request->getPost('title'),
@@ -78,11 +78,11 @@ class Posts extends BaseController
 
         if($imageFile->isValid() && !$imageFile->hasMoved()){
             $old_image = $post['file_name'];
-            if(file_exists("public/uploads". $old_image)){
-                unlink("public/uploads". $old_image);                
+            if(file_exists("../rareconsultancy.co.tz/uploads". $old_image)){
+                unlink("../rareconsultancy.co.tz/uploads". $old_image);                
             }
             $file_name = $imageFile->getRandomName();
-            $imageFile->move(ROOTPATH . 'public/uploads', $file_name);
+            $imageFile->move(ROOTPATH . '../rareconsultancy.co.tz/uploads', $file_name);
         }
 
         $data= [
