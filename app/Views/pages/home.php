@@ -136,6 +136,7 @@
     </div>
 </section>
 <!--End Services Style5 Area-->
+<?php if (! empty($posts) && is_array($posts)): ?>
 <!-- Start Blog Section -->
 <section id="blog" class="rareblog blog-area bg-gray py-5 mt-3 mb-3">
     <div class="container">
@@ -149,8 +150,7 @@
                 <div class="borders-right thm-bgc3"></div>
             </div>
         </div>
-        <div class="row pb-5">
-                <?php if (! empty($posts) && is_array($posts)): ?>
+        <div class="row pb-5">               
                 <?php foreach($posts as $posts_item): ?>
             <div class="col-lg-4 col-md-6">
                 <div class="single-blog">
@@ -178,8 +178,7 @@
                     </div>
                 </div>
             </div>
-            <?php endforeach; ?>
-            <?php endif; ?>
+            <?php endforeach; ?>            
         </div>
         <div class="row">
             <div class="col-xl-12">
@@ -195,4 +194,5 @@
     </div>
 </section>
 <!-- End Blog Section -->
+<?php endif; ?>
 <?= $this->endSection() ?>
