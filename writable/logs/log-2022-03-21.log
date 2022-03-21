@@ -1,0 +1,143 @@
+CRITICAL - 2022-03-21 11:57:04 --> The action you requested is not allowed.
+#0 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('admin/post-crea...', 'before')
+#4 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\WEB SERVICES...')
+#7 {main}
+CRITICAL - 2022-03-21 11:57:15 --> The action you requested is not allowed.
+#0 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Security\Security.php(277): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Filters\CSRF.php(53): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('admin/post-crea...', 'before')
+#4 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\WEB SERVICES...')
+#7 {main}
+CRITICAL - 2022-03-21 12:10:23 --> authGuard filter must have a matching alias defined.
+#0 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('authGuard')
+#1 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(375): CodeIgniter\Filters\Filters->enableFilter('authGuard', 'before')
+#2 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\WEB SERVICES...')
+#5 {main}
+CRITICAL - 2022-03-21 12:12:04 --> authGuard filter must have a matching alias defined.
+#0 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('authGuard')
+#1 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(375): CodeIgniter\Filters\Filters->enableFilter('authGuard', 'before')
+#2 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\WEB SERVICES...')
+#5 {main}
+CRITICAL - 2022-03-21 12:12:08 --> authGuard filter must have a matching alias defined.
+#0 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('authGuard')
+#1 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(375): CodeIgniter\Filters\Filters->enableFilter('authGuard', 'before')
+#2 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\WEB SERVICES...')
+#5 {main}
+ERROR - 2022-03-21 12:14:20 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-03-21 12:14:20 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#2 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Validation\Rules.php(161): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Validation\Validation.php(277): CodeIgniter\Validation\Rules->is_unique('bugalama28@gmai...', 'email', Array, NULL)
+#4 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('email', 'email', 'bugalama28@gmai...', Array, Array)
+#5 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#6 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\app\Controllers\SignupController.php(27): CodeIgniter\Controller->validate(Array)
+#7 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\SignupController->store()
+#8 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#9 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\WEB SERVICES...')
+#12 {main}
+ERROR - 2022-03-21 12:16:18 --> Table 'article.users' doesn't exist
+CRITICAL - 2022-03-21 12:16:18 --> Table 'article.users' doesn't exist
+#0 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Validation\Rules.php(161): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Validation\Validation.php(277): CodeIgniter\Validation\Rules->is_unique('bugalama28@gmai...', 'email', Array, NULL)
+#6 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('email', 'email', 'bugalama28@gmai...', Array, Array)
+#7 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#8 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\app\Controllers\SignupController.php(27): CodeIgniter\Controller->validate(Array)
+#9 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\SignupController->store()
+#10 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#11 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\WEB SERVICES...')
+#14 {main}
+ERROR - 2022-03-21 12:17:21 --> Table 'article.users' doesn't exist
+CRITICAL - 2022-03-21 12:17:21 --> Table 'article.users' doesn't exist
+#0 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Validation\Rules.php(161): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Validation\Validation.php(277): CodeIgniter\Validation\Rules->is_unique('bugalama28@gmai...', 'email', Array, NULL)
+#6 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('email', 'email', 'bugalama28@gmai...', Array, Array)
+#7 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#8 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\app\Controllers\SignupController.php(27): CodeIgniter\Controller->validate(Array)
+#9 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\SignupController->store()
+#10 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#11 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\WEB SERVICES...')
+#14 {main}
+ERROR - 2022-03-21 12:20:35 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2022-03-21 12:20:35 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#2 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Validation\Rules.php(161): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Validation\Validation.php(277): CodeIgniter\Validation\Rules->is_unique('bugalama28@gmai...', 'email', Array, NULL)
+#4 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('email', 'email', 'bugalama28@gmai...', Array, Array)
+#5 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#6 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\app\Controllers\SignupController.php(27): CodeIgniter\Controller->validate(Array)
+#7 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\SignupController->store()
+#8 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#9 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\WEB SERVICES...')
+#12 {main}
+ERROR - 2022-03-21 12:22:00 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2022-03-21 12:22:00 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\app\Controllers\SigninController.php(25): CodeIgniter\BaseModel->first()
+#5 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\SigninController->loginAuth()
+#6 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+#7 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\WEB SERVICES...')
+#10 {main}
+CRITICAL - 2022-03-21 12:25:46 --> Invalid file: layouts/dashboard.php
+#0 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/dashboa...')
+#1 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\View\View.php(230): CodeIgniter\View\View->render('layouts/dashboa...', Array, true)
+#2 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('dashboard/posts', Array, true)
+#3 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\app\Controllers\Posts.php(18): view('dashboard/posts', Array)
+#4 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Posts->index()
+#5 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Posts))
+#6 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\WEB SERVICES...')
+#9 {main}
+CRITICAL - 2022-03-21 12:56:36 --> Call to undefined function counter()
+#0 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\View\View.php(214): include()
+#1 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('dashboard/posts', Array, true)
+#3 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\app\Controllers\Posts.php(18): view('dashboard/posts', Array)
+#4 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Posts->index()
+#5 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Posts))
+#6 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\WEB SERVICES\WORKPLACE\CodeIgniter\CLIENTS\rareconsultancy_CI\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\WEB SERVICES...')
+#9 {main}

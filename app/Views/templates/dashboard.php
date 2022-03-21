@@ -1,194 +1,219 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><?= $title ?> | Admin Panel</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <head>
-        <meta charset="utf-8">
-        <title><?= $title ?> | Rare-Admin</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description">
-        <meta content="Themesbrand" name="author">
-        <!-- App favicon -->
-        <link rel="shortcut icon" href="<?= base_url('/dashboard/assets/images/favicon.ico') ?>">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="<?= base_url('/assets/images/favicon/apple-touch-icon.png') ?>">
+    <link rel="icon" type="image/png" href="<?= base_url('/assets/images/favicon/favicon-32x32.png') ?>" sizes="32x32">
+    <link rel="icon" type="image/png" href="<?= base_url('/assets/images/favicon/favicon-16x16.png') ?>" sizes="16x16">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="<?= base_url('admin/plugins/fontawesome-free/css/all.min.css') ?>">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Tempusdominus Bbootstrap 4 -->
+    <link rel="stylesheet"
+        href="<?= base_url('admin/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css') ?>">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="<?= base_url('admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css') ?>">
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="<?= base_url('admin/plugins/jqvmap/jqvmap.min.css') ?>">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="<?= base_url('admin/assets/css/adminlte.min.css') ?>">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="<?= base_url('admin/plugins/overlayScrollbars/css/OverlayScrollbars.min.css') ?>">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="<?= base_url('admin/plugins/daterangepicker/daterangepicker.css') ?>">
+    <!-- summernote -->
+    <link rel="stylesheet" href="<?= base_url('admin/plugins/summernote/summernote-bs4.css') ?>">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="<?= base_url('admin/assets/css/custom.css') ?>">
+
+    <script src="https://cdn.ckeditor.com/4.17.1/standard-all/ckeditor.js"></script>
+
+    <?= $this->renderSection('stylesheet') ?>
+
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto mr-5">
+                <a href="<?= base_url('dashboard/logout') ?>" class="btn btn-outline-secondary">Logout</a>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+
+            <!-- Brand Logo -->
+            <a href="<?= base_url('/dashboard') ?>" class="brand-link dashboard-logo text-center">
+                <img src="<?= base_url() ?>/assets/images/resources/logo.png" alt="Logo"> 
+            </a>
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <li class="nav-header"><b>POSTS</b></li>
+                        <li class="nav-item">
+                            <a href="<?= base_url() ?>/dashboard/post-create" class="nav-link">
+                                <i class="nav-icon far fa-plus-square text-white"></i>
+                                <p class="text">Create Post</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?= base_url('/dashboard') ?>" class="nav-link">
+                                <i class="nav-icon far fa-list-alt text-white"></i>
+                                <p class="text">All Posts</p>
+                            </a>
+                        </li>                                                         
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
 
         
-        <!-- Bootstrap Css -->
-        <link href="<?= base_url('/dashboard/assets/css/bootstrap.min.css') ?>" rel="stylesheet" type="text/css">
-        <!-- Icons Css -->
-        <link href="<?= base_url('/dashboard/assets/css/icons.min.css') ?>" rel="stylesheet" type="text/css">
-        <!-- App Css-->
-        <link href="<?= base_url('/dashboard/assets/css/app.min.css') ?>" rel="stylesheet" type="text/css">
-        <script>
-        var csrfName = '<?= csrf_token() ?>';
-        var csrfHash = '<?= csrf_hash() ?>';  
-    </script>
-    </head>
-
-
-    <body data-topbar="dark" data-layout="horizontal">
-        <!-- Begin page -->
-        <div id="layout-wrapper">
-
-            <header id="page-topbar">
-                <div class="navbar-header">
-                    <div class="d-flex">
-                        <!-- LOGO -->
-                        <div class="navbar-brand-box">
-                            <a href="index.html" class="logo logo-dark">
-                                <span class="logo-sm">
-                                    <img src="<?= base_url('/dashboard/assets/images/logo-sm.png') ?>" alt="" height="22">
-                                </span>
-                                <span class="logo-lg">
-                                    <img src="<?= base_url('/dashboard/assets/images/logo-dark.png') ?>" alt="" height="17">
-                                </span>
-                            </a>
-
-                            <a href="index.html" class="logo logo-light">
-                                <span class="logo-sm">
-                                    <img src="<?= base_url('/dashboard/assets/images/logo-sm.png') ?>" alt="" height="22">
-                                </span>
-                                <span class="logo-lg">
-                                    <img src="<?= base_url('/dashboard/assets/images/logo-light.png') ?>" alt="" height="18">
-                                </span>
-                            </a>
-                        </div>
-
-                        <button type="button" class="btn btn-sm me-2 font-size-24 d-lg-none header-item waves-effect waves-light"
-                            data-bs-toggle="collapse" data-bs-target="#topnav-menu-content">
-                            <i class="mdi mdi-menu"></i>
-                        </button>
-
-                    </div>
-
-                    <div class="d-flex">
-
-                        <!-- App Search-->
-                        <form class="app-search d-none d-lg-block">
-                            <div class="position-relative">
-                                <input type="text" class="form-control" placeholder="Search...">
-                                <span class="fa fa-search"></span>
-                            </div>
-                        </form>
-
-                        <div class="dropdown d-inline-block">
-                            <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img class="rounded-circle header-profile-user" src="<?= base_url('dashboard/assets/images/users/user-4.jpg') ?>"
-                                    alt="Header Avatar">
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-end">
-                                <!-- item-->
-                                <a class="dropdown-item" href="#"><i
-                                        class="mdi mdi-account-circle font-size-17 align-middle me-1"></i> Profile</a>
-                                <a class="dropdown-item" href="#"><i class="mdi mdi-wallet font-size-17 align-middle me-1"></i> My
-                                    Wallet</a>
-                                <a class="dropdown-item d-block" href="#"><span class="badge bg-success float-end">11</span><i
-                                        class="mdi mdi-cog font-size-17 align-middle me-1"></i> Settings</a>
-                                <a class="dropdown-item" href="#"><i
-                                        class="mdi mdi-lock-open-outline font-size-17 align-middle me-1"></i> Lock screen</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item text-danger" href="#"><i
-                                        class="bx bx-power-off font-size-17 align-middle me-1 text-danger"></i> Logout</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-
-            <div class="topnav">
-                <div class="container-fluid">
-                    <nav class="navbar navbar-light navbar-expand-lg topnav-menu">
-
-                        <div class="collapse navbar-collapse" id="topnav-menu-content">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="pages-starter.html">
-                                        <i class="ti-home me-2"></i>Starter Pages
-                                    </a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="layouts-horizontal.html">
-                                        <i class="ti-home me-2"></i>Horizontal
-                                    </a>
-                                </li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-auth" role="button">
-                                        <i class="ti-archive me-2"></i> Authentication
-                                    </a>
-
-                                    <div class="dropdown-menu px-2" aria-labelledby="topnav-auth">
-                                        <a href="pages-login.html" class="dropdown-item">Login 1</a>
-                                        <a href="pages-register.html" class="dropdown-item">Register 1</a>
-                                        <a href="pages-recoverpw.html" class="dropdown-item">Recover Password 1</a>
-                                        <a href="pages-lock-screen.html" class="dropdown-item">Lock Screen 1</a>
-                                        <a href="pages-login-2.html" class="dropdown-item">Login 2</a>
-                                        <a href="pages-register-2.html" class="dropdown-item">Register 2</a>
-                                        <a href="pages-recoverpw-2.html" class="dropdown-item">Recover Password 2</a>
-                                        <a href="pages-lock-screen-2.html" class="dropdown-item">Lock Screen 2</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-
-            <!-- ============================================================== -->
-            <!-- Start right Content here -->
-            <!-- ============================================================== -->
-            <div class="main-content">
-
-                <div class="page-content">
-                    <div class="container-fluid">
-                      
+        <div class="content-wrapper mt-4">           
+            <section class="content">
+                <div class="container-fluid">                    
+                    <div class="row">
                         <?= $this->renderSection('content') ?>
-
-
-                    </div> <!-- container-fluid -->
+                    </div>                    
                 </div>
-                <!-- End Page-content -->
-
-                
-                <footer class="footer">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-12">
-                                © <script>document.write(new Date().getFullYear())</script> Veltrix<span class="d-none d-sm-inline-block"> - Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesbrand.</span>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
+            </section>           
+        </div>        
+        <footer class="main-footer text-center">
+            <strong>Copyright &copy; <script>
+                document.write(new Date().getFullYear())
+                </script></strong>
+            All rights reserved.
+        </footer>
 
 
-            </div>
-            <!-- end main content-->
+        <aside class="control-sidebar control-sidebar-dark">
 
-        </div>
-        <!-- END layout-wrapper -->
-        
-        <!-- JAVASCRIPT -->
-        <script src="<?= base_url('/dashboard/assets/libs/jquery/jquery.min.js') ?>"></script>
-        <script src="<?= base_url('/dashboard/assets/libs/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
-        <script src="<?= base_url('/dashboard/assets/libs/metismenu/metisMenu.min.js') ?>"></script>
-        <script src="<?= base_url('/dashboard/assets/libs/simplebar/simplebar.min.js') ?>"></script>
-        <script src="<?= base_url('/dashboard/assets/libs/node-waves/waves.min.js') ?>"></script>
+        </aside>
+
+    </div>
 
 
-        <script src="<?= base_url('/dashboard/assets/js/app.js') ?>"></script>
+    <!-- jQuery -->
+    <script src="admin/plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="admin/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+    $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="admin/plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="admin/plugins/sparklines/sparkline.js"></script>
+    <!-- JQVMap -->
+    <script src="admin/plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="admin/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="admin/plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="admin/plugins/moment/moment.min.js"></script>
+    <script src="admin/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="admin/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="admin/plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="admin/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="admin/assets/js/adminlte.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="admin/assets/js/pages/dashboard.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="admin/assets/js/demo.js"></script>
 
-        <!-- INTERNAL Data tables -->
-        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-        <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
-        <script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap5.min.js"></script>
-        <script src="https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js"></script>    
-        <script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.bootstrap5.min.js"></script>    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>   
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>    
-        <script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.html5.min.js"></script>    
-        <script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.print.min.js"></script>    
-        <script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.colVis.min.js"></script>
-        <?= $this->renderSection('javascript') ?>
-    </body>
+    <!-- INTERNAL Data tables -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap4.min.js"></script>
+
+    <?= $this->renderSection('javascript') ?>
+    <script>
+    CKEDITOR.replace('content', {
+        uiColor: '#e623274d',
+        removeButtons: 'PasteFromWord'
+    });
+    </script>
+    <script>
+    CKEDITOR.config.toolbar = [{
+            name: 'document',
+            items: ['Source', '-', 'Save', 'NewPage', 'DocProps', 'Preview', 'Print', '-', 'Templates']
+        },
+        {
+            name: 'clipboard',
+            items: ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo']
+        },
+        {
+            name: 'editing',
+            items: ['Find', 'Replace', '-', 'SelectAll', '-', 'SpellChecker', 'Scayt']
+        },
+        {
+            name: 'forms',
+            items: ['Form', 'Checkbox', 'Radio', 'TextField', 'Textarea', 'Select', 'Button', 'ImageButton',
+                'HiddenField'
+            ]
+        },
+        {
+            name: 'styles',
+            items: ['Styles', 'Format', 'Font', 'FontSize']
+        },
+        {
+            name: 'tools',
+            items: ['Maximize', 'ShowBlocks']
+        } {
+            name: 'colors',
+            items: ['TextColor', 'BGColor']
+        },
+        '/',
+        {
+            name: 'basicstyles',
+            items: ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat']
+        },
+        {
+            name: 'paragraph',
+            items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv',
+                '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock', '-', 'BidiLtr', 'BidiRtl'
+            ]
+        },
+        {
+            name: 'links',
+            items: ['Link', 'Unlink', 'Anchor']
+        },
+        {
+            name: 'insert',
+            items: ['Image', 'Flash', 'Table', 'HorizontalRule', 'Smiley', 'SpecialChar', 'PageBreak', 'Iframe']
+        },
+        '/',
+
+
+
+    ];
+    </script>
+</body>
+
 </html>

@@ -80,7 +80,7 @@
                                             <li><a href="<?= base_url() ?>/tax">Tax</a></li>                                           
                                         </ul>
                                     </li>
-                                    <li><a href="#">Articles</a></li>
+                                    <li><a href="<?= base_url() ?>/articles">Articles</a></li>
                                     <li><a href="<?= base_url() ?>/contact">Contact Us</a></li>
                                 </ul>
                             </div>

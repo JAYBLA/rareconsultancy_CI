@@ -1,0 +1,28 @@
+CREATE TABLE users(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100),
+    email VARCHAR(100),
+    password VARCHAR(200),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=INNODB;
+
+CREATE TABLE posts (
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    title VARCHAR(128) NOT NULL,
+    slug VARCHAR(128) NOT NULL,
+    body TEXT NOT NULL,
+    file_name varchar(100) NOT NULL,
+    file_type varchar(255) NOT NULL,
+    PRIMARY KEY (id),
+    KEY slug (slug),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='posts table' AUTO_INCREMENT=1;
+
+CREATE TABLE contacts(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    full_name VARCHAR(100),
+    email VARCHAR(100),
+    phone VARCHAR(200),
+    message TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=INNODB;

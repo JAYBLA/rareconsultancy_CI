@@ -327,3 +327,15 @@
     padding-right: 4px;
     border-bottom: 10px solid #0d9e0d;
 }
+
+.btn-outline-primary {
+    color: #008000;
+    border-color: #008000;
+}
+
+.btn-outline-primary:hover {
+    color: #ffffff;
+    border-color: #008000;
+    background-color: #008000;
+}
+

@@ -137,7 +137,7 @@
 </section>
 <!--End Services Style5 Area-->
 <!-- Start Blog Section -->
-<!-- <section id="blog" class="blog-area bg-gray py-5 mt-3 mb-3">
+<section id="blog" class="blog-area bg-gray py-5 mt-3 mb-3">
     <div class="container">
         <div class="sec-title-style4 text-center">
             <p>Our Latest Blog</p>
@@ -163,8 +163,6 @@
                                 <li>
                                     <h6>20 January - 2021</h6>
                                 </li>
-                                <li><span class="blog-inline-sep">|</span></li>
-                                <li><a href="#">Technology</a></li>
                             </ul>
                         </div>
                         <div class="blog-body-title">
@@ -192,8 +190,6 @@
                                 <li>
                                     <h6>25 January - 2021</h6>
                                 </li>
-                                <li><span class="blog-inline-sep">|</span></li>
-                                <li><a href="#">IT Services</a></li>
                             </ul>
                         </div>
                         <div class="blog-body-title">
@@ -221,8 +217,6 @@
                                 <li>
                                     <h6>30 January - 2021</h6>
                                 </li>
-                                <li><span class="blog-inline-sep">|</span></li>
-                                <li><a href="#">Business</a></li>
                             </ul>
                         </div>
                         <div class="blog-body-title">
@@ -239,6 +233,6 @@
             </div>
         </div>
     </div>
-</section> -->
+</section>
 <!-- End Blog Section -->
 <?= $this->endSection() ?>

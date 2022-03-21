@@ -32,15 +32,24 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 
-        // Admin
-$routes->get('admin', 'Dashboard::index');
-$routes->post('admin/post-create', 'Dashboard::article_add');
-$routes->get('admin/post-update/(:num)', 'Dashboard::ajax_post/$1');
-$routes->post('admin/post-delete/(:num)', 'Dashboard::ajax_post/$1');
-$routes->post('admin/post-update', 'Dashboard::article_update/$1');
+// User Management
+$routes->get('dashboard/signup', 'SignupController::index');
+$routes->post('dashboard/signup', 'SignupController::store');
+$routes->get('dashboard/signin', 'SigninController::index');
+$routes->post('dashboard/signin', 'SigninController::loginAuth');
+$routes->get('dashboard/logout', 'SigninController::logout');
 
 
+// Dashboard
+$routes->match(['get', 'post'], '/dashboard/post-create', 'Posts::create', ['filter' => 'authGuard']);
+$routes->get('/dashboard/posts/(:segment)', 'Posts::view/$1');
+$routes->get('/dashboard/post-delete/(:segment)', 'Posts::delete/$1');
+$routes->post('/dashboard/post-update/(:segment)', 'Posts::update/$1');
+$routes->get('/dashboard', 'Posts::index', ['filter' => 'authGuard']);
 
+
+$routes->get('/articles', 'Pages::articles');
+$routes->get('/articles/(:segment)', 'Pages::article_detail/$1');
 $routes->get('/contact', 'Contact::index');
 $routes->get('/', 'Pages::index');
 $routes->get('(:any)', 'Pages::view/$1');

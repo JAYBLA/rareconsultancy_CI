@@ -1,0 +1,44 @@
+:root{
+    --primary-color:#008000;
+    --primary-dark-color:#014401;
+    --rgba-primary-color:rgba(0, 128, 0, 0.03);
+    --rgba-primary-border-color:rgba(0, 128, 0, 0.125)
+}
+
+.fs-22{
+    font-size: 22px !important;
+}
+
+.btn-company {
+    color: #fff;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.card-header-company {
+    background-color: var(--rgba-primary-color);
+    border-bottom: 1px solid var(--rgba-primary-border-color);
+}
+
+.admin-divider{
+    border: solid 1px #15171a;
+    width: 100% !important;
+}
+
+.dashboard-logo img{
+    height: 60px !important;
+    width: auto;
+}
+.dashboard-logo{
+background-color: #ffffff;
+}
+.sidebar{
+    background-color: var(--primary-dark-color) !important;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: var(--primary-color) !important;
+    border-color:  var(--primary-color) !important;
+}
